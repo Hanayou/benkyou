@@ -1,0 +1,30 @@
+{
+  "name": "benkyou",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "勉強 Benkyō — a simple offline JLPT kanji & vocab drill PWA",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "data:fetch": "node scripts/fetch-data.mjs",
+    "data:build": "node scripts/build-data.mjs",
+    "icons": "node scripts/make-icons.mjs"
+  },
+  "dependencies": {
+    "dexie": "^4.0.11",
+    "preact": "^10.26.5",
+    "wanakana": "^5.3.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.1",
+    "fflate": "^0.8.2",
+    "sharp": "^0.34.1",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-pwa": "^1.0.0",
+    "vitest": "^3.1.3"
+  }
+}
