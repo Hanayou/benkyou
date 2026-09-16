@@ -180,18 +180,16 @@ export function QuizView({ list, onExit }: { list: ListMeta; onExit(): void }) {
               );
             })}
           </div>
-          <div class="opts-spacer" />
+          <div class="drawer-zone">
+            <Drawer open={drawerOpen} setOpen={setDrawerOpen}>
+              {infoItem ? (
+                <ItemDetail item={infoItem} />
+              ) : (
+                <div class="drawer-empty muted">Answer a question to see details here.</div>
+              )}
+            </Drawer>
+          </div>
         </>
-      )}
-
-      {state !== 'loading' && (
-        <Drawer open={drawerOpen} setOpen={setDrawerOpen}>
-          {infoItem ? (
-            <ItemDetail item={infoItem} />
-          ) : (
-            <div class="drawer-empty muted">Answer a question to see details here.</div>
-          )}
-        </Drawer>
       )}
     </div>
   );

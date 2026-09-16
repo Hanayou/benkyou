@@ -3,7 +3,8 @@ import type { ComponentChildren } from 'preact';
 
 /**
  * Bottom info drawer. Collapsed it shows only a slim grabber bar; expanded it
- * slides up over the quiz. Tap the bar to toggle; drag it up/down too.
+ * fills its containing zone below the quiz, which stays interactive. Tap the
+ * bar to toggle; drag it up/down too.
  */
 export function Drawer({
   open,
@@ -26,7 +27,11 @@ export function Drawer({
   const onPointerDown = (e: PointerEvent) => {
     const el = sheet.current;
     if (!el) return;
-    (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+    try {
+      (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+    } catch {
+      /* pointer may already be gone (or synthetic) — drag still works uncaptured */
+    }
     const closedY = closedOffset();
     drag.current = { startY: e.clientY, base: open ? 0 : closedY, closedY, moved: false };
     el.style.transition = 'none';
@@ -60,21 +65,18 @@ export function Drawer({
   };
 
   return (
-    <>
-      <div class={`scrim${open ? ' show' : ''}`} onClick={() => setOpen(false)} />
-      <div class={`drawer${open ? ' open' : ''}`} ref={sheet}>
-        <button
-          type="button"
-          class="drawer-handle"
-          aria-label={open ? 'Close info drawer' : 'Open info drawer'}
-          onPointerDown={onPointerDown}
-          onPointerMove={onPointerMove}
-          onPointerUp={onPointerUp}
-        >
-          <span class="grabber" />
-        </button>
-        <div class="drawer-body">{children}</div>
-      </div>
-    </>
+    <div class={`drawer${open ? ' open' : ''}`} ref={sheet}>
+      <button
+        type="button"
+        class="drawer-handle"
+        aria-label={open ? 'Close info drawer' : 'Open info drawer'}
+        onPointerDown={onPointerDown}
+        onPointerMove={onPointerMove}
+        onPointerUp={onPointerUp}
+      >
+        <span class="grabber" />
+      </button>
+      <div class="drawer-body">{children}</div>
+    </div>
   );
 }

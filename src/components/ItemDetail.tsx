@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import type { StudyItem } from '../lib/types';
 import { getAllItems } from '../lib/data';
 import { isDrawable } from '../lib/strokes';
@@ -22,8 +22,11 @@ function Highlighted({ text, hl }: { text: string; hl: string }) {
 /** Full info panel for one item — used by the quiz drawer and search. */
 export function ItemDetail({ item }: { item: StudyItem }) {
   const [related, setRelated] = useState<StudyItem[]>([]);
+  const root = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // content swaps in place while the drawer stays open — show the new item from the top
+    if (root.current?.parentElement) root.current.parentElement.scrollTop = 0;
     setRelated([]);
     if (item.kind !== 'kanji') return;
     let alive = true;
@@ -43,7 +46,7 @@ export function ItemDetail({ item }: { item: StudyItem }) {
   const strokeChars = [...new Set([...item.text])].filter(isDrawable);
 
   return (
-    <div class="detail">
+    <div class="detail" ref={root}>
       <div class="detail-head">
         <div class="detail-main">
           <div class="detail-text" lang="ja">

@@ -286,11 +286,11 @@ p {
   transition: width 0.3s ease;
 }
 .quiz-main {
-  flex: 1;
+  min-height: 118px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 22px;
+  padding: 8px 22px 12px;
   overflow: hidden;
   user-select: none;
   -webkit-user-select: none;
@@ -310,29 +310,29 @@ p {
   font-weight: 500;
 }
 .prompt-k.sz-xl {
-  font-size: 104px;
-  line-height: 1.15;
+  font-size: 86px;
+  line-height: 1.12;
 }
 .prompt-k.sz-l {
-  font-size: 60px;
-  line-height: 1.25;
+  font-size: 52px;
+  line-height: 1.22;
 }
 .prompt-k.sz-m {
-  font-size: 42px;
+  font-size: 36px;
   line-height: 1.3;
 }
 .prompt-k.sz-s {
-  font-size: 30px;
+  font-size: 27px;
   line-height: 1.4;
 }
 .prompt-y {
-  font-size: 30px;
-  line-height: 1.55;
+  font-size: 26px;
+  line-height: 1.5;
   font-weight: 500;
 }
 .prompt-e {
-  font-size: 25px;
-  line-height: 1.45;
+  font-size: 22px;
+  line-height: 1.4;
   font-weight: 550;
 }
 .opts {
@@ -342,7 +342,7 @@ p {
   padding: 0 14px;
 }
 .opt {
-  min-height: 84px;
+  min-height: 76px;
   padding: 10px 10px;
   border: 1.5px solid var(--line);
   border-radius: 16px;
@@ -370,10 +370,6 @@ p {
 }
 .opt-dim {
   opacity: 0.45;
-}
-.opts-spacer {
-  height: calc(52px + env(safe-area-inset-bottom));
-  flex-shrink: 0;
 }
 
 .done-panel {
@@ -428,28 +424,16 @@ p {
 }
 
 /* ---------------------------------------------------------------- drawer */
-.scrim {
-  position: fixed;
-  inset: 0;
-  z-index: 20;
-  background: rgba(0, 0, 0, 0.38);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.28s;
-}
-.scrim.show {
-  opacity: 1;
-  pointer-events: auto;
+.drawer-zone {
+  flex: 1;
+  position: relative;
+  min-height: 110px;
+  margin-top: 12px;
+  overflow: hidden;
 }
 .drawer {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 21;
-  max-width: 560px;
-  margin: 0 auto;
-  height: min(68vh, 620px);
+  position: absolute;
+  inset: 0;
   background: var(--card);
   border: 1px solid var(--line);
   border-bottom: none;
