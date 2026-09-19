@@ -59,16 +59,16 @@ export function ItemDetail({ item }: { item: StudyItem }) {
               </div>
             ) : (
               <>
-                {item.on.length > 0 && (
-                  <div class="detail-yomi">
-                    <span class="yomi-label">音</span>
-                    <span lang="ja">{item.on.join('・')}</span>
-                  </div>
-                )}
                 {item.kun.length > 0 && (
                   <div class="detail-yomi">
                     <span class="yomi-label">訓</span>
                     <span lang="ja">{item.kun.join('・')}</span>
+                  </div>
+                )}
+                {item.on.length > 0 && (
+                  <div class="detail-yomi">
+                    <span class="yomi-label">音</span>
+                    <span lang="ja">{item.on.join('・')}</span>
                   </div>
                 )}
               </>

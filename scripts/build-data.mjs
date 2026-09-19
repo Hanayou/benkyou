@@ -109,6 +109,152 @@ for (let n = 1; n <= 5; n++) {
   vocabLists[n] = items;
 }
 
+// ------------------------------------------------ trim kanji readings/meanings
+// Keep only the readings a learner actually needs. Each reading is scored by
+// how often it appears inside JLPT vocabulary containing that kanji (weighted
+// toward lower levels); per word only the longest matching stem gets credit so
+// substrings like く don't steal points from しょく. Top 2 kun + top 2 on are
+// kept (rare readings are better absorbed through vocab study), meanings cap
+// at 3 (KANJIDIC2 lists the primary gloss first).
+const kata2hira = (s) =>
+  s.replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0x60));
+const DAKUTEN = { か: 'が', き: 'ぎ', く: 'ぐ', け: 'げ', こ: 'ご', さ: 'ざ', し: 'じ', す: 'ず', せ: 'ぜ', そ: 'ぞ', た: 'だ', ち: 'ぢ', つ: 'づ', て: 'で', と: 'ど', は: 'ば', ひ: 'び', ふ: 'ぶ', へ: 'べ', ほ: 'ぼ' };
+const HANDAKUTEN = { は: 'ぱ', ひ: 'ぴ', ふ: 'ぷ', へ: 'ぺ', ほ: 'ぽ' };
+
+function stemVariants(reading) {
+  const clean = kata2hira(reading).replace(/-/g, '');
+  const [rawStem, okurigana] = clean.split('.');
+  // A one-kana stem like the い of い.きる would match い anywhere, letting
+  // sibling readings free-ride on each other's words — anchor it with the
+  // first okurigana character (い.きる → いき).
+  const stem = rawStem.length === 1 && okurigana ? rawStem + okurigana[0] : rawStem;
+  if (!stem) return { stem: '', variants: [] };
+  const v = new Set([stem]);
+  const d = DAKUTEN[stem[0]];
+  if (d) v.add(d + stem.slice(1));
+  const h = HANDAKUTEN[stem[0]];
+  if (h) v.add(h + stem.slice(1));
+  if (stem.length > 1 && /[くきつち]$/.test(stem)) v.add(stem.slice(0, -1) + 'っ');
+  return { stem, variants: [...v] };
+}
+
+const charWords = new Map(); // kanji char -> [{kana, weight}]
+for (let n = 1; n <= 5; n++) {
+  for (const it of vocabLists[n]) {
+    const kana = kata2hira(it.kana);
+    for (const ch of new Set(it.text)) {
+      if (!KANJI_RE.test(ch)) continue;
+      let arr = charWords.get(ch);
+      if (!arr) charWords.set(ch, (arr = []));
+      arr.push({ kana, weight: n }); // N5 words count 5×, N1 words 1×
+    }
+  }
+}
+
+const MAX_PER_CAT = 3;
+// final-kana → い-row, to unify a verb with its conjugated/masu-stem variants
+const IROW = { く: 'き', ぐ: 'ぎ', う: 'い', つ: 'ち', む: 'み', ぶ: 'び', ぬ: 'に', る: 'り', す: 'し', ず: 'じ' };
+let readingsBefore = 0;
+let readingsAfter = 0;
+let droppedUsed = 0;
+const trimReport = [];
+for (let n = 1; n <= 5; n++) {
+  for (const it of kanjiLists[n]) {
+    const words = charWords.get(it.text) ?? [];
+    // score all readings jointly; per word, only the longest matching stem scores
+    const all = [
+      ...it.on.map((r, i) => ({ r, i, cat: 'on', ...stemVariants(r), score: 0 })),
+      ...it.kun.map((r, i) => ({ r, i, cat: 'kun', ...stemVariants(r), score: 0 })),
+    ];
+    for (const w of words) {
+      let best = 0;
+      const hits = [];
+      for (const c of all) {
+        if (c.stem && c.variants.some((v) => w.kana.includes(v))) {
+          hits.push(c);
+          if (c.stem.length > best) best = c.stem.length;
+        }
+      }
+      for (const c of hits)
+        if (c.stem.length === best)
+          // the reading standing alone as a whole word (上 うえ) is the
+          // strongest signal it must be taught — count it double
+          c.score += w.weight * (c.variants.includes(w.kana) ? 2 : 1);
+    }
+    // Keep readings with real JLPT-vocab usage (score > 0), best first, up to
+    // MAX_PER_CAT. A category where nothing scored keeps its primary reading.
+    if (process.env.DEBUG_KANJI?.includes(it.text)) {
+      console.log(`DEBUG ${it.text}: words=${words.length}`);
+      for (const c of all) console.log(`  ${c.cat} ${c.r} stem=${c.stem} score=${c.score}`);
+    }
+    // Group reading variants into families before ranking: identical
+    // normalized forms (うし.ろ/うしろ), prefix relations (うまれ/う.まれる),
+    // and conjugation pairs of the same verb (い.く/-い.き, via mapping the
+    // final kana to its い-row) pool their vocab-usage score. Families with
+    // real usage rank by score; top MAX_PER_CAT per category are kept.
+    const pick = (cat) => {
+      const groups = [];
+      for (const c of all) {
+        if (c.cat !== cat) continue;
+        const norm = kata2hira(c.r).replace(/[.\-]/g, '');
+        if (!norm) continue;
+        const last = IROW[norm[norm.length - 1]];
+        const fam = norm.length >= 2 && last ? norm.slice(0, -1) + last : norm;
+        const g = groups.find(
+          (g) =>
+            g.fam === fam ||
+            (g.norm.length >= 2 && norm.startsWith(g.norm)) ||
+            (norm.length >= 2 && g.norm.startsWith(norm))
+        );
+        if (g) {
+          // variants sharing a stem matched exactly the same words — count once
+          if (!g.stems.has(c.stem)) {
+            g.stems.add(c.stem);
+            g.score += c.score;
+            if (norm.length < g.norm.length) g.norm = norm;
+          }
+          // show the family as its plain form, not an affix variant (ひと- → ひと.つ)
+          if (g.rep.includes('-') && !c.r.includes('-')) g.rep = c.r;
+        } else {
+          groups.push({ fam, norm, stems: new Set([c.stem]), rep: c.r, i: c.i, score: c.score });
+        }
+      }
+      groups.sort((a, b) => b.score - a.score || a.i - b.i);
+      const used = groups.filter((g) => g.score > 0);
+      const kept = used.length ? used.slice(0, MAX_PER_CAT) : groups.slice(0, 1);
+      return {
+        kept: kept.map((g) => g.rep),
+        dropped: groups.filter((g) => !kept.includes(g)).map((g) => ({ r: g.rep, score: g.score })),
+      };
+    };
+    readingsBefore += it.on.length + it.kun.length;
+    const kun = pick('kun');
+    const on = pick('on');
+    it.kun = kun.kept;
+    it.on = on.kept;
+    it.en = it.en.slice(0, 3);
+    readingsAfter += it.on.length + it.kun.length;
+    const dropped = [...kun.dropped, ...on.dropped];
+    if (dropped.length) {
+      for (const d of dropped) if (d.score > 0) droppedUsed++;
+      trimReport.push(
+        `${it.text} [N${n}]  kept: ${[...it.kun, ...it.on].join('・') || '—'}   dropped: ` +
+          dropped.map((d) => `${d.r}${d.score > 0 ? `(!${d.score})` : ''}`).join('・')
+      );
+    }
+  }
+}
+for (const sample of ['行', '生', '後', '上', '日', '難', '増', '汚']) {
+  for (let n = 1; n <= 5; n++) {
+    const it = kanjiLists[n].find((k) => k.text === sample);
+    if (it) console.log(`trim ${sample}: kun ${it.kun.join('・') || '—'} | on ${it.on.join('・') || '—'} | ${it.en.join(', ')}`);
+  }
+}
+writeFileSync(join(cache, 'trim-report.txt'), trimReport.join('\n'));
+console.log(
+  `readings trimmed: ${readingsBefore} → ${readingsAfter} (${droppedUsed} dropped despite vocab usage — see .data-cache/trim-report.txt, "(!n)" marks them)`
+);
+
 // ---------------------------------------------------------------- stroke data
 const neededChars = new Set();
 for (let n = 1; n <= 5; n++) {
@@ -271,7 +417,7 @@ for (const [kind, lists] of [['kanji', kanjiLists], ['vocab', vocabLists]]) {
 // Order: all kanji N5→N1, then all vocab N5→N1 (mirrors the classic app)
 writeFileSync(
   join(out, 'lists.json'),
-  JSON.stringify({ version: 1, built: new Date().toISOString().slice(0, 10), lists: meta })
+  JSON.stringify({ version: 2, built: new Date().toISOString().slice(0, 10), lists: meta })
 );
 
 console.log('lists:');
