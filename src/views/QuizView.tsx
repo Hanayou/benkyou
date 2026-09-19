@@ -103,7 +103,7 @@ export function QuizView({ list, onExit }: { list: ListMeta; onExit(): void }) {
   return (
     <div class="quiz">
       <header class="quiz-head">
-        <button type="button" class="icon-btn" onClick={onExit} aria-label="Back to lists">
+        <button type="button" class="icon-btn" onClick={onExit} aria-label="Back">
           <svg viewBox="0 0 24 24" width="22" height="22">
             <path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
@@ -137,7 +137,7 @@ export function QuizView({ list, onExit }: { list: ListMeta; onExit(): void }) {
               {run ? ` — ${run.points} points earned.` : '.'}
             </p>
             <button type="button" class="btn btn-primary" onClick={onExit}>
-              Back to lists
+              Back to list
             </button>
             <button type="button" class="btn btn-danger-ghost" onClick={doReset}>
               Reset this list

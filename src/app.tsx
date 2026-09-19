@@ -3,6 +3,7 @@ import type { ListMeta } from './lib/types';
 import { ListsView } from './views/ListsView';
 import { SearchView } from './views/SearchView';
 import { SettingsView } from './views/SettingsView';
+import { ListDetailView } from './views/ListDetailView';
 import { QuizView } from './views/QuizView';
 
 type Tab = 'study' | 'search' | 'settings';
@@ -46,36 +47,49 @@ const TABS: { id: Tab; label: string }[] = [
 
 export function App() {
   const [tab, setTab] = useState<Tab>('study');
-  const [quiz, setQuiz] = useState<ListMeta | null>(null);
+  const [openList, setOpenList] = useState<ListMeta | null>(null);
+  const [inQuiz, setInQuiz] = useState(false);
 
   useEffect(() => {
-    const onPop = () => setQuiz(null);
+    const onPop = (e: PopStateEvent) => {
+      const view = (e.state as { view?: string } | null)?.view;
+      if (view === 'quiz') {
+        setInQuiz(true);
+      } else if (view === 'detail') {
+        setInQuiz(false);
+      } else {
+        setInQuiz(false);
+        setOpenList(null);
+      }
+    };
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
   }, []);
 
-  const openQuiz = (l: ListMeta) => {
-    history.pushState({ quiz: l.id }, '');
-    setQuiz(l);
+  const openDetail = (l: ListMeta) => {
+    history.pushState({ view: 'detail', id: l.id }, '');
+    setOpenList(l);
   };
 
-  const exitQuiz = () => {
-    if (history.state?.quiz) history.back();
-    else setQuiz(null);
+  const startQuiz = () => {
+    history.pushState({ view: 'quiz' }, '');
+    setInQuiz(true);
   };
+
+  const back = () => history.back();
 
   return (
     <>
-      <div class="shell" hidden={!!quiz}>
+      <div class="shell" hidden={!!openList}>
         <main class="shell-main">
           <div hidden={tab !== 'study'}>
-            <ListsView active={!quiz && tab === 'study'} onOpen={openQuiz} />
+            <ListsView active={!openList && tab === 'study'} onOpen={openDetail} />
           </div>
           <div hidden={tab !== 'search'}>
             <SearchView />
           </div>
           <div hidden={tab !== 'settings'}>
-            <SettingsView active={!quiz && tab === 'settings'} />
+            <SettingsView active={!openList && tab === 'settings'} />
           </div>
         </main>
         <nav class="tabbar">
@@ -92,7 +106,10 @@ export function App() {
           ))}
         </nav>
       </div>
-      {quiz && <QuizView list={quiz} onExit={exitQuiz} />}
+      {openList && (
+        <ListDetailView list={openList} active={!inQuiz} onStart={startQuiz} onExit={back} />
+      )}
+      {openList && inQuiz && <QuizView list={openList} onExit={back} />}
     </>
   );
 }
