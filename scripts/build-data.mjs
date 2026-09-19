@@ -121,21 +121,29 @@ const kata2hira = (s) =>
 const DAKUTEN = { か: 'が', き: 'ぎ', く: 'ぐ', け: 'げ', こ: 'ご', さ: 'ざ', し: 'じ', す: 'ず', せ: 'ぜ', そ: 'ぞ', た: 'だ', ち: 'ぢ', つ: 'づ', て: 'で', と: 'ど', は: 'ば', ひ: 'び', ふ: 'ぶ', へ: 'べ', ほ: 'ぼ' };
 const HANDAKUTEN = { は: 'ぱ', ひ: 'ぴ', ふ: 'ぷ', へ: 'ぺ', ほ: 'ぽ' };
 
-function stemVariants(reading) {
+function variantsOf(base) {
+  if (!base) return [];
+  const v = new Set([base]);
+  const d = DAKUTEN[base[0]];
+  if (d) v.add(d + base.slice(1));
+  const h = HANDAKUTEN[base[0]];
+  if (h) v.add(h + base.slice(1));
+  if (base.length > 1 && /[くきつち]$/.test(base)) v.add(base.slice(0, -1) + 'っ');
+  return [...v];
+}
+
+function readingBases(reading) {
   const clean = kata2hira(reading).replace(/-/g, '');
   const [rawStem, okurigana] = clean.split('.');
   // A one-kana stem like the い of い.きる would match い anywhere, letting
   // sibling readings free-ride on each other's words — anchor it with the
   // first okurigana character (い.きる → いき).
   const stem = rawStem.length === 1 && okurigana ? rawStem + okurigana[0] : rawStem;
-  if (!stem) return { stem: '', variants: [] };
-  const v = new Set([stem]);
-  const d = DAKUTEN[stem[0]];
-  if (d) v.add(d + stem.slice(1));
-  const h = HANDAKUTEN[stem[0]];
-  if (h) v.add(h + stem.slice(1));
-  if (stem.length > 1 && /[くきつち]$/.test(stem)) v.add(stem.slice(0, -1) + 'っ');
-  return { stem, variants: [...v] };
+  // Anchored base for ALL okurigana readings: stem + first okurigana kana
+  // (ひろ.がる → ひろが). Evidence for THIS verb specifically, immune to the
+  // shared-stem free-riding that makes 広まる tie with 広がる.
+  const aBase = okurigana ? rawStem + okurigana[0] : rawStem;
+  return { stem, variants: variantsOf(stem), dotted: !!okurigana, aBase, aVariants: variantsOf(aBase) };
 }
 
 const charWords = new Map(); // kanji char -> [{kana, weight}]
@@ -151,7 +159,43 @@ for (let n = 1; n <= 5; n++) {
   }
 }
 
-const MAX_PER_CAT = 3;
+const MAX_PER_CAT = 3; // always keep up to this many evidenced readings per category
+const SOFT_MAX = 5; // …stretch to this many while a reading has MIN_KEEP_EVIDENCE
+const MIN_KEEP_EVIDENCE = 2; // ≈ one N2 word's weight of usage
+// transitive/intransitive suffix alternations — a kept verb pulls its partner
+const PAIRS = [
+  ['る', 'す'], ['れる', 'す'], ['まる', 'める'], ['がる', 'げる'], ['む', 'める'],
+  ['りる', 'ろす'], ['える', 'やす'], ['く', 'ける'], ['ける', 'かす'], ['める', 'ます'],
+  ['つ', 'てる'], ['ぶ', 'ばす'],
+];
+// Hand-curated corrections for readings the JLPT vocab lists can't score:
+// common words that appear in no list (応える, ふところ), or KANJIDIC quirks
+// where dictionary order front-loads classical readings (透 とう.る).
+const OVERRIDES = {
+  '応': { keep: ['こた.える'], drop: ['あた.る', 'まさに'] },
+  '透': { keep: ['す.ける', 'す.かす', 'す.く'], drop: ['とう.る', 'とう.す'] },
+  '懐': { keep: ['ふところ'] },
+  '即': { keep: ['すなわ.ち'], drop: ['つ.く', 'つ.ける'] },
+  '仰': { keep: ['お.っしゃる'] },
+  '浸': { keep: ['つ.かる'] },
+  '潜': { keep: ['くぐ.る'] },
+  '明': { keep: ['あき.らか'], drop: ['あか.るむ'] },
+  '上': { keep: ['かみ'], drop: ['のぼ.す'] },
+};
+
+function isTransPair(a, b) {
+  for (const [x, y] of PAIRS) {
+    for (const [s1, s2] of [[x, y], [y, x]]) {
+      if (
+        a.length > s1.length && b.length > s2.length &&
+        a.endsWith(s1) && b.endsWith(s2) &&
+        a.slice(0, -s1.length) === b.slice(0, -s2.length)
+      )
+        return true;
+    }
+  }
+  return false;
+}
 // final-kana → い-row, to unify a verb with its conjugated/masu-stem variants
 const IROW = { く: 'き', ぐ: 'ぎ', う: 'い', つ: 'ち', む: 'み', ぶ: 'び', ぬ: 'に', る: 'り', す: 'し', ず: 'じ' };
 let readingsBefore = 0;
@@ -163,8 +207,8 @@ for (let n = 1; n <= 5; n++) {
     const words = charWords.get(it.text) ?? [];
     // score all readings jointly; per word, only the longest matching stem scores
     const all = [
-      ...it.on.map((r, i) => ({ r, i, cat: 'on', ...stemVariants(r), score: 0 })),
-      ...it.kun.map((r, i) => ({ r, i, cat: 'kun', ...stemVariants(r), score: 0 })),
+      ...it.on.map((r, i) => ({ r, i, cat: 'on', ...readingBases(r), score: 0, aScore: 0 })),
+      ...it.kun.map((r, i) => ({ r, i, cat: 'kun', ...readingBases(r), score: 0, aScore: 0 })),
     ];
     for (const w of words) {
       let best = 0;
@@ -174,24 +218,30 @@ for (let n = 1; n <= 5; n++) {
           hits.push(c);
           if (c.stem.length > best) best = c.stem.length;
         }
+        // the reading standing alone as a whole word (上 うえ) is the
+        // strongest signal it must be taught — count it double
+        if (c.aBase && c.aVariants.some((v) => w.kana.includes(v)))
+          c.aScore += w.weight * (c.aVariants.includes(w.kana) ? 2 : 1);
       }
       for (const c of hits)
         if (c.stem.length === best)
-          // the reading standing alone as a whole word (上 うえ) is the
-          // strongest signal it must be taught — count it double
           c.score += w.weight * (c.variants.includes(w.kana) ? 2 : 1);
     }
-    // Keep readings with real JLPT-vocab usage (score > 0), best first, up to
-    // MAX_PER_CAT. A category where nothing scored keeps its primary reading.
     if (process.env.DEBUG_KANJI?.includes(it.text)) {
       console.log(`DEBUG ${it.text}: words=${words.length}`);
-      for (const c of all) console.log(`  ${c.cat} ${c.r} stem=${c.stem} score=${c.score}`);
+      for (const c of all)
+        console.log(`  ${c.cat} ${c.r} stem=${c.stem} aBase=${c.aBase} score=${c.score} aScore=${c.aScore}`);
     }
     // Group reading variants into families before ranking: identical
     // normalized forms (うし.ろ/うしろ), prefix relations (うまれ/う.まれる),
     // and conjugation pairs of the same verb (い.く/-い.き, via mapping the
-    // final kana to its い-row) pool their vocab-usage score. Families with
-    // real usage rank by score; top MAX_PER_CAT per category are kept.
+    // final kana to its い-row) pool their evidence. An okurigana reading
+    // counts only its ANCHORED score — its own verb, not the shared stem, so
+    // 広まる can't ride on 広がる's words; dotless readings count their stem
+    // score. The top MAX_PER_CAT families are kept, stretching to SOFT_MAX
+    // while a family stays within REL_KEEP of the leader. Kun keeps at least
+    // 2 (dictionary order) even with no JLPT-vocab evidence — common verbs
+    // like 企む simply never appear in the lists.
     const pick = (cat) => {
       const groups = [];
       for (const c of all) {
@@ -206,25 +256,51 @@ for (let n = 1; n <= 5; n++) {
             (g.norm.length >= 2 && norm.startsWith(g.norm)) ||
             (norm.length >= 2 && g.norm.startsWith(norm))
         );
+        const key = c.dotted ? `a:${c.aBase}` : `s:${c.stem}`;
+        const contrib = c.dotted ? c.aScore : c.score;
         if (g) {
-          // variants sharing a stem matched exactly the same words — count once
-          if (!g.stems.has(c.stem)) {
-            g.stems.add(c.stem);
-            g.score += c.score;
+          // variants sharing an evidence base matched the same words — count once
+          g.members++;
+          if (!g.keys.has(key)) {
+            g.keys.add(key);
+            g.eff += contrib;
+            g.raw += c.score;
             if (norm.length < g.norm.length) g.norm = norm;
           }
           // show the family as its plain form, not an affix variant (ひと- → ひと.つ)
           if (g.rep.includes('-') && !c.r.includes('-')) g.rep = c.r;
         } else {
-          groups.push({ fam, norm, stems: new Set([c.stem]), rep: c.r, i: c.i, score: c.score });
+          groups.push({ fam, norm, keys: new Set([key]), rep: c.r, i: c.i, eff: contrib, raw: c.score, members: 1 });
         }
       }
-      groups.sort((a, b) => b.score - a.score || a.i - b.i);
-      const used = groups.filter((g) => g.score > 0);
-      const kept = used.length ? used.slice(0, MAX_PER_CAT) : groups.slice(0, 1);
+      groups.sort((a, b) => b.eff - a.eff || b.raw - a.raw || a.i - b.i);
+      const used = groups.filter((g) => g.eff > 0);
+      const kept = used.filter(
+        (g, idx) => idx < MAX_PER_CAT || (idx < SOFT_MAX && g.eff >= MIN_KEEP_EVIDENCE)
+      );
+      // floor counts dictionary entries covered, so a family that already
+      // absorbed two listed forms (扱い/扱う) doesn't drag in a junk third
+      const floor = cat === 'kun' ? 2 : 1;
+      let covered = kept.reduce((s, g) => s + g.members, 0);
+      for (const g of groups) {
+        if (covered >= floor) break;
+        if (!kept.includes(g)) {
+          kept.push(g);
+          covered += g.members;
+        }
+      }
+      // a kept verb's transitivity partner comes along (治る → 治す), provided
+      // the partner's family shows any life in the vocab at all
+      if (cat === 'kun') {
+        for (const g of groups) {
+          if (kept.length >= SOFT_MAX + 2) break;
+          if (kept.includes(g) || (g.eff <= 0 && g.raw <= 0)) continue;
+          if (kept.some((k) => isTransPair(k.norm, g.norm))) kept.push(g);
+        }
+      }
       return {
         kept: kept.map((g) => g.rep),
-        dropped: groups.filter((g) => !kept.includes(g)).map((g) => ({ r: g.rep, score: g.score })),
+        dropped: groups.filter((g) => !kept.includes(g)).map((g) => ({ r: g.rep, score: g.eff })),
       };
     };
     readingsBefore += it.on.length + it.kun.length;
@@ -232,9 +308,21 @@ for (let n = 1; n <= 5; n++) {
     const on = pick('on');
     it.kun = kun.kept;
     it.on = on.kept;
+    const ov = OVERRIDES[it.text];
+    if (ov) {
+      if (ov.drop) {
+        it.kun = it.kun.filter((r) => !ov.drop.includes(r));
+        it.on = it.on.filter((r) => !ov.drop.includes(r));
+      }
+      for (const r of ov.keep ?? []) {
+        if (it.kun.includes(r) || it.on.includes(r)) continue;
+        (/[ァ-ヶ]/.test(r) ? it.on : it.kun).push(r);
+      }
+    }
     it.en = it.en.slice(0, 3);
     readingsAfter += it.on.length + it.kun.length;
-    const dropped = [...kun.dropped, ...on.dropped];
+    const dropped = [...kun.dropped, ...on.dropped].filter((d) => !(ov?.keep ?? []).includes(d.r));
+    for (const r of ov?.drop ?? []) if (!dropped.some((d) => d.r === r)) dropped.push({ r, score: 0 });
     if (dropped.length) {
       for (const d of dropped) if (d.score > 0) droppedUsed++;
       trimReport.push(
