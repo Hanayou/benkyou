@@ -9,6 +9,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { gunzipSync } from 'node:zlib';
 import { unzipSync } from 'fflate';
+import kuromoji from 'kuromoji';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const cache = join(root, '.data-cache');
@@ -188,7 +189,7 @@ for (let i = 0; i < lines.length; i++) {
   if (!bLine.startsWith('B: ')) continue;
   const idx = sentences.length;
   const good = bLine.includes('~');
-  sentences.push({ ja, en, good });
+  sentences.push({ ja, en, good, b: i + 1 });
   for (const tok of bLine.slice(3).split(' ')) {
     if (!tok) continue;
     const m = TOKEN_RE.exec(tok);
@@ -209,6 +210,211 @@ for (let i = 0; i < lines.length; i++) {
   }
 }
 
+// ---------------------------------------------------------------- furigana
+// Readings come from two sources, most trusted first:
+//  1. Tanaka Corpus B-line annotations — human-curated readings that exist
+//     precisely where words are ambiguous (行く(いく) vs ゆく, 二十歳(はたち)).
+//  2. kuromoji (IPADIC) morphological analysis for everything else.
+// A span neither source is confident about gets NO furigana — absent beats wrong.
+const kata2hira = (s) =>
+  s.replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0x60));
+const HAS_KANJI = /[㐀-鿿豈-﫿々〆]/;
+const escRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+process.stdout.write('loading kuromoji dictionary... ');
+const tokenizer = await new Promise((resolve, reject) =>
+  kuromoji
+    .builder({ dicPath: join(root, 'node_modules', 'kuromoji', 'dict') })
+    .build((err, t) => (err ? reject(err) : resolve(t)))
+);
+console.log('ok');
+
+// Split `surface` into [text, ruby|null] segments: rubies cover exactly the
+// kanji runs, and the kana runs must match `reading` (hiragana) literally.
+function fit(surface, reading) {
+  if (!HAS_KANJI.test(surface)) return null;
+  if (kata2hira(surface) === reading) return null;
+  const runs = surface.match(/([㐀-鿿豈-﫿々〆]+|[^㐀-鿿豈-﫿々〆]+)/g) ?? [];
+  let re = '^';
+  for (const run of runs) re += HAS_KANJI.test(run[0]) ? '(.+?)' : escRe(kata2hira(run));
+  const m = reading.match(new RegExp(re + '$'));
+  if (!m) return [[surface, reading]]; // can't split — one ruby over the whole span
+  let g = 0;
+  const segs = [];
+  for (const run of runs) {
+    if (HAS_KANJI.test(run[0])) segs.push([run, m[++g]]);
+    else segs.push([run, null]);
+  }
+  return segs;
+}
+
+// Gold segments for a B-line token: `base(reading)` appearing in the sentence
+// as `surface` (identical, conjugated, or an alternate writing).
+function goldFor(base, reading, surface) {
+  if (!HAS_KANJI.test(surface)) return null;
+  if (surface === base) return fit(base, reading);
+  const baseSegs = fit(base, reading);
+  if (baseSegs) {
+    let lastK = -1;
+    baseSegs.forEach((s, i) => {
+      if (s[1]) lastK = i;
+    });
+    if (lastK >= 0) {
+      const prefix = baseSegs.slice(0, lastK + 1);
+      const prefixText = prefix.map((s) => s[0]).join('');
+      const rest = surface.slice(prefixText.length);
+      if (surface.startsWith(prefixText) && !HAS_KANJI.test(rest)) {
+        return rest ? [...prefix, [rest, null]] : prefix;
+      }
+    }
+  }
+  // alternate writing of a non-conjugating word (２０歳 for 二十歳(はたち))
+  if (!/[ぁ-ゖァ-ヶ]$/.test(base)) return [[surface, reading]];
+  return null;
+}
+
+// Replace [start, start+len) of segs with `gold`, cutting plain segments at
+// the boundaries. If a ruby segment straddles a boundary, keep kuromoji's.
+function patch(segs, start, len, gold) {
+  const end = start + len;
+  const out = [];
+  let off = 0;
+  let placed = false;
+  for (const seg of segs) {
+    const a = off;
+    const b = off + seg.t.length;
+    off = b;
+    if (b <= start || a >= end) {
+      out.push(seg);
+      continue;
+    }
+    if (a < start) {
+      if (seg.r) return;
+      out.push({ t: seg.t.slice(0, start - a), r: null });
+    }
+    if (!placed) {
+      for (const [t, r] of gold) out.push({ t, r });
+      placed = true;
+    }
+    if (b > end) {
+      if (seg.r) return;
+      out.push({ t: seg.t.slice(end - a), r: null });
+    }
+  }
+  if (placed) segs.splice(0, segs.length, ...out);
+}
+
+// Pure-kanji words from our own vocab lists with exactly one known reading —
+// fixes number+counter words IPADIC splits into on-yomi pieces (一人 → イチ+ニン).
+// Ambiguous words (一日: ついたち/いちにち) are excluded.
+const vocabGold = new Map();
+for (let n = 1; n <= 5; n++) {
+  for (const it of vocabLists[n]) {
+    const w = it.text;
+    if (w.length < 2 || !/^[㐀-鿿豈-﫿々〆]+$/.test(w)) continue;
+    if (vocabGold.has(w)) {
+      if (vocabGold.get(w) !== it.kana) vocabGold.set(w, null);
+    } else vocabGold.set(w, it.kana);
+  }
+}
+
+const segCache = new Map();
+function segmentsFor(idx) {
+  let segs = segCache.get(idx);
+  if (segs) return segs;
+  const { ja, b } = sentences[idx];
+  segs = [];
+  for (const tok of tokenizer.tokenize(ja)) {
+    const t = tok.surface_form;
+    let sub = null;
+    if (HAS_KANJI.test(t) && tok.reading && tok.reading !== '*') {
+      sub = fit(t, kata2hira(tok.reading));
+    }
+    if (sub) for (const [txt, r] of sub) segs.push({ t: txt, r });
+    else segs.push({ t, r: null });
+  }
+  // overlay known whole-word readings from the vocab lists; patch() refuses
+  // any span whose boundaries disagree with the tokenization (大人 inside
+  // 大人気 straddles kuromoji's 人気 token, so it is left alone)
+  const runRe = /[㐀-鿿豈-﫿々〆]{2,}/g;
+  let rm;
+  while ((rm = runRe.exec(ja))) {
+    const run = rm[0];
+    let p = 0;
+    while (p < run.length - 1) {
+      let matched = 0;
+      for (let l = Math.min(run.length - p, 6); l >= 2; l--) {
+        const w = run.slice(p, p + l);
+        const r = vocabGold.get(w);
+        if (r) {
+          patch(segs, rm.index + p, l, [[w, r]]);
+          matched = l;
+          break;
+        }
+      }
+      p += matched || 1;
+    }
+  }
+  // overlay curated readings from the B line
+  let cursor = 0;
+  for (const tokStr of lines[b].slice(3).split(' ')) {
+    const m = TOKEN_RE.exec(tokStr);
+    if (!m) continue;
+    const [, base, reading, surface] = m;
+    const span = surface || base;
+    const pos = ja.indexOf(span, cursor);
+    if (pos < 0) continue;
+    cursor = pos + span.length;
+    if (!reading) continue;
+    const gold = goldFor(base, kata2hira(reading), span);
+    if (gold) patch(segs, pos, span.length, gold);
+  }
+  segCache.set(idx, segs);
+  return segs;
+}
+
+// Serialize one usage: compact segments, with the studied word marked.
+// string = plain text; [t, r] = ruby; [t, r|null, 1] = highlighted.
+function finishExample(idx, hl) {
+  const s = sentences[idx];
+  const segs = segmentsFor(idx);
+  let h0 = -1;
+  let h1 = -1;
+  if (hl) {
+    const p = s.ja.indexOf(hl);
+    if (p >= 0) {
+      h0 = p;
+      h1 = p + hl.length;
+    }
+  }
+  const out = [];
+  const push = (t, r, h) => {
+    if (!t) return;
+    if (!r && !h && typeof out[out.length - 1] === 'string') out[out.length - 1] += t;
+    else if (!r && !h) out.push(t);
+    else if (h) out.push([t, r ?? null, 1]);
+    else out.push([t, r]);
+  };
+  let off = 0;
+  for (const seg of segs) {
+    const a = off;
+    const b = off + seg.t.length;
+    off = b;
+    if (h0 < 0 || b <= h0 || a >= h1) {
+      push(seg.t, seg.r, false);
+    } else if (seg.r) {
+      push(seg.t, seg.r, true); // ruby overlapping the word → mark whole segment
+    } else {
+      const s0 = Math.max(a, h0);
+      const s1 = Math.min(b, h1);
+      push(seg.t.slice(0, s0 - a), null, false);
+      push(seg.t.slice(s0 - a, s1 - a), null, true);
+      push(seg.t.slice(s1 - a), null, false);
+    }
+  }
+  return { s: out, en: s.en };
+}
+
 function pickExamples(cands /* [{idx, score, hl}] */) {
   cands.sort((a, b) => a.score - b.score);
   const res = [];
@@ -220,7 +426,7 @@ function pickExamples(cands /* [{idx, score, hl}] */) {
       if (!relaxed && (s.ja.length > 46 || s.en.length > 110)) continue;
       if (seenEn.has(s.en)) continue;
       seenEn.add(s.en);
-      res.push([s.ja, s.en, c.hl]);
+      res.push(finishExample(c.idx, c.hl));
     }
     if (res.length >= 3) break;
   }
@@ -271,11 +477,21 @@ for (const [kind, lists] of [['kanji', kanjiLists], ['vocab', vocabLists]]) {
 // Order: all kanji N5→N1, then all vocab N5→N1 (mirrors the classic app)
 writeFileSync(
   join(out, 'lists.json'),
-  JSON.stringify({ version: 3, built: new Date().toISOString().slice(0, 10), lists: meta })
+  JSON.stringify({ version: 4, built: new Date().toISOString().slice(0, 10), lists: meta })
 );
 
 console.log('lists:');
 for (const m of meta) console.log(`  ${m.id.padEnd(10)} ${String(m.count).padStart(5)} items`);
 console.log(`strokes: ${strokeHit} chars ok, ${strokeMiss} missing${missSamples.length ? ' (e.g. ' + missSamples.join(' ') + ')' : ''}, ${Object.keys(shards).length} shards`);
 console.log(`examples: vocab ${vocabWithEx}/${vocabTotal}, kanji ${kanjiWithEx}/${kanjiTotal}`);
-console.log(`sentences parsed: ${sentences.length}`);
+console.log(`sentences parsed: ${sentences.length}, furigana cached for ${segCache.size}`);
+// eyeball a few furigana results
+const showEx = (ex) =>
+  ex.s.map((g) => (typeof g === 'string' ? g : g[1] ? `${g[0]}(${g[1]})` : g[0])).join('');
+for (const [label, it] of [
+  ['kanji-n5 行', kanjiLists[5].find((i) => i.text === '行')],
+  ['vocab-n5 食べる', vocabLists[5].find((i) => i.text === '食べる')],
+  ['vocab-n1 first', vocabLists[1].find((i) => i.ex?.length)],
+]) {
+  if (it?.ex?.length) console.log(`furigana ${label}: ${showEx(it.ex[0])}`);
+}

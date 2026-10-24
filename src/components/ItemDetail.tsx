@@ -1,22 +1,22 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
-import type { StudyItem } from '../lib/types';
+import type { ComponentChildren } from 'preact';
+import type { RubySeg, StudyItem } from '../lib/types';
 import { getAllItems } from '../lib/data';
 import { isDrawable } from '../lib/strokes';
 import { StrokeOrder } from './StrokeOrder';
 
-function Highlighted({ text, hl }: { text: string; hl: string }) {
-  if (!hl || !text.includes(hl)) return <span>{text}</span>;
-  const parts = text.split(hl);
-  return (
-    <span>
-      {parts.map((p, i) => (
-        <>
-          {p}
-          {i < parts.length - 1 && <mark>{hl}</mark>}
-        </>
-      ))}
-    </span>
+function Seg({ seg }: { seg: RubySeg }) {
+  if (typeof seg === 'string') return <>{seg}</>;
+  const [text, ruby, hl] = seg as [string, string | null, 1?];
+  const body: ComponentChildren = ruby ? (
+    <ruby>
+      {text}
+      <rt>{ruby}</rt>
+    </ruby>
+  ) : (
+    text
   );
+  return hl ? <mark>{body}</mark> : <>{body}</>;
 }
 
 /** Full info panel for one item — used by the quiz drawer and search. */
@@ -96,12 +96,14 @@ export function ItemDetail({ item }: { item: StudyItem }) {
       {item.ex.length > 0 && (
         <section class="detail-section">
           <h3>Examples</h3>
-          {item.ex.map(([ja, en, hl]) => (
+          {item.ex.map((ex) => (
             <div class="example">
               <div class="example-ja" lang="ja">
-                <Highlighted text={ja} hl={hl} />
+                {ex.s.map((seg) => (
+                  <Seg seg={seg} />
+                ))}
               </div>
-              <div class="example-en">{en}</div>
+              <div class="example-en">{ex.en}</div>
             </div>
           ))}
         </section>

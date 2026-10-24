@@ -14,8 +14,17 @@ export interface ListsIndex {
   lists: ListMeta[];
 }
 
-/** [japanese, english, highlight-substring] */
-export type Example = [string, string, string];
+/**
+ * One furigana segment of a Japanese sentence:
+ * plain text, [text, ruby], or [text, ruby|null, 1] for the studied word.
+ */
+export type RubySeg = string | [string, string] | [string, string | null, 1];
+
+export interface Example {
+  /** Sentence as furigana segments. */
+  s: RubySeg[];
+  en: string;
+}
 
 /** Raw item as shipped in public/data/list/*.json */
 export interface RawItem {

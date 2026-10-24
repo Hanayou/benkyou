@@ -587,7 +587,17 @@ p {
 }
 .example-ja {
   font-size: 18px;
-  line-height: 1.65;
+  line-height: 2.05;
+}
+.example-ja rt {
+  font-size: 9.5px;
+  font-weight: 400;
+  color: var(--ink2);
+  letter-spacing: 0;
+}
+.example-ja mark rt {
+  color: inherit;
+  opacity: 0.75;
 }
 .example-ja mark {
   background: none;
