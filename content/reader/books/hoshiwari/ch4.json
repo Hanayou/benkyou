@@ -1,0 +1,448 @@
+{
+  "id": "ch4",
+  "title": "王都の謁見",
+  "titleEn": "Audience in the Royal Capital",
+  "focus": ["ございます", "かねます", "ませ"],
+  "paras": [
+    { "s": [
+      { "jp": "王都アルデンは、リナの知るどんな場所とも違っていた。",
+        "en": "The royal capital, Alden, was unlike any place Rina had ever known.",
+        "w": {
+          "王都": "おうと|royal capital",
+          "アルデン": "あるでん|Alden (the capital)",
+          "リナ": "りな|Rina",
+          "知る": "しる|to know",
+          "どんな": "どんな|what kind of; any kind of",
+          "場所": "ばしょ|place",
+          "違っていた": "ちがっていた|was different|違う to differ + ていた"
+        } },
+      { "jp": "白い石の建物がどこまでも重なり、鐘の音が人混みの上を波のように渡っていく。",
+        "en": "Buildings of white stone piled up as far as the eye could see, and the sound of bells rolled over the crowds like waves.",
+        "w": {
+          "白い": "しろい|white",
+          "石": "いし|stone",
+          "建物": "たてもの|building",
+          "重なり": "かさなり|piling up (literary stem)|重なる to pile up",
+          "鐘": "かね|bell",
+          "音": "おと|sound",
+          "人混み": "ひとごみ|crowd of people",
+          "上": "うえ|top, above",
+          "波": "なみ|wave",
+          "渡っていく": "わたっていく|goes across|渡る to cross + ていく"
+        } },
+      { "jp": "リナは地図筒を胸に抱きしめ、人の流れの中を歩くだけで精一杯だった。",
+        "en": "Hugging her map tube to her chest, it was all Rina could do just to walk through the stream of people.",
+        "w": {
+          "リナ": "りな|Rina",
+          "地図筒": "ちずづつ|map tube",
+          "胸": "むね|chest",
+          "抱きしめ": "だきしめ|hugging tight (stem)|抱きしめる to embrace",
+          "人": "ひと|person, people",
+          "流れ": "ながれ|flow, stream",
+          "中": "なか|middle, midst",
+          "歩く": "あるく|to walk",
+          "精一杯": "せいいっぱい|the most one can manage"
+        } }
+    ] },
+    { "sp": "リナ", "s": [
+      { "jp": "「すごい……村の祭りの百倍、人がいる。鐘の音まで、谷の風と違うんだね」",
+        "en": "\"Incredible... there are a hundred times more people than at the village festival. Even the bells sound different from the wind back in our valley.\"",
+        "w": {
+          "すごい": "すごい|amazing, incredible",
+          "村": "むら|village",
+          "祭り": "まつり|festival",
+          "百倍": "ひゃくばい|a hundred times as much",
+          "人": "ひと|person, people",
+          "いる": "いる|to be, to exist (animate)",
+          "鐘": "かね|bell",
+          "音": "おと|sound",
+          "谷": "たに|valley",
+          "風": "かぜ|wind",
+          "違う": "ちがう|to differ"
+        } }
+    ] },
+    { "s": [
+      { "jp": "「口を開けて歩いてんじゃねえよ、迷子になっちまうぜ」と、ドレックの笑い声が飛んできた。",
+        "en": "\"Quit walkin' around with your mouth open — you'll end up a lost kid,\" came Drek's laughing voice.",
+        "w": {
+          "口": "くち|mouth",
+          "開けて": "あけて|opening (te-form)|開ける to open",
+          "歩いてん": "あるいてん|walking around (slurred)|歩いている → 歩いてん, rough contraction",
+          "迷子": "まいご|lost child",
+          "なっ": "なっ|becoming (clipped stem)|なる to become",
+          "ドレック": "どれっく|Drek (the mercenary)",
+          "笑い声": "わらいごえ|laughing voice",
+          "飛んできた": "とんできた|came flying|飛ぶ to fly + てくる"
+        } },
+      { "jp": "村の崖より高い城壁の門では、衛兵が手紙の封蝋を見たとたん、背筋を伸ばした。",
+        "en": "At the gate in walls higher than the cliffs back home, the guards snapped upright the instant they saw the letter's wax seal.",
+        "w": {
+          "村": "むら|village",
+          "崖": "がけ|cliff",
+          "高い": "たかい|tall, high",
+          "城壁": "じょうへき|castle wall, ramparts",
+          "門": "もん|gate",
+          "衛兵": "えいへい|guard, sentry",
+          "手紙": "てがみ|letter",
+          "封蝋": "ふうろう|sealing wax",
+          "見": "み|seeing (stem)|見る to see",
+          "背筋": "せすじ|one's back, spine",
+          "伸ばした": "のばした|straightened|伸ばす to stretch, past"
+        } },
+      { "jp": "ふたりは槍の列の間を通り、磨かれた石の廊下を奥へと案内された。",
+        "en": "The two of them passed between rows of spears and were led down a polished stone corridor, deep into the castle.",
+        "w": {
+          "ふたり": "ふたり|the two of them",
+          "槍": "やり|spear",
+          "列": "れつ|row, line",
+          "間": "あいだ|space between",
+          "通り": "とおり|passing (stem)|通る to pass through",
+          "磨かれた": "みがかれた|polished|磨く to polish, passive past",
+          "石": "いし|stone",
+          "廊下": "ろうか|corridor",
+          "奥": "おく|the inner depths",
+          "案内された": "あんないされた|was guided|案内する to guide, passive past"
+        } }
+    ] },
+    { "sp": "侍従長バルロ", "s": [
+      { "jp": "「侍従長を務めております、バルロでございます」",
+        "en": "\"I serve as lord chamberlain; my name is Barlo.\"",
+        "w": {
+          "侍従長": "じじゅうちょう|lord chamberlain",
+          "務めて": "つとめて|serving (te-form)|務める to serve as",
+          "バルロ": "ばるろ|Barlo (the chamberlain)"
+        } },
+      { "jp": "「リナ様と、お連れの方でいらっしゃいますね」",
+        "en": "\"Lady Rina, and her companion, I presume.\"",
+        "w": {
+          "リナ": "りな|Rina",
+          "様": "さま|-sama (deferential suffix)",
+          "お連れ": "おつれ|companion (honorific)|お + 連れ",
+          "方": "かた|person (respectful)"
+        } },
+      { "jp": "「ガルドヴァン様のお手紙、確かに承りました」",
+        "en": "\"Master Galdvan's letter — I have duly received it.\"",
+        "w": {
+          "ガルドヴァン": "がるどゔぁん|Galdvan (the old mage)",
+          "様": "さま|-sama (deferential suffix)",
+          "お手紙": "おてがみ|letter (honorific)|お + 手紙",
+          "確かに": "たしかに|certainly, duly",
+          "承りました": "うけたまわりました|have (humbly) received|承る humble 受け取る, polite past"
+        } },
+      { "jp": "「ただいま姫殿下に申し上げますので、こちらでお待ちくださいませ」",
+        "en": "\"I shall inform Her Highness at once, so please be so good as to wait here.\"",
+        "w": {
+          "ただいま": "ただいま|right now (formal)",
+          "姫殿下": "ひめでんか|Her Highness the princess",
+          "こちら": "こちら|here, this way (polite)",
+          "お待ち": "おまち|waiting (honorific stem)|お + 待つ to wait"
+        } }
+    ] },
+    { "sp": "ドレック", "s": [
+      { "jp": "「けっ、堅苦しいとこだぜ」",
+        "en": "\"Tch. Stiff sorta place, this.\"",
+        "w": {
+          "けっ": "けっ|tch (scoff)",
+          "堅苦しい": "かたくるしい|stiff, overly formal",
+          "とこ": "とこ|place (casual ところ)"
+        } },
+      { "jp": "「なあ、姫さんによ、直接会わせてくれりゃいいじゃねえか」",
+        "en": "\"C'mon, just let us see the princess gal directly, why don'tcha.\"",
+        "w": {
+          "なあ": "なあ|hey, c'mon",
+          "姫": "ひめ|princess",
+          "直接": "ちょくせつ|directly",
+          "会わせてくれりゃ": "あわせてくれりゃ|if you just let (us) meet (rough)|会わせてくれれば → くれりゃ, rough contraction"
+        } }
+    ] },
+    { "sp": "侍従長バルロ", "s": [
+      { "jp": "「お取り次ぎのない謁見は、いたしかねます」",
+        "en": "\"An audience without formal announcement is something I am unable to arrange.\"",
+        "w": {
+          "お取り次ぎ": "おとりつぎ|formal announcement (of a visitor)|お + 取り次ぎ",
+          "謁見": "えっけん|audience (with royalty)",
+          "いたし": "いたし|doing (humble stem)|いたす, humble する"
+        } },
+      { "jp": "「例外は、ひとつもございません」",
+        "en": "\"There are no exceptions. Not a single one.\"",
+        "w": {
+          "例外": "れいがい|exception"
+        } },
+      { "jp": "「それが王家の作法でございます。お言葉も、どうかお慎みくださいませ」",
+        "en": "\"Such is the etiquette of the royal house. And your language — kindly restrain it, if you please.\"",
+        "w": {
+          "王家": "おうけ|royal house",
+          "作法": "さほう|etiquette, proper form",
+          "お言葉": "おことば|speech, words (honorific)|お + 言葉",
+          "どうか": "どうか|please, I beg you",
+          "お慎み": "おつつしみ|restraint (honorific stem)|お + 慎む to restrain"
+        } }
+    ] },
+    { "sp": "リナ", "s": [
+      { "jp": "「え、ええと……リナと、申し上げますでございます……ます？」",
+        "en": "\"Um, er... I humbly announce that I is called Rina... -masu?\"",
+        "w": {
+          "え": "え|huh, um (stammer)",
+          "ええと": "ええと|um, let me see",
+          "リナ": "りな|Rina"
+        } },
+      { "jp": "「……ねえ、今の、合ってた？」",
+        "en": "\"...Hey, did I get that right?\"",
+        "w": {
+          "今": "いま|just now",
+          "合ってた": "あってた|was correct|合う to be right + てた (=ていた)"
+        } }
+    ] },
+    { "s": [
+      { "jp": "侍従長は何も聞かなかったという顔のまま、謁見の広間の重い扉を押し開けた。",
+        "en": "His face saying he had heard none of it, the chamberlain pushed open the heavy doors of the audience hall.",
+        "w": {
+          "侍従長": "じじゅうちょう|lord chamberlain",
+          "何も": "なにも|nothing (with negative)",
+          "聞か": "きか|hearing (negative stem)|聞く to hear",
+          "いう": "いう|to say|言う",
+          "顔": "かお|face",
+          "まま": "まま|as is, unchanged",
+          "謁見": "えっけん|audience (with royalty)",
+          "広間": "ひろま|great hall",
+          "重い": "おもい|heavy",
+          "扉": "とびら|door (large/formal)",
+          "押し開けた": "おしあけた|pushed open|押し開ける, past"
+        } },
+      { "jp": "深紅の絨毯の先、玉座のかたわらに、第二王女エステルが立っていた。",
+        "en": "At the far end of the crimson carpet, beside the throne, stood the second princess, Estelle.",
+        "w": {
+          "深紅": "しんく|crimson",
+          "絨毯": "じゅうたん|carpet",
+          "先": "さき|far end, ahead",
+          "玉座": "ぎょくざ|throne",
+          "かたわら": "かたわら|beside",
+          "第二王女": "だいにおうじょ|second princess",
+          "エステル": "えすてる|Estelle (the second princess)",
+          "立っていた": "たっていた|was standing|立つ to stand + ていた"
+        } },
+      { "jp": "完璧な微笑みの奥で、その瞳だけが鋭く光っていた。",
+        "en": "Behind the flawless smile, only her eyes glinted sharply.",
+        "w": {
+          "完璧な": "かんぺきな|perfect, flawless",
+          "微笑み": "ほほえみ|smile",
+          "奥": "おく|the depths, behind",
+          "瞳": "ひとみ|eyes, pupils",
+          "鋭く": "するどく|sharply|鋭い sharp",
+          "光っていた": "ひかっていた|was gleaming|光る to shine + ていた"
+        } }
+    ] },
+    { "sp": "エステル", "s": [
+      { "jp": "「遠い村から、ようこそいらっしゃいました」",
+        "en": "\"Welcome — you have come such a long way from your village.\"",
+        "w": {
+          "遠い": "とおい|far, distant",
+          "村": "むら|village",
+          "ようこそ": "ようこそ|welcome"
+        } },
+      { "jp": "「街道の旅のお話は、バルロより伺っておりますわ。大変だったことと存じますわ」",
+        "en": "\"I have heard from Barlo of your journey along the highroad. A hard road it must have been, I imagine.\"",
+        "w": {
+          "大変": "たいへん|hard, trying",
+          "街道": "かいどう|highroad, highway",
+          "旅": "たび|journey",
+          "お話": "おはなし|account, story (polite)|お + 話",
+          "バルロ": "ばるろ|Barlo (the chamberlain)",
+          "伺って": "うかがって|hearing (humble te-form)|伺う, humble 聞く"
+        } },
+      { "jp": "「ガルドヴァン様のお手紙を、拝見いたしますわね」",
+        "en": "\"Now, I shall read Master Galdvan's letter.\"",
+        "w": {
+          "ガルドヴァン": "がるどゔぁん|Galdvan (the old mage)",
+          "様": "さま|-sama (deferential suffix)",
+          "お手紙": "おてがみ|letter (honorific)|お + 手紙",
+          "拝見": "はいけん|looking at (humble)|拝見する, humble 見る"
+        } }
+    ] },
+    { "s": [
+      { "jp": "封を切った王女は、読み終えた後も、長いこと黙っていた。窓の外で、昼の鐘が遠く鳴った。",
+        "en": "The princess broke the seal, and even after reading it through she stayed silent a long while. Outside the windows, the noon bells rang far away.",
+        "w": {
+          "封": "ふう|seal (on a letter)",
+          "切った": "きった|cut, broke|切る to cut, past",
+          "王女": "おうじょ|princess",
+          "読み終えた": "よみおえた|finished reading|読み終える, past",
+          "後": "あと|after",
+          "長い": "ながい|long",
+          "黙っていた": "だまっていた|stayed silent|黙る to fall silent + ていた",
+          "窓": "まど|window",
+          "外": "そと|outside",
+          "昼": "ひる|midday, noon",
+          "鐘": "かね|bell",
+          "遠く": "とおく|far off|遠い far",
+          "鳴った": "なった|rang|鳴る to ring, past"
+        } },
+      { "jp": "そのとき、リナの胸もとで、小さな箱がかすかに鳴り始めた。",
+        "en": "And then, at Rina's chest, the little box began to ring faintly.",
+        "w": {
+          "リナ": "りな|Rina",
+          "胸もと": "むねもと|at one's chest",
+          "小さな": "ちいさな|small, little",
+          "箱": "はこ|box",
+          "かすかに": "かすかに|faintly",
+          "鳴り始めた": "なりはじめた|began to ring|鳴る + 始める, past"
+        } },
+      { "jp": "リナが玉座へ一歩近づくたびに、石のかけらの音色は澄んで強くなっていった。",
+        "en": "With every step Rina took toward the throne, the stone fragment's tone grew clearer and stronger.",
+        "w": {
+          "リナ": "りな|Rina",
+          "玉座": "ぎょくざ|throne",
+          "一歩": "いっぽ|one step",
+          "近づく": "ちかづく|to approach",
+          "たび": "たび|each time",
+          "石": "いし|stone",
+          "かけら": "かけら|fragment, shard",
+          "音色": "ねいろ|timbre, tone",
+          "澄んで": "すんで|becoming clear (te-form)|澄む to become clear",
+          "強く": "つよく|strong(er)|強い strong",
+          "なっていった": "なっていった|went on becoming|なる + ていく, past"
+        } }
+    ] },
+    { "sp": "エステル", "s": [
+      { "jp": "「……塔が動いた夜、この城の地下で、星の封印にひびが入りましたの」",
+        "en": "\"...The night the tower moved, down beneath this castle, a crack opened in the Star Seal.\"",
+        "w": {
+          "塔": "とう|tower",
+          "動いた": "うごいた|moved|動く to move, past",
+          "夜": "よる|night",
+          "城": "しろ|castle",
+          "地下": "ちか|underground, below ground",
+          "星": "ほし|star",
+          "封印": "ふういん|seal (magical)",
+          "ひび": "ひび|crack",
+          "入りました": "はいりました|formed, appeared|入る to enter (a crack forms), polite past"
+        } },
+      { "jp": "「宮廷の魔術師たちでは、その裂け目を、もはや止めかねますの」",
+        "en": "\"The court mages, I fear, are no longer able to halt that rift.\"",
+        "w": {
+          "宮廷": "きゅうてい|royal court",
+          "魔術師たち": "まじゅつしたち|mages|魔術師 mage + たち plural",
+          "裂け目": "さけめ|rift, fissure",
+          "もはや": "もはや|by now, any longer",
+          "止め": "とめ|stopping (stem)|止める to stop"
+        } },
+      { "jp": "「けれど、お聞きなさい。そなたのかけらが、封印の歌に応えていますわ」",
+        "en": "\"But listen. Your fragment is answering the seal's song.\"",
+        "w": {
+          "けれど": "けれど|but, however",
+          "お聞き": "おきき|listening (honorific stem)|お + 聞く to listen",
+          "そなた": "そなた|you (archaic, courtly)",
+          "かけら": "かけら|fragment, shard",
+          "封印": "ふういん|seal (magical)",
+          "歌": "うた|song",
+          "応えています": "こたえています|is answering|応える to respond + ています"
+        } },
+      { "jp": "「ガルドヴァン様は、北の星見台でなら封印を結び直せると、お手紙でおっしゃいましたわ」",
+        "en": "\"Master Galdvan says in his letter that at the northern star-observatory, the seal can be bound anew.\"",
+        "w": {
+          "ガルドヴァン": "がるどゔぁん|Galdvan (the old mage)",
+          "様": "さま|-sama (deferential suffix)",
+          "北": "きた|north",
+          "星見台": "ほしみだい|star-observatory",
+          "封印": "ふういん|seal (magical)",
+          "結び直せる": "むすびなおせる|can bind anew|結び直す to re-tie + potential",
+          "お手紙": "おてがみ|letter (honorific)|お + 手紙"
+        } },
+      { "jp": "「リナ様を、星見台への遠征の地図師として、任命いたしますわ」",
+        "en": "\"Lady Rina, I hereby appoint you map-maker to the expedition to the observatory.\"",
+        "w": {
+          "リナ": "りな|Rina",
+          "様": "さま|-sama (deferential suffix)",
+          "星見台": "ほしみだい|star-observatory",
+          "遠征": "えんせい|expedition",
+          "地図師": "ちずし|map-maker, cartographer",
+          "任命": "にんめい|appointment, commission"
+        } },
+      { "jp": "「そちらの傭兵の方も、護衛として、お雇いいたしますわ。頼もしいことですわ」",
+        "en": "\"And the mercenary gentleman there — I shall engage him as escort. How very reassuring.\"",
+        "w": {
+          "そちら": "そちら|the one over there (polite)",
+          "傭兵": "ようへい|mercenary",
+          "方": "かた|person (respectful)",
+          "護衛": "ごえい|escort, bodyguard",
+          "お雇い": "おやとい|hiring (honorific stem)|お + 雇う to hire",
+          "頼もしい": "たのもしい|reliable, reassuring"
+        } }
+    ] },
+    { "sp": "侍従長バルロ", "s": [
+      { "jp": "「ひ、姫殿下！それには、賛成いたしかねます！」",
+        "en": "\"Y-Your Highness! To that, I am quite unable to consent!\"",
+        "w": {
+          "ひ": "ひ|Y- (stammered start of 姫殿下)",
+          "姫殿下": "ひめでんか|Her Highness the princess",
+          "賛成": "さんせい|agreement, approval",
+          "いたし": "いたし|doing (humble stem)|いたす, humble する"
+        } },
+      { "jp": "「どうか、どうかお考え直しくださいませ……！」",
+        "en": "\"I beg you, I beg you, please reconsider...!\"",
+        "w": {
+          "どうか": "どうか|please, I beg you",
+          "お考え直し": "おかんがえなおし|reconsidering (honorific stem)|お + 考え直す to reconsider"
+        } }
+    ] },
+    { "sp": "リナ", "s": [
+      { "jp": "「うん、やる！あたし、北の地図、描いてみたい！」",
+        "en": "\"Yeah, I'll do it! I wanna try drawing the maps of the north!\"",
+        "w": {
+          "やる": "やる|to do (casual)",
+          "北": "きた|north",
+          "地図": "ちず|map",
+          "描いてみたい": "かいてみたい|want to try drawing|描く to draw + てみる + たい"
+        } }
+    ] },
+    { "s": [
+      { "jp": "一瞬、広間から声が消えた。",
+        "en": "For an instant, every voice in the hall vanished.",
+        "w": {
+          "一瞬": "いっしゅん|an instant",
+          "広間": "ひろま|great hall",
+          "声": "こえ|voice",
+          "消えた": "きえた|vanished|消える to vanish, past"
+        } },
+      { "jp": "やがて、エステルは扇の陰で、「面白い方ですわね」と小さく笑った。",
+        "en": "Then, behind her fan, Estelle laughed softly: \"What an interesting person you are.\"",
+        "w": {
+          "やがて": "やがて|before long",
+          "エステル": "えすてる|Estelle (the second princess)",
+          "扇": "おうぎ|folding fan",
+          "陰": "かげ|shade, cover (behind)",
+          "面白い": "おもしろい|interesting, amusing",
+          "方": "かた|person (respectful)",
+          "小さく": "ちいさく|softly, in a small voice|小さい small",
+          "笑った": "わらった|laughed|笑う to laugh, past"
+        } },
+      { "jp": "侍従長は長いため息をつき、「……かしこまりました」と深く頭を下げた。",
+        "en": "The chamberlain let out a long sigh, bowed deep, and said: \"...As you command.\"",
+        "w": {
+          "侍従長": "じじゅうちょう|lord chamberlain",
+          "長い": "ながい|long",
+          "ため息": "ためいき|sigh",
+          "つき": "つき|letting out (stem)|つく to emit (a sigh)",
+          "深く": "ふかく|deeply|深い deep",
+          "頭": "あたま|head",
+          "下げた": "さげた|lowered|下げる to lower, past"
+        } },
+      { "jp": "出発は三日後。リナは古い地図筒をそっと抱き直し、ほんとうの物語がいま始まるのだと感じていた。",
+        "en": "Departure was set for three days later. Rina gently hugged her old map tube closer, feeling that the real story was beginning now.",
+        "w": {
+          "出発": "しゅっぱつ|departure",
+          "三日後": "みっかご|three days later",
+          "リナ": "りな|Rina",
+          "古い": "ふるい|old",
+          "地図筒": "ちずづつ|map tube",
+          "そっと": "そっと|gently, quietly",
+          "抱き直し": "だきなおし|re-embracing (stem)|抱き直す to hold anew",
+          "ほんとう": "ほんとう|real, true",
+          "物語": "ものがたり|story, tale",
+          "いま": "いま|now",
+          "始まる": "はじまる|to begin",
+          "感じていた": "かんじていた|was feeling|感じる to feel + ていた"
+        } }
+    ] }
+  ]
+}

@@ -68,11 +68,12 @@ export function ReadView({
             <div class="card">
               {book.chapters.map((ch, i) => {
                 const best = row?.quiz?.[ch.id];
+                const num = parseInt(ch.id.replace(/\D/g, ''), 10) || i + 1;
                 return (
                   <button type="button" class="list-row" key={ch.id} onClick={() => onOpen(book, ch.id)}>
                     <div class="list-row-left">
                       <div class="list-row-title">
-                        <span class="ch-num">{i + 1}</span>
+                        <span class="ch-num">{num}</span>
                         <span lang="ja">{ch.title}</span>
                       </div>
                       <div class="list-row-sub muted">

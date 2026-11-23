@@ -144,7 +144,7 @@ export function ReaderView({
             {ch?.title ?? '…'}
           </div>
           <div class="quiz-title-sub">
-            {book.titleEn} · chapter {chIndex + 1}/{book.chapters.length}
+            {book.titleEn} · chapter {parseInt(chId.replace(/\D/g, ''), 10) || chIndex + 1}
           </div>
         </div>
         <div class="reader-tools">

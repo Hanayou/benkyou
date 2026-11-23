@@ -1,0 +1,433 @@
+{
+  "id": "ch2",
+  "title": "塔の老人",
+  "titleEn": "The Old Man of the Tower",
+  "focus": ["ておる", "ねばならぬ", "まい"],
+  "paras": [
+    { "s": [
+      { "jp": "扉の内側に広がっていたのは、本でできた谷だった。",
+        "en": "What opened out beyond the door was a valley made of books.",
+        "w": {
+          "扉": "とびら|door (large/formal)",
+          "内側": "うちがわ|the inside",
+          "広がっていた": "ひろがっていた|was spreading out|広がる to spread + ていた",
+          "本": "ほん|book",
+          "できた": "できた|made (of)|できる, past",
+          "谷": "たに|valley"
+        } },
+      { "jp": "壁はすべて書棚になっていて、本の列が螺旋を描きながら、闇の奥まで続いていた。",
+        "en": "Every wall was shelving, and the rows of books climbed in a spiral until they were lost in the dark above.",
+        "w": {
+          "壁": "かべ|wall",
+          "すべて": "すべて|all, entirely",
+          "書棚": "しょだな|bookshelf",
+          "なっていて": "なっていて|having turned into|なる to become + ている, て-form",
+          "本": "ほん|book",
+          "列": "れつ|row, line",
+          "螺旋": "らせん|spiral",
+          "描き": "えがき|tracing (stem)|描く to draw, trace",
+          "闇": "やみ|darkness",
+          "奥": "おく|the inner depths",
+          "続いていた": "つづいていた|continued on|続く to continue + ていた"
+        } },
+      { "jp": "棚の間には古い梯子が掛かり、ランプの灯りが本の背を金色に照らしている。",
+        "en": "Old ladders hung between the shelves, and lamplight washed the spines of the books in gold.",
+        "w": {
+          "棚": "たな|shelf",
+          "間": "あいだ|space between",
+          "古い": "ふるい|old",
+          "梯子": "はしご|ladder",
+          "掛かり": "かかり|hanging (literary stem)|掛かる to hang, be set",
+          "ランプ": "らんぷ|lamp",
+          "灯り": "あかり|light, lamplight",
+          "本": "ほん|book",
+          "背": "せ|spine (of a book)",
+          "金色": "きんいろ|gold (color)",
+          "照らしている": "てらしている|is lighting up|照らす to illuminate + ている"
+        } },
+      { "jp": "そして、あの古い紙とろうそくのにおいが、塔の奥から静かに流れてくる。",
+        "en": "And that smell of old paper and candles came drifting quietly from the tower's depths.",
+        "w": {
+          "古い": "ふるい|old",
+          "紙": "かみ|paper",
+          "ろうそく": "ろうそく|candle",
+          "におい": "におい|smell",
+          "塔": "とう|tower",
+          "奥": "おく|the inner depths",
+          "静かに": "しずかに|quietly|静か quiet + に",
+          "流れ": "ながれ|flowing (stem)|流れる to flow"
+        } }
+    ] },
+    { "s": [
+      { "jp": "リナが静かに扉を閉めると、書棚の影から、杖をついた小さな老人が現れた。",
+        "en": "When Rina quietly shut the door, a small old man leaning on a staff appeared from the shadow of the shelves.",
+        "w": {
+          "リナ": "りな|Rina",
+          "静かに": "しずかに|quietly|静か quiet + に",
+          "扉": "とびら|door",
+          "閉める": "しめる|to close",
+          "書棚": "しょだな|bookshelf",
+          "影": "かげ|shadow",
+          "杖": "つえ|staff, cane",
+          "ついた": "ついた|planted, leaning on|つく to plant (a staff), past",
+          "小さな": "ちいさな|small",
+          "老人": "ろうじん|old man",
+          "現れた": "あらわれた|appeared|現れる to appear, past"
+        } },
+      { "jp": "白い髭は帯のように長く、瞳は星を宿したように光っていた。",
+        "en": "His white beard was as long as a sash, and his eyes gleamed as if they held stars.",
+        "w": {
+          "白い": "しろい|white",
+          "髭": "ひげ|beard",
+          "帯": "おび|sash, belt",
+          "長く": "ながく|long (adverbial)|長い",
+          "瞳": "ひとみ|eyes, pupils",
+          "星": "ほし|star",
+          "宿した": "やどした|held, harbored|宿す to harbor, past",
+          "光っていた": "ひかっていた|was gleaming|光る to shine + ていた"
+        } }
+    ] },
+    { "sp": "ガルドヴァン", "s": [
+      { "jp": "「ふむ、扉を閉めてくれる客は珍しいのう」",
+        "en": "\"Hm. A guest who shuts the door for me — now that is rare.\"",
+        "w": {
+          "扉": "とびら|door",
+          "閉め": "しめ|closing (stem)|閉める to close",
+          "客": "きゃく|guest, visitor",
+          "珍しい": "めずらしい|rare, unusual"
+        } },
+      { "jp": "「よく来たのう。おぬし、地図を描く者じゃろう？」",
+        "en": "\"Welcome, welcome. You would be a drawer of maps, I take it?\"",
+        "w": {
+          "来た": "きた|came|来る to come, past",
+          "地図": "ちず|map",
+          "描く": "かく|to draw",
+          "者": "もの|person (literary)",
+          "じゃろう": "じゃろう|right? (sage だろう)|だろう, old-sage register"
+        } },
+      { "jp": "「わしはガルドヴァン。この塔の主じゃ」",
+        "en": "\"I am Galdovan, master of this tower.\"",
+        "w": {
+          "ガルドヴァン": "がるどゔぁん|Galdovan (the old mage)",
+          "塔": "とう|tower",
+          "主": "あるじ|master (of a house)"
+        } }
+    ] },
+    { "sp": "リナ", "s": [
+      { "jp": "「あたしはリナ。リーデン村の、地図描きの見習いよ」",
+        "en": "\"I'm Rina. A map-maker's apprentice, from Rieden village.\"",
+        "w": {
+          "リナ": "りな|Rina",
+          "リーデン村": "りーでんむら|Rieden village",
+          "地図描き": "ちずかき|map-maker",
+          "見習い": "みならい|apprentice"
+        } },
+      { "jp": "「ねえ、この塔、昨日までこの谷にはなかったよね？」",
+        "en": "\"Hey — this tower wasn't in this valley until yesterday, right?\"",
+        "w": {
+          "塔": "とう|tower",
+          "昨日": "きのう|yesterday",
+          "谷": "たに|valley"
+        } }
+    ] },
+    { "sp": "ガルドヴァン", "s": [
+      { "jp": "「驚くなよ。この塔はのう、自分の足で歩くのじゃ」",
+        "en": "\"Don't be startled, now. This tower, you see, walks on its own legs.\"",
+        "w": {
+          "驚く": "おどろく|to be startled, surprised",
+          "塔": "とう|tower",
+          "自分": "じぶん|oneself, its own",
+          "足": "あし|leg, foot",
+          "歩く": "あるく|to walk"
+        } },
+      { "jp": "「ゆうべは石の足を伸ばして、峠をひとつ越えてきたのじゃよ」",
+        "en": "\"Last night it stretched out its legs of stone and came over a mountain pass, oh yes.\"",
+        "w": {
+          "ゆうべ": "ゆうべ|last night",
+          "石": "いし|stone",
+          "足": "あし|leg, foot",
+          "伸ばして": "のばして|stretching out|伸ばす to stretch, て-form",
+          "峠": "とうげ|mountain pass",
+          "越えてきた": "こえてきた|came across|越える to cross + てくる, past"
+        } },
+      { "jp": "「信じられぬかの？」",
+        "en": "\"You find that hard to believe, hm?\"",
+        "w": {
+          "信じられぬかの": "しんじられぬかの|can you not believe it? (archaic)|信じる to believe + られる potential + ぬ(=ない) + かの, old-sage question"
+        } }
+    ] },
+    { "sp": "リナ", "s": [
+      { "jp": "「歩く塔なんて、おとぎ話の中だけだと思ってた」",
+        "en": "\"A walking tower... I thought those only existed in fairy tales.\"",
+        "w": {
+          "歩く": "あるく|to walk",
+          "塔": "とう|tower",
+          "おとぎ話": "おとぎばなし|fairy tale",
+          "中": "なか|inside",
+          "思ってた": "おもってた|thought (casual)|思う to think + ていた, casual contraction"
+        } },
+      { "jp": "「でも、どうしてわざわざ、あたしたちの谷へ来たの？」",
+        "en": "\"But why come all this way to our valley, of all places?\"",
+        "w": {
+          "わざわざ": "わざわざ|going out of one's way, deliberately",
+          "あたしたち": "あたしたち|we, us (casual feminine)|あたし + たち plural",
+          "谷": "たに|valley",
+          "来た": "きた|came|来る to come, past"
+        } }
+    ] },
+    { "sp": "ガルドヴァン", "s": [
+      { "jp": "「王都アルデンの地下には、星の封印というものが眠っておる」",
+        "en": "\"Beneath Alden, the royal capital, there sleeps a thing called the star seal.\"",
+        "w": {
+          "王都": "おうと|royal capital",
+          "アルデン": "あるでん|Alden (the royal capital)",
+          "地下": "ちか|underground, cellar",
+          "星": "ほし|star",
+          "封印": "ふういん|seal (magical)",
+          "という": "という|called, by the name of",
+          "眠っ": "ねむっ|sleeping (て-stem)|眠る to sleep"
+        } },
+      { "jp": "「大昔、空から落ちてきた星のかけらを、地の底に封じた、古い印じゃ」",
+        "en": "\"Long ago, a fragment of a star fell from the sky — the seal is the ancient mark that shut it away deep in the earth.\"",
+        "w": {
+          "大昔": "おおむかし|ages ago",
+          "空": "そら|sky",
+          "落ちてきた": "おちてきた|fell (down to earth)|落ちる to fall + てくる, past",
+          "星": "ほし|star",
+          "かけら": "かけら|fragment, shard",
+          "地": "ち|the earth, ground",
+          "底": "そこ|bottom, depths",
+          "封じた": "ふうじた|sealed away|封じる to seal, past",
+          "古い": "ふるい|old",
+          "印": "しるし|mark, sign"
+        } },
+      { "jp": "「わしはこの塔の地下で、そのかけらのひとつを守っておる」",
+        "en": "\"Here in this tower's cellar, I guard one of those fragments.\"",
+        "w": {
+          "塔": "とう|tower",
+          "地下": "ちか|underground, cellar",
+          "かけら": "かけら|fragment, shard",
+          "守っ": "まもっ|guarding (て-stem)|守る to guard, protect"
+        } },
+      { "jp": "「ゆうべ、かけらが急に震えて光った。すると、塔がひとりでに歩き出したのじゃ」",
+        "en": "\"Last night, the fragment suddenly trembled and shone. And with that, the tower set off walking all by itself.\"",
+        "w": {
+          "ゆうべ": "ゆうべ|last night",
+          "かけら": "かけら|fragment, shard",
+          "急に": "きゅうに|suddenly",
+          "震えて": "ふるえて|trembling|震える to tremble, て-form",
+          "光った": "ひかった|shone|光る to shine, past",
+          "塔": "とう|tower",
+          "ひとりでに": "ひとりでに|by itself, of its own accord",
+          "歩き出した": "あるきだした|started walking|歩く to walk + 出す (begin to), past"
+        } },
+      { "jp": "「弱った封印が、仲間のかけらを呼んでおるのじゃ。このままでは、次の冬までもつまい」",
+        "en": "\"The weakened seal is calling to its fellow fragment. At this rate, it will not last past the coming winter.\"",
+        "w": {
+          "弱った": "よわった|weakened|弱る to weaken, past",
+          "封印": "ふういん|seal (magical)",
+          "仲間": "なかま|companion, fellow",
+          "かけら": "かけら|fragment, shard",
+          "呼んでおる": "よんでおる|is calling (sage ている)|呼ぶ to call + ておる(=ている)",
+          "このまま": "このまま|like this, as things are",
+          "次": "つぎ|next",
+          "冬": "ふゆ|winter",
+          "もつ": "もつ|to last, hold out|持つ"
+        } }
+    ] },
+    { "sp": "リナ", "s": [
+      { "jp": "「それで……あたしに、何をしてほしいの？」",
+        "en": "\"So... what is it you want me to do?\"",
+        "w": {
+          "それで": "それで|so then, and so",
+          "何": "なに|what",
+          "してほしい": "してほしい|want (someone) to do|する + てほしい"
+        } }
+    ] },
+    { "sp": "ガルドヴァン", "s": [
+      { "jp": "「わしも行かねばならぬのじゃが、この老いた体では、長い旅に耐えられまい」",
+        "en": "\"I ought to go myself — but this old body would never endure the long journey.\"",
+        "w": {
+          "行か": "いか|go (negative stem)|行く to go",
+          "老いた": "おいた|aged|老いる to grow old, past",
+          "体": "からだ|body",
+          "長い": "ながい|long",
+          "旅": "たび|journey",
+          "耐えられ": "たえられ|can endure (potential stem)|耐える to endure + られる potential"
+        } },
+      { "jp": "「かけらは、手遅れになる前に、封印のそばへ戻さねばならぬ。王都で今、何が起きておるのか、確かめねばならぬ」",
+        "en": "\"The fragment must be returned to the seal's side before it is too late. And someone must find out what is happening in the capital now.\"",
+        "w": {
+          "かけら": "かけら|fragment, shard",
+          "手遅れ": "ておくれ|too late",
+          "なる": "なる|to become",
+          "前": "まえ|before",
+          "封印": "ふういん|seal (magical)",
+          "そば": "そば|side, vicinity",
+          "戻さ": "もどさ|return (negative stem)|戻す to put back",
+          "王都": "おうと|royal capital",
+          "今": "いま|now",
+          "何": "なに|what",
+          "起き": "おき|happening (stem)|起きる to happen",
+          "確かめ": "たしかめ|ascertain (stem)|確かめる to make sure of"
+        } },
+      { "jp": "「この手紙と、かけらの入った小箱を、王都アルデンまで届けてくれんかの」",
+        "en": "\"Won't you carry this letter, and the little box that holds the fragment, to the royal capital of Alden?\"",
+        "w": {
+          "手紙": "てがみ|letter",
+          "かけら": "かけら|fragment, shard",
+          "入った": "はいった|containing (lit. entered)|入る to go in, past",
+          "小箱": "こばこ|small box",
+          "王都": "おうと|royal capital",
+          "アルデン": "あるでん|Alden (the royal capital)",
+          "届けてくれんかの": "とどけてくれんかの|won't you deliver it for me (archaic request)|届ける to deliver + てくれないか, old-sage register (くれん=くれない, かの=softened question)"
+        } },
+      { "jp": "「地図描きの目は、一度通った道を忘れぬ。おぬしなら、帰り道に迷うこともあるまい」",
+        "en": "\"A map-maker's eyes never forget a road once traveled. You, of all people, would not lose your way home.\"",
+        "w": {
+          "地図描き": "ちずかき|map-maker",
+          "目": "め|eye",
+          "一度": "いちど|once, one time",
+          "通った": "とおった|passed along|通る to pass through, past",
+          "道": "みち|road, way",
+          "忘れぬ": "わすれぬ|does not forget (archaic)|忘れる to forget + ぬ(=ない)",
+          "帰り道": "かえりみち|the way home",
+          "迷う": "まよう|to lose one's way",
+          "ある": "ある|to exist, come about"
+        } }
+    ] },
+    { "sp": "リナ", "s": [
+      { "jp": "「でも、あたしには、おばあちゃんがいるの。何も言わずにいなくなったら、みんなきっと心配するよ」",
+        "en": "\"But I've got my grandma here. If I vanished without a word, everyone would worry for sure.\"",
+        "w": {
+          "おばあちゃん": "おばあちゃん|grandma",
+          "いる": "いる|to be (there), to have (animate)",
+          "何も": "なにも|nothing (with negative)",
+          "言わ": "いわ|say (negative stem)|言う to say",
+          "いなくなったら": "いなくなったら|if (I) went missing|いなくなる to disappear + たら",
+          "心配する": "しんぱいする|to worry|心配 worry + する"
+        } }
+    ] },
+    { "sp": "ガルドヴァン", "s": [
+      { "jp": "「リナよ。地図とは、帰り道の約束じゃ」",
+        "en": "\"Rina. A map is a promise of the way home.\"",
+        "w": {
+          "リナ": "りな|Rina",
+          "地図": "ちず|map",
+          "とは": "とは|(definition) as for, what ~ is|と + は, topic-defining",
+          "帰り道": "かえりみち|the way home",
+          "約束": "やくそく|promise"
+        } },
+      { "jp": "「地図を描いた者は、必ずその道を戻ってくる。わしは、そう信じておるよ」",
+        "en": "\"The one who drew the road always comes back along it. That is what I believe.\"",
+        "w": {
+          "地図": "ちず|map",
+          "描いた": "かいた|drew|描く to draw, past",
+          "者": "もの|person (literary)",
+          "必ず": "かならず|without fail",
+          "道": "みち|road, way",
+          "戻ってくる": "もどってくる|comes back|戻る to return + てくる",
+          "信じ": "しんじ|believe (stem)|信じる to believe"
+        } }
+    ] },
+    { "s": [
+      { "jp": "窓のない塔の中で、リナは村の朝のにおいを思い出していた。",
+        "en": "Inside the windowless tower, Rina found herself remembering the smell of mornings in her village.",
+        "w": {
+          "窓": "まど|window",
+          "塔": "とう|tower",
+          "中": "なか|inside",
+          "リナ": "りな|Rina",
+          "村": "むら|village",
+          "朝": "あさ|morning",
+          "におい": "におい|smell",
+          "思い出していた": "おもいだしていた|was remembering|思い出す to recall + ていた"
+        } },
+      { "jp": "それでも、胸の奥では、好奇心が小さな火のように燃え始めていた。",
+        "en": "Even so, deep in her chest, curiosity had begun to burn like a small flame.",
+        "w": {
+          "胸": "むね|chest, heart",
+          "奥": "おく|the inner depths",
+          "好奇心": "こうきしん|curiosity",
+          "小さな": "ちいさな|small",
+          "火": "ひ|fire, flame",
+          "燃え始めていた": "もえはじめていた|had begun to burn|燃える to burn + 始める + ていた"
+        } },
+      { "jp": "リナは深く息を吸うと、「分かった。あたし、行くよ」と、はっきりした声で言った。",
+        "en": "Rina drew a deep breath, and said in a clear voice, \"All right. I'll go.\"",
+        "w": {
+          "リナ": "りな|Rina",
+          "深く": "ふかく|deeply|深い",
+          "息": "いき|breath",
+          "吸う": "すう|to breathe in",
+          "分かった": "わかった|got it, all right|分かる to understand, past",
+          "行く": "いく|to go",
+          "はっきりした": "はっきりした|clear, firm|はっきりする to be clear, past",
+          "声": "こえ|voice",
+          "言った": "いった|said|言う to say, past"
+        } },
+      { "jp": "少女はもう、読みかけの冒険譚の主人公の顔になっていた。",
+        "en": "Already, the girl wore the face of the hero of a half-read adventure tale.",
+        "w": {
+          "少女": "しょうじょ|girl",
+          "読み": "よみ|reading (stem)|読む to read",
+          "冒険譚": "ぼうけんたん|adventure tale (literary)",
+          "主人公": "しゅじんこう|protagonist, hero",
+          "顔": "かお|face",
+          "なっていた": "なっていた|had become|なる + ていた"
+        } },
+      { "jp": "老人は満足そうに笑うと、机の引き出しから、蝋で封じた手紙と黒い小箱を取り出した。",
+        "en": "The old man smiled with satisfaction, and from a desk drawer he took out a wax-sealed letter and a small black box.",
+        "w": {
+          "老人": "ろうじん|old man",
+          "満足そうに": "まんぞくそうに|with a satisfied look|満足 satisfaction + そうに looking",
+          "笑う": "わらう|to smile, laugh",
+          "机": "つくえ|desk",
+          "引き出し": "ひきだし|drawer",
+          "蝋": "ろう|wax",
+          "封じた": "ふうじた|sealed|封じる to seal, past",
+          "手紙": "てがみ|letter",
+          "黒い": "くろい|black",
+          "小箱": "こばこ|small box",
+          "取り出した": "とりだした|took out|取り出す to take out, past"
+        } },
+      { "jp": "小箱は小さいのに妙に重く、受け取ると、中で何かが動く気配がした。",
+        "en": "The box was small yet strangely heavy, and as she took it, she sensed something stir inside.",
+        "w": {
+          "小箱": "こばこ|small box",
+          "小さい": "ちいさい|small",
+          "妙に": "みょうに|strangely",
+          "重く": "おもく|heavy (adverbial)|重い",
+          "受け取る": "うけとる|to receive, take",
+          "中": "なか|inside",
+          "何か": "なにか|something",
+          "動く": "うごく|to move, stir",
+          "気配がした": "けはいがした|sensed a presence|気配 presence + がする, past"
+        } }
+    ] },
+    { "sp": "ガルドヴァン", "s": [
+      { "jp": "「明日の朝、村はずれの十字路で、護衛の男が待っておる」",
+        "en": "\"Tomorrow morning, an escort will be waiting at the crossroads on the edge of the village.\"",
+        "w": {
+          "明日": "あした|tomorrow",
+          "朝": "あさ|morning",
+          "村はずれ": "むらはずれ|the edge of the village",
+          "十字路": "じゅうじろ|crossroads",
+          "護衛": "ごえい|escort, guard",
+          "男": "おとこ|man",
+          "待っ": "まっ|waiting (て-stem)|待つ to wait"
+        } },
+      { "jp": "「ドレックという男じゃ。口は悪いが、腕は確かじゃ」",
+        "en": "\"A man called Drek. Foul of mouth, but his arm is true.\"",
+        "w": {
+          "ドレック": "どれっく|Drek (a mercenary)",
+          "という": "という|called, by the name of",
+          "男": "おとこ|man",
+          "口": "くち|mouth; way of speaking",
+          "悪い": "わるい|bad, foul",
+          "腕": "うで|arm; skill",
+          "確か": "たしか|reliable, sure"
+        } }
+    ] }
+  ]
+}
