@@ -29,15 +29,28 @@ export interface ProgressRow {
   done: 0 | 1;
 }
 
+/** Per-book reading state: last chapter opened and best quiz score per chapter. */
+export interface ReadingRow {
+  bookId: string;
+  lastCh?: string;
+  quiz: Record<string, number>;
+}
+
 class BenkyouDB extends Dexie {
   runs!: Table<RunRow, string>;
   progress!: Table<ProgressRow, [string, string]>;
+  reading!: Table<ReadingRow, string>;
 
   constructor() {
     super('benkyou');
     this.version(1).stores({
       runs: 'listId',
       progress: '[listId+itemId], listId',
+    });
+    this.version(2).stores({
+      runs: 'listId',
+      progress: '[listId+itemId], listId',
+      reading: 'bookId',
     });
   }
 }

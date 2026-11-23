@@ -1,15 +1,32 @@
 import { useEffect, useState } from 'preact/hooks';
 import type { ListMeta } from './lib/types';
+import type { ReaderBook } from './lib/reader';
 import { ListsView } from './views/ListsView';
 import { SearchView } from './views/SearchView';
 import { SettingsView } from './views/SettingsView';
 import { ListDetailView } from './views/ListDetailView';
 import { QuizView } from './views/QuizView';
+import { ReadView } from './views/ReadView';
+import { ReaderView } from './views/ReaderView';
+import { ChapterQuizView } from './views/ChapterQuizView';
 
-type Tab = 'study' | 'search' | 'settings';
+type Tab = 'study' | 'read' | 'search' | 'settings';
 
 function TabIcon({ tab }: { tab: Tab }) {
   switch (tab) {
+    case 'read':
+      return (
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <path
+            d="M12 6.3C10.4 4.9 8 4.4 4.5 4.4v13.9c3.5 0 5.9.5 7.5 2 1.6-1.5 4-2 7.5-2V4.4c-3.5 0-5.9.5-7.5 1.9z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linejoin="round"
+          />
+          <path d="M12 6.3v14" stroke="currentColor" stroke-width="1.8" />
+        </svg>
+      );
     case 'study':
       return (
         <svg viewBox="0 0 24 24" width="24" height="24">
@@ -41,6 +58,7 @@ function TabIcon({ tab }: { tab: Tab }) {
 
 const TABS: { id: Tab; label: string }[] = [
   { id: 'study', label: 'Study' },
+  { id: 'read', label: 'Read' },
   { id: 'search', label: 'Search' },
   { id: 'settings', label: 'Settings' },
 ];
@@ -49,18 +67,22 @@ export function App() {
   const [tab, setTab] = useState<Tab>('study');
   const [openList, setOpenList] = useState<ListMeta | null>(null);
   const [inQuiz, setInQuiz] = useState(false);
+  const [reading, setReading] = useState<{ book: ReaderBook; ch: string; quiz: boolean } | null>(
+    null
+  );
 
   useEffect(() => {
     const onPop = (e: PopStateEvent) => {
-      const view = (e.state as { view?: string } | null)?.view;
-      if (view === 'quiz') {
-        setInQuiz(true);
-      } else if (view === 'detail') {
-        setInQuiz(false);
-      } else {
-        setInQuiz(false);
-        setOpenList(null);
-      }
+      const state = e.state as { view?: string; ch?: string } | null;
+      const view = state?.view;
+      setInQuiz(view === 'quiz');
+      if (view !== 'quiz' && view !== 'detail') setOpenList(null);
+      setReading((r) => {
+        if (!r) return null;
+        if (view === 'rquiz') return { ...r, quiz: true };
+        if (view === 'rchap') return { ...r, ch: state?.ch ?? r.ch, quiz: false };
+        return null;
+      });
     };
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
@@ -76,20 +98,38 @@ export function App() {
     setInQuiz(true);
   };
 
+  const openReader = (book: ReaderBook, ch: string) => {
+    history.pushState({ view: 'rchap', ch }, '');
+    setReading({ book, ch, quiz: false });
+  };
+
+  const readerChapter = (ch: string) => {
+    history.pushState({ view: 'rchap', ch }, '');
+    setReading((r) => (r ? { ...r, ch, quiz: false } : r));
+  };
+
+  const startReaderQuiz = () => {
+    history.pushState({ view: 'rquiz' }, '');
+    setReading((r) => (r ? { ...r, quiz: true } : r));
+  };
+
   const back = () => history.back();
 
   return (
     <>
-      <div class="shell" hidden={!!openList}>
+      <div class="shell" hidden={!!openList || !!reading}>
         <main class="shell-main">
           <div hidden={tab !== 'study'}>
-            <ListsView active={!openList && tab === 'study'} onOpen={openDetail} />
+            <ListsView active={!openList && !reading && tab === 'study'} onOpen={openDetail} />
+          </div>
+          <div hidden={tab !== 'read'}>
+            <ReadView active={!openList && !reading && tab === 'read'} onOpen={openReader} />
           </div>
           <div hidden={tab !== 'search'}>
             <SearchView />
           </div>
           <div hidden={tab !== 'settings'}>
-            <SettingsView active={!openList && tab === 'settings'} />
+            <SettingsView active={!openList && !reading && tab === 'settings'} />
           </div>
         </main>
         <nav class="tabbar">
@@ -110,6 +150,18 @@ export function App() {
         <ListDetailView list={openList} active={!inQuiz} onStart={startQuiz} onExit={back} />
       )}
       {openList && inQuiz && <QuizView list={openList} onExit={back} />}
+      {reading && (
+        <ReaderView
+          book={reading.book}
+          chId={reading.ch}
+          onExit={back}
+          onQuiz={startReaderQuiz}
+          onChapter={readerChapter}
+        />
+      )}
+      {reading?.quiz && (
+        <ChapterQuizView book={reading.book} chId={reading.ch} onExit={back} />
+      )}
     </>
   );
 }

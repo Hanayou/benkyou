@@ -19,6 +19,13 @@ No accounts, no server: all progress lives on your device.
   animations (KanjiVG), readings, meanings, example sentences, and related
   vocabulary for whatever you just answered. Stays out of the way otherwise.
 - **Search tab**: search every list by kanji, kana, romaji, or English.
+- **Read tab**: original serialized stories written for learners (N2+), where
+  every token is tappable — vocabulary with readings and glosses, function
+  words and grammar patterns against a curated glossary. Per-sentence English,
+  a side-by-side JP∣EN view, furigana toggle, character speech-style notes
+  (役割語), and a per-chapter vocab/grammar review quiz. Content lives in
+  `content/reader/` and compiles via `npm run reader:build`, which fails if
+  any span of any sentence lacks an explanation.
 - **Settings**: auto-advance delay, rotation size, per-direction target,
   per-list reset, and clipboard backup/restore of all progress.
 

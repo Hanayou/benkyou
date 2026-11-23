@@ -1,0 +1,292 @@
+{
+  "id": "ch1",
+  "title": "地図にない塔",
+  "titleEn": "The Tower Not on Any Map",
+  "focus": ["たとたん", "かけの", "ずに"],
+  "paras": [
+    { "s": [
+      { "jp": "峠を越えた風が、リーデン村の麦畑を銀色に揺らしていた。",
+        "en": "A wind that had crossed the pass was swaying Rieden village's wheat fields silver.",
+        "w": {
+          "峠": "とうげ|mountain pass",
+          "越えた": "こえた|crossed|越える to cross, past",
+          "風": "かぜ|wind",
+          "リーデン村": "りーでんむら|Rieden village",
+          "麦畑": "むぎばたけ|wheat field",
+          "銀色": "ぎんいろ|silver (color)",
+          "揺らしていた": "ゆらしていた|was swaying (something)|揺らす to sway + ていた"
+        } },
+      { "jp": "村の朝は早い。",
+        "en": "Mornings come early in the village.",
+        "w": { "村": "むら|village", "朝": "あさ|morning", "早い": "はやい|early" } },
+      { "jp": "だが、その日のリナは、鶏より早く目を覚ました。",
+        "en": "But that day, Rina woke even earlier than the roosters.",
+        "w": {
+          "日": "ひ|day",
+          "リナ": "りな|Rina (protagonist)",
+          "鶏": "にわとり|chicken, rooster",
+          "早く": "はやく|early (adverb)|早い",
+          "目を覚ました": "めをさました|woke up|目を覚ます to wake, past"
+        } },
+      { "jp": "窓の外に、見慣れない影があったのだ。",
+        "en": "Outside her window, there was an unfamiliar shadow.",
+        "w": {
+          "窓": "まど|window",
+          "外": "そと|outside",
+          "見慣れない": "みなれない|unfamiliar (lit. not seen-used-to)|見慣れる to be used to seeing, negative",
+          "影": "かげ|shadow, silhouette",
+          "あった": "あった|there was|ある to exist, past"
+        } }
+    ] },
+    { "s": [
+      { "jp": "谷の向こうに、黒い塔が立っていた。",
+        "en": "On the far side of the valley stood a black tower.",
+        "w": {
+          "谷": "たに|valley",
+          "向こう": "むこう|the far side, over there",
+          "黒い": "くろい|black",
+          "塔": "とう|tower",
+          "立っていた": "たっていた|was standing|立つ to stand + ていた"
+        } },
+      { "jp": "昨日まで、そこには何もなかったはずだ。",
+        "en": "Until yesterday, there should have been nothing there.",
+        "w": {
+          "昨日": "きのう|yesterday",
+          "何も": "なにも|nothing (with negative)",
+          "なかった": "なかった|there was not|ない, past"
+        } },
+      { "jp": "リナは描きかけの地図を机から取ると、何度も谷と紙を見比べた。",
+        "en": "Rina took her half-drawn map from the desk and compared the valley and the paper again and again.",
+        "w": {
+          "リナ": "りな|Rina",
+          "描き": "かき|drawing (stem)|描く to draw",
+          "地図": "ちず|map",
+          "谷": "たに|valley",
+          "机": "つくえ|desk",
+          "取る": "とる|to take",
+          "何度も": "なんども|many times over",
+          "紙": "かみ|paper",
+          "見比べた": "みくらべた|compared (by looking)|見比べる, past"
+        } },
+      { "jp": "間違いない。地図にない塔だった。",
+        "en": "There was no mistake. It was a tower that was on no map.",
+        "w": {
+          "間違いない": "まちがいない|there's no mistake, definitely",
+          "地図": "ちず|map",
+          "塔": "とう|tower"
+        } }
+    ] },
+    { "sp": "リナ", "s": [
+      { "jp": "「うそでしょ……一晩で塔が生えるなんて、聞いたことないよ」",
+        "en": "\"No way... a tower sprouting in one night? Never heard of that.\"",
+        "w": {
+          "うそ": "うそ|lie; no way!",
+          "でしょ": "でしょ|right? (casual でしょう)|でしょう",
+          "一晩": "ひとばん|one night",
+          "塔": "とう|tower",
+          "生える": "はえる|to sprout, to grow (from the ground)",
+          "聞いたことない": "きいたことない|have never heard of|聞いたことがない, casual が-drop"
+        } }
+    ] },
+    { "s": [
+      { "jp": "階段を駆け下りたとたん、台所から祖母の声が飛んできた。",
+        "en": "The instant she dashed down the stairs, her grandmother's voice came flying from the kitchen.",
+        "w": {
+          "階段": "かいだん|stairs",
+          "駆け下り": "かけおり|dashing down (stem)|駆け下りる to run down",
+          "台所": "だいどころ|kitchen",
+          "祖母": "そぼ|grandmother",
+          "声": "こえ|voice",
+          "飛んできた": "とんできた|came flying|飛ぶ to fly + てくる"
+        } }
+    ] },
+    { "sp": "祖母", "s": [
+      { "jp": "「リナ、朝ごはんも食べずにどこへ行くつもりだい」",
+        "en": "\"Rina, where do you think you're going without even eating breakfast?\"",
+        "w": {
+          "リナ": "りな|Rina",
+          "朝ごはん": "あさごはん|breakfast",
+          "食べ": "たべ|eating (stem)|食べる to eat",
+          "行く": "いく|to go"
+        } }
+    ] },
+    { "sp": "リナ", "s": [
+      { "jp": "「谷の塔を見てくる！地図を直さなきゃいけないの！」",
+        "en": "\"I'm going to go look at the tower in the valley! I have to fix the map!\"",
+        "w": {
+          "谷": "たに|valley",
+          "塔": "とう|tower",
+          "見てくる": "みてくる|go take a look (and come back)|見る + てくる",
+          "地図": "ちず|map",
+          "直さ": "なおさ|fix (negative stem)|直す to fix, correct"
+        } }
+    ] },
+    { "s": [
+      { "jp": "広場には村の衆が集まり、谷を指さしながらざわめいていた。",
+        "en": "The villagers had gathered in the square, buzzing as they pointed at the valley.",
+        "w": {
+          "広場": "ひろば|town square",
+          "村の衆": "むらのしゅう|the village folk (rustic collective)",
+          "集まり": "あつまり|gathering (stem, literary continuative)|集まる to gather",
+          "谷": "たに|valley",
+          "指さし": "ゆびさし|pointing (stem)|指さす to point at",
+          "ざわめいていた": "ざわめいていた|was buzzing with voices|ざわめく to murmur + ていた"
+        } },
+      { "jp": "猟師のトムじいさんは、「朝起きたら、もうあそこに立っておった」と繰り返すばかりだった。",
+        "en": "Old Tom the hunter just kept repeating, \"When I got up this morning, it was already standing there.\"",
+        "w": {
+          "猟師": "りょうし|hunter",
+          "トム": "とむ|Tom",
+          "じいさん": "じいさん|old man, gramps",
+          "朝": "あさ|morning",
+          "起きたら": "おきたら|when (I) got up|起きる to get up + たら",
+          "立っておった": "たっておった|was standing (archaic ておる)|立つ + ておる(=ている), old-person register",
+          "繰り返す": "くりかえす|to repeat"
+        } },
+      { "jp": "大人たちは、塔に近づいてはならないと口々に言った。",
+        "en": "The adults said, each in their own words, that no one must go near the tower.",
+        "w": {
+          "大人たち": "おとなたち|the adults|大人 + たち plural",
+          "塔": "とう|tower",
+          "近づい": "ちかづい|approaching (て-stem)|近づく to approach",
+          "口々に": "くちぐちに|each saying their own piece",
+          "言った": "いった|said|言う to say, past"
+        } }
+    ] },
+    { "s": [
+      { "jp": "それでも、リナの好奇心は恐れよりも強かった。",
+        "en": "Even so, Rina's curiosity was stronger than her fear.",
+        "w": {
+          "リナ": "りな|Rina",
+          "好奇心": "こうきしん|curiosity",
+          "恐れ": "おそれ|fear",
+          "強かった": "つよかった|was strong|強い, past"
+        } },
+      { "jp": "誰にも告げずに、彼女は谷への小道を下り始めた。",
+        "en": "Without telling anyone, she started down the path into the valley.",
+        "w": {
+          "誰": "だれ|who; (with にも) anyone",
+          "告げ": "つげ|telling (stem)|告げる to inform",
+          "彼女": "かのじょ|she",
+          "谷": "たに|valley",
+          "小道": "こみち|narrow path",
+          "下り始めた": "くだりはじめた|began to descend|下る + 始める, past"
+        } }
+    ] },
+    { "s": [
+      { "jp": "近くで見る塔は、思ったよりずっと高かった。",
+        "en": "Seen up close, the tower was far taller than she had thought.",
+        "w": {
+          "近く": "ちかく|nearby, up close",
+          "見る": "みる|to see",
+          "塔": "とう|tower",
+          "思った": "おもった|thought|思う, past",
+          "高かった": "たかかった|was tall|高い, past"
+        } },
+      { "jp": "壁は黒い石でできていて、窓はひとつも見当たらない。",
+        "en": "The walls were made of black stone, and not a single window could be found.",
+        "w": {
+          "壁": "かべ|wall",
+          "黒い": "くろい|black",
+          "石": "いし|stone",
+          "できていて": "できていて|being made (of)|できる + ている, て-form",
+          "窓": "まど|window",
+          "見当たらない": "みあたらない|cannot be found (by looking)|見当たる, negative"
+        } },
+      { "jp": "地面には、昨日までなかった細かいひびが走っていた。",
+        "en": "Across the ground ran fine cracks that had not been there yesterday.",
+        "w": {
+          "地面": "じめん|ground",
+          "昨日": "きのう|yesterday",
+          "なかった": "なかった|was not there|ない, past",
+          "細かい": "こまかい|fine, tiny",
+          "ひび": "ひび|crack",
+          "走っていた": "はしっていた|ran (spread) across|走る to run + ていた"
+        } }
+    ] },
+    { "sp": "リナ", "s": [
+      { "jp": "「扉……開いてる？」",
+        "en": "\"The door... it's open?\"",
+        "w": {
+          "扉": "とびら|door (large/formal)",
+          "開いてる": "あいてる|is open|開く + てる(=ている)"
+        } }
+    ] },
+    { "s": [
+      { "jp": "石の扉は、人ひとり分だけ開いていた。",
+        "en": "The stone door stood open just wide enough for one person.",
+        "w": {
+          "石": "いし|stone",
+          "扉": "とびら|door",
+          "人ひとり分": "ひとひとりぶん|the space of one person|〜分 = portion of",
+          "開いていた": "あいていた|was open|開く + ていた"
+        } },
+      { "jp": "中からは、古い紙とろうそくのにおいがした。",
+        "en": "From inside came the smell of old paper and candles.",
+        "w": {
+          "中": "なか|inside",
+          "古い": "ふるい|old",
+          "紙": "かみ|paper",
+          "ろうそく": "ろうそく|candle",
+          "においがした": "においがした|there was a smell|におい smell + がする, past"
+        } },
+      { "jp": "リナが一歩踏み出したとたん、奥で何かが動く気配がした。",
+        "en": "The instant Rina stepped inside, she sensed something move in the depths.",
+        "w": {
+          "リナ": "りな|Rina",
+          "一歩": "いっぽ|one step",
+          "踏み出し": "ふみだし|stepping forward (stem)|踏み出す to step forward",
+          "奥": "おく|the inner depths",
+          "何か": "なにか|something",
+          "動く": "うごく|to move",
+          "気配がした": "けはいがした|sensed a presence|気配 presence + がする, past"
+        } }
+    ] },
+    { "sp": "ガルドヴァン", "s": [
+      { "jp": "「客とは珍しい。入るなら、扉を閉めてくれんかの」",
+        "en": "\"A guest? How unusual. If you're coming in, would you shut the door for me?\"",
+        "w": {
+          "客": "きゃく|guest, visitor",
+          "とは": "とは|(surprise) that it should be|と + は, 'to think it's...'",
+          "珍しい": "めずらしい|rare, unusual",
+          "入る": "はいる|to enter",
+          "扉": "とびら|door",
+          "閉めてくれんかの": "しめてくれんかの|won't you close it for me (archaic request)|閉める + てくれないか, old-man register (くれん=くれない, かの=softened question)"
+        } }
+    ] },
+    { "s": [
+      { "jp": "声は低く乾いていて、どこか楽しげだった。",
+        "en": "The voice was low and dry, and somehow sounded amused.",
+        "w": {
+          "声": "こえ|voice",
+          "低く": "ひくく|low (adverbial)|低い",
+          "乾いていて": "かわいていて|being dry|乾く to dry + ている, て-form",
+          "どこか": "どこか|somewhere, somehow",
+          "楽しげ": "たのしげ|seeming amused|〜げ = looking like (literary そう)"
+        } },
+      { "jp": "リナは息を呑み、読みかけの冒険譚の主人公になったような気がした。",
+        "en": "Rina caught her breath, and felt as if she had become the hero of a half-read adventure tale.",
+        "w": {
+          "リナ": "りな|Rina",
+          "息を呑み": "いきをのみ|catching her breath (literary stem)|息を呑む to gasp",
+          "読み": "よみ|reading (stem)|読む to read",
+          "冒険譚": "ぼうけんたん|adventure tale (literary)",
+          "主人公": "しゅじんこう|protagonist, hero",
+          "なった": "なった|became|なる, past",
+          "気がした": "きがした|had the feeling|気がする, past"
+        } },
+      { "jp": "一歩、また一歩。",
+        "en": "One step, then another.",
+        "w": { "一歩": "いっぽ|one step" } },
+      { "jp": "こうして、リナと塔の長い物語が始まったのである。",
+        "en": "And so began the long story of Rina and the tower.",
+        "w": {
+          "リナ": "りな|Rina",
+          "塔": "とう|tower",
+          "長い": "ながい|long",
+          "物語": "ものがたり|story, tale",
+          "始まった": "はじまった|began|始まる, past"
+        } }
+    ] }
+  ]
+}
