@@ -1,0 +1,444 @@
+{
+  "id": "ch3",
+  "title": "街道の傭兵",
+  "titleEn": "The Mercenary on the Highway",
+  "focus": ["ちまう", "じゃねえか", "んだ"],
+  "paras": [
+    { "s": [
+      { "jp": "夜明けの十字路には、朝の霧がうすく流れていた。",
+        "en": "At the dawn crossroads, morning mist drifted thin.",
+        "w": {
+          "夜明け": "よあけ|dawn",
+          "十字路": "じゅうじろ|crossroads",
+          "朝": "あさ|morning",
+          "霧": "きり|mist, fog",
+          "うすく": "うすく|thinly|薄い thin",
+          "流れていた": "ながれていた|was drifting|流れる to flow + ていた"
+        } },
+      { "jp": "リナは地図の筒と荷物を背負い直し、胸元の小箱の重みを確かめた。",
+        "en": "Rina re-shouldered her map tube and pack, and checked the weight of the little box at her chest.",
+        "w": {
+          "リナ": "りな|Rina",
+          "地図": "ちず|map",
+          "筒": "つつ|tube, cylinder",
+          "荷物": "にもつ|luggage, pack",
+          "背負い直し": "せおいなおし|re-shouldering (stem)|背負う to carry on one's back + 直す re-do",
+          "胸元": "むなもと|at one's chest",
+          "小箱": "こばこ|small box",
+          "重み": "おもみ|weight, heft",
+          "確かめた": "たしかめた|checked, made sure of|確かめる, past"
+        } },
+      { "jp": "街道の石標に、大きな男がもたれていた。",
+        "en": "A big man was leaning against the highway's stone marker.",
+        "w": {
+          "街道": "かいどう|highway, main road",
+          "石標": "せきひょう|stone marker",
+          "大きな": "おおきな|big",
+          "男": "おとこ|man",
+          "もたれていた": "もたれていた|was leaning|もたれる to lean + ていた"
+        } },
+      { "jp": "腰には使い込まれた剣、右腕には古い傷あとがある。",
+        "en": "A well-worn sword at his hip, an old scar on his right arm.",
+        "w": {
+          "腰": "こし|hip, waist",
+          "使い込まれた": "つかいこまれた|well-worn, well-used|使い込む, passive past",
+          "剣": "けん|sword",
+          "右腕": "みぎうで|right arm",
+          "古い": "ふるい|old",
+          "傷あと": "きずあと|scar",
+          "ある": "ある|there is; to have"
+        } }
+    ] },
+    { "sp": "ドレック", "s": [
+      { "jp": "「おい、嬢ちゃんが例の依頼主か？」",
+        "en": "\"Hey. You the client, missy?\"",
+        "w": {
+          "嬢ちゃん": "じょうちゃん|little missy (rough address)",
+          "例の": "れいの|the one in question, that ~",
+          "依頼主": "いらいぬし|client"
+        } },
+      { "jp": "「俺はドレック。じいさんに頼まれて、王都まであんたを運ぶんだ」",
+        "en": "\"I'm Drek. The old man asked me to haul you to the capital.\"",
+        "w": {
+          "俺": "おれ|I (rough masculine)",
+          "ドレック": "どれっく|Drek",
+          "じいさん": "じいさん|the old man, gramps",
+          "頼まれて": "たのまれて|was asked to (て-form)|頼む to request, passive",
+          "王都": "おうと|royal capital",
+          "あんた": "あんた|you (blunt casual)",
+          "運ぶ": "はこぶ|to carry, transport"
+        } },
+      { "jp": "「なに、ガキのお守りなんて、昼寝みたいなもんだぜ」",
+        "en": "\"Eh, babysitting a kid? Easy as a nap.\"",
+        "w": {
+          "なに": "なに|what; eh (dismissive)",
+          "ガキ": "がき|brat (rough)",
+          "お守り": "おもり|babysitting, minding",
+          "昼寝": "ひるね|nap",
+          "もん": "もん|thing (casual もの)"
+        } }
+    ] },
+    { "sp": "リナ", "s": [
+      { "jp": "「お守りじゃないよ。あたしは地図師見習いとして、大事な手紙を運んでるの」",
+        "en": "\"It's not babysitting. I'm carrying an important letter, as a map-maker's apprentice.\"",
+        "w": {
+          "お守り": "おもり|babysitting",
+          "地図師": "ちずし|map-maker",
+          "見習い": "みならい|apprentice",
+          "大事な": "だいじな|important, precious",
+          "手紙": "てがみ|letter",
+          "運んでる": "はこんでる|am carrying|運ぶ + てる(=ている)"
+        } }
+    ] },
+    { "s": [
+      { "jp": "ふたりは朝の光の中、北へ続く街道を歩き出した。",
+        "en": "In the morning light, the two set off up the highway leading north.",
+        "w": {
+          "ふたり": "ふたり|the two of them",
+          "朝": "あさ|morning",
+          "光": "ひかり|light",
+          "中": "なか|in, amid",
+          "北": "きた|north",
+          "続く": "つづく|to continue, lead on",
+          "街道": "かいどう|highway",
+          "歩き出した": "あるきだした|started walking|歩く + 出す to start, past"
+        } },
+      { "jp": "バルクの森に入ると、梢の影が道の上で揺れた。",
+        "en": "When they entered Balk Forest, the shadows of the treetops swayed over the road.",
+        "w": {
+          "バルクの森": "ばるくのもり|Balk Forest",
+          "入る": "はいる|to enter",
+          "梢": "こずえ|treetops",
+          "影": "かげ|shadow",
+          "道": "みち|road",
+          "上": "うえ|top, above",
+          "揺れた": "ゆれた|swayed|揺れる, past"
+        } }
+    ] },
+    { "sp": "ドレック", "s": [
+      { "jp": "「歩く塔の話は、じいさんの手紙で読んだぜ。嬢ちゃん、よくあんな中に入ったな」",
+        "en": "\"Read about the walking tower in the old man's letter. Takes nerve, missy, walking into a thing like that.\"",
+        "w": {
+          "歩く": "あるく|to walk",
+          "塔": "とう|tower",
+          "話": "はなし|story, talk",
+          "じいさん": "じいさん|the old man",
+          "手紙": "てがみ|letter",
+          "読んだ": "よんだ|read|読む, past",
+          "嬢ちゃん": "じょうちゃん|missy",
+          "あんな": "あんな|that kind of",
+          "中": "なか|inside",
+          "入った": "はいった|entered|入る, past"
+        } },
+      { "jp": "「で、その箱の中身は何だ？言えないのか。ふうん、怪しいじゃねえか」",
+        "en": "\"So what's in the box? Can't say? Huh. Suspicious, ain't it.\"",
+        "w": {
+          "で": "で|so, and (picking up the topic)",
+          "箱": "はこ|box",
+          "中身": "なかみ|contents",
+          "何": "なん|what",
+          "言えない": "いえない|can't say|言う, potential negative",
+          "ふうん": "ふうん|hmm (unimpressed)",
+          "怪しい": "あやしい|suspicious"
+        } },
+      { "jp": "「ま、詮索はしねえよ。報酬をもらえりゃ、それでいいんだ」",
+        "en": "\"Well, I don't pry. Long as I get paid, that's all I care about.\"",
+        "w": {
+          "ま": "ま|well (interjection)",
+          "詮索": "せんさく|prying, snooping",
+          "しねえ": "しねえ|don't do (rough しない)|する + ねえ",
+          "報酬": "ほうしゅう|payment, reward",
+          "もらえりゃ": "もらえりゃ|if I get (rough もらえれば)|もらう potential + ば, contracted"
+        } }
+    ] },
+    { "s": [
+      { "jp": "日が落ちると、ふたりは森のはずれで火を起こした。",
+        "en": "When the sun went down, they built a fire at the forest's edge.",
+        "w": {
+          "日": "ひ|sun; day",
+          "落ちる": "おちる|to fall, set",
+          "ふたり": "ふたり|the two of them",
+          "森": "もり|forest",
+          "はずれ": "はずれ|edge, outskirts",
+          "火": "ひ|fire",
+          "起こした": "おこした|started (a fire)|起こす, past"
+        } },
+      { "jp": "焚き火の向こうで、ドレックは剣を磨きながら黙っていた。",
+        "en": "Across the campfire, Drek polished his sword in silence.",
+        "w": {
+          "焚き火": "たきび|campfire",
+          "向こう": "むこう|the far side",
+          "ドレック": "どれっく|Drek",
+          "剣": "けん|sword",
+          "磨き": "みがき|polishing (stem)|磨く to polish",
+          "黙っていた": "だまっていた|stayed silent|黙る + ていた"
+        } },
+      { "jp": "夜の森は、昼間とはまるで別のにおいがした。",
+        "en": "The night forest smelled utterly different from the daytime one.",
+        "w": {
+          "夜": "よる|night",
+          "森": "もり|forest",
+          "昼間": "ひるま|daytime",
+          "とは": "とは|compared to, from|と + は",
+          "まるで": "まるで|utterly, just like",
+          "別": "べつ|different, separate",
+          "においがした": "においがした|there was a smell|におい smell + がする, past"
+        } }
+    ] },
+    { "s": [
+      { "jp": "草むらの奥で、低いうなり声が動いた。",
+        "en": "In the depths of the undergrowth, a low growl moved.",
+        "w": {
+          "草むら": "くさむら|undergrowth, clump of grass",
+          "奥": "おく|the depths, the back",
+          "低い": "ひくい|low",
+          "うなり声": "うなりごえ|growl",
+          "動いた": "うごいた|moved|動く, past"
+        } },
+      { "jp": "狼の群れが、焚き火の光の縁を回っている。",
+        "en": "A pack of wolves was circling the rim of the firelight.",
+        "w": {
+          "狼": "おおかみ|wolf",
+          "群れ": "むれ|pack, herd",
+          "焚き火": "たきび|campfire",
+          "光": "ひかり|light",
+          "縁": "ふち|rim, edge",
+          "回っている": "まわっている|is circling|回る + ている"
+        } }
+    ] },
+    { "sp": "ドレック", "s": [
+      { "jp": "「動くなよ。腹をすかせたやつらが、様子を見てるだけだ」",
+        "en": "\"Don't move. They're just hungry and sizing us up.\"",
+        "w": {
+          "動く": "うごく|to move",
+          "腹をすかせた": "はらをすかせた|hungry (with emptied bellies)|腹をすかす, past",
+          "やつら": "やつら|those guys (rough)",
+          "様子": "ようす|the situation, how things look",
+          "見てる": "みてる|are watching|見る + てる"
+        } },
+      { "jp": "「ぼんやりしてると、荷物ごと食われちまうぞ。火を強くしてくれ」",
+        "en": "\"Space out and they'll eat you, pack and all. Build up the fire.\"",
+        "w": {
+          "ぼんやりしてる": "ぼんやりしてる|spacing out|ぼんやりする + てる",
+          "荷物ごと": "にもつごと|pack and all|〜ごと = together with",
+          "食われ": "くわれ|get eaten (stem)|食う to eat (rough), passive",
+          "火": "ひ|fire",
+          "強くし": "つよくし|make stronger (stem)|強くする"
+        } },
+      { "jp": "「燃えてる枝を、一本こっちに投げるんだ」",
+        "en": "\"Grab a burning branch and throw it over here.\"",
+        "w": {
+          "燃えてる": "もえてる|burning|燃える + てる",
+          "枝": "えだ|branch",
+          "一本": "いっぽん|one (long object)",
+          "こっち": "こっち|this way, over here",
+          "投げる": "なげる|to throw"
+        } }
+    ] },
+    { "s": [
+      { "jp": "リナは震える手で枝をつかみ、火の粉ごと狼たちへ投げつけた。",
+        "en": "With a trembling hand Rina seized a branch and hurled it, sparks and all, at the wolves.",
+        "w": {
+          "リナ": "りな|Rina",
+          "震える": "ふるえる|trembling",
+          "手": "て|hand",
+          "枝": "えだ|branch",
+          "つかみ": "つかみ|grabbing (literary stem)|つかむ to grab",
+          "火の粉ごと": "ひのこごと|sparks and all|火の粉 sparks + 〜ごと together with",
+          "狼たち": "おおかみたち|the wolves",
+          "投げつけた": "なげつけた|hurled at|投げつける, past"
+        } },
+      { "jp": "影たちは一声うなって、闇の奥へ引き返していった。",
+        "en": "The shadows gave a single snarl and withdrew into the depths of the dark.",
+        "w": {
+          "影たち": "かげたち|the shadows|影 + たち plural",
+          "一声": "ひとこえ|a single cry",
+          "うなって": "うなって|snarling (て-form)|うなる to growl",
+          "闇": "やみ|darkness",
+          "奥": "おく|the depths",
+          "引き返していった": "ひきかえしていった|turned back and went away|引き返す + ていく, past"
+        } }
+    ] },
+    { "sp": "ドレック", "s": [
+      { "jp": "「へえ、やるじゃねえか」",
+        "en": "\"Huh. Not bad at all.\"",
+        "w": {
+          "へえ": "へえ|huh! (impressed)",
+          "やる": "やる|to do; (here) to have what it takes"
+        } },
+      { "jp": "「悲鳴を上げて逃げ出すかと思ったぜ。度胸は認めてやるよ」",
+        "en": "\"Figured you'd scream and bolt. I'll give you this much — you've got nerve.\"",
+        "w": {
+          "悲鳴": "ひめい|scream",
+          "上げて": "あげて|raising (て-form)|上げる to raise",
+          "逃げ出す": "にげだす|to run away, bolt",
+          "思った": "おもった|thought|思う, past",
+          "度胸": "どきょう|guts, nerve",
+          "認めてやる": "みとめてやる|I'll grant you that|認める to acknowledge + てやる (grant, rough-friendly)"
+        } }
+    ] },
+    { "s": [
+      { "jp": "火が落ち着くと、夜空には星がひとつずつ増えていった。",
+        "en": "As the fire settled, stars came out one by one in the night sky.",
+        "w": {
+          "火": "ひ|fire",
+          "落ち着く": "おちつく|to settle down",
+          "夜空": "よぞら|night sky",
+          "星": "ほし|star",
+          "ひとつずつ": "ひとつずつ|one at a time|ひとつ + ずつ each",
+          "増えていった": "ふえていった|kept increasing|増える + ていく, past"
+        } }
+    ] },
+    { "sp": "リナ", "s": [
+      { "jp": "「ねえ、どうして傭兵をやってるの？」",
+        "en": "\"Hey — why do you do mercenary work?\"",
+        "w": {
+          "傭兵": "ようへい|mercenary",
+          "やってる": "やってる|doing (as a job)|やる + てる"
+        } },
+      { "jp": "「あのおじいさんとは、昔からの知り合い？」",
+        "en": "\"And the old man — have you known him a long time?\"",
+        "w": {
+          "おじいさん": "おじいさん|old man (familiar-polite)",
+          "とは": "とは|with (as topic)|と + は",
+          "昔": "むかし|long ago, the past",
+          "知り合い": "しりあい|acquaintance"
+        } }
+    ] },
+    { "sp": "ドレック", "s": [
+      { "jp": "「……こういう静かな夜は、つい昔を思い出しちまうな」",
+        "en": "\"...Quiet nights like this, I end up remembering the old days whether I like it or not.\"",
+        "w": {
+          "こういう": "こういう|this kind of",
+          "静かな": "しずかな|quiet",
+          "夜": "よる|night",
+          "つい": "つい|without meaning to",
+          "昔": "むかし|the old days",
+          "思い出し": "おもいだし|remember (stem)|思い出す to recall"
+        } },
+      { "jp": "「昔、この右腕をひどく折って、傭兵として終わったと思ったんだ」",
+        "en": "\"Years back I broke this right arm bad, and figured I was finished as a mercenary.\"",
+        "w": {
+          "昔": "むかし|years back",
+          "右腕": "みぎうで|right arm",
+          "ひどく": "ひどく|badly|ひどい terrible",
+          "折って": "おって|breaking (て-form)|折る to break",
+          "傭兵": "ようへい|mercenary",
+          "終わった": "おわった|was finished|終わる, past",
+          "思った": "おもった|thought|思う, past"
+        } },
+      { "jp": "「どこの医者も、治せないと言った。けど、あのじいさんだけは別だったんだ」",
+        "en": "\"Every doctor said it couldn't be healed. But that old man was different.\"",
+        "w": {
+          "どこの": "どこの|every, whichever|どこ + の",
+          "医者": "いしゃ|doctor",
+          "治せない": "なおせない|can't heal|治す to cure, potential negative",
+          "言った": "いった|said|言う, past",
+          "けど": "けど|but (casual)",
+          "じいさん": "じいさん|the old man",
+          "別": "べつ|different"
+        } },
+      { "jp": "「だから、借りを返すだけだ。深い意味なんてねえよ」",
+        "en": "\"So I'm just paying back a debt. No deep meaning to it.\"",
+        "w": {
+          "だから": "だから|so, that's why",
+          "借り": "かり|debt (favor owed)",
+          "返す": "かえす|to repay, return",
+          "深い": "ふかい|deep",
+          "意味": "いみ|meaning"
+        } }
+    ] },
+    { "s": [
+      { "jp": "翌朝、朝霧の切れた丘の上で、ふたりは足を止めた。",
+        "en": "The next morning, on a hill where the mist had broken, the two came to a stop.",
+        "w": {
+          "翌朝": "よくあさ|the next morning",
+          "朝霧": "あさぎり|morning mist",
+          "切れた": "きれた|had cleared, broken|切れる, past",
+          "丘": "おか|hill",
+          "上": "うえ|top",
+          "ふたり": "ふたり|the two of them",
+          "足": "あし|feet",
+          "止めた": "とめた|stopped|止める, past"
+        } },
+      { "jp": "白い城壁が、地平線いっぱいに広がっている。王都アルデンだ。",
+        "en": "White city walls spread across the whole horizon. The royal capital, Alden.",
+        "w": {
+          "白い": "しろい|white",
+          "城壁": "じょうへき|city walls",
+          "地平線": "ちへいせん|horizon",
+          "いっぱい": "いっぱい|filling, the whole of",
+          "広がっている": "ひろがっている|spreads out|広がる + ている",
+          "王都アルデン": "おうとあるでん|the royal capital Alden"
+        } }
+    ] },
+    { "sp": "ドレック", "s": [
+      { "jp": "「見ろよ、着いたじゃねえか」",
+        "en": "\"Look at that — we made it, didn't we.\"",
+        "w": {
+          "見ろ": "みろ|look! (blunt imperative)|見る",
+          "着いた": "ついた|arrived|着く, past"
+        } },
+      { "jp": "「急ごうぜ。のんびりしてると、昼を過ぎちまう」",
+        "en": "\"Let's move. Dawdle and it'll be past noon before we know it.\"",
+        "w": {
+          "急ごう": "いそごう|let's hurry|急ぐ, volitional",
+          "のんびりしてる": "のんびりしてる|dawdling|のんびりする + てる",
+          "昼": "ひる|noon",
+          "過ぎ": "すぎ|pass (stem)|過ぎる to pass"
+        } }
+    ] },
+    { "s": [
+      { "jp": "門の前で、ドレックの仕事は終わりのはずだった。",
+        "en": "At the gate, Drek's job was supposed to be over.",
+        "w": {
+          "門": "もん|gate",
+          "前": "まえ|in front of",
+          "ドレック": "どれっく|Drek",
+          "仕事": "しごと|job",
+          "終わり": "おわり|the end"
+        } },
+      { "jp": "だが、彼は門を見上げると、面倒くさそうに頭をかいた。",
+        "en": "But he looked up at the gate and scratched his head like it was all a bother.",
+        "w": {
+          "彼": "かれ|he",
+          "門": "もん|gate",
+          "見上げる": "みあげる|to look up at",
+          "面倒くさそうに": "めんどうくさそうに|as if it were a pain|面倒くさい + そう, adverbial",
+          "頭": "あたま|head",
+          "かいた": "かいた|scratched|かく, past"
+        } }
+    ] },
+    { "sp": "ドレック", "s": [
+      { "jp": "「ったく、しょうがねえな。ここまで来たら、最後まで見届けてやるよ」",
+        "en": "\"Good grief. Fine — came this far, might as well see it through to the end.\"",
+        "w": {
+          "ったく": "ったく|good grief (clipped まったく)",
+          "しょうがねえ": "しょうがねえ|can't be helped (rough)|しょうがない + ねえ",
+          "来たら": "きたら|having come|来る + たら",
+          "最後": "さいご|the end, the last",
+          "見届けてやる": "みとどけてやる|see it through for you|見届ける to see through + てやる"
+        } },
+      { "jp": "「あんたの物語の続きが、ちょっと気になるんだ」",
+        "en": "\"I'm a little curious how your story goes, is all.\"",
+        "w": {
+          "あんた": "あんた|you (blunt casual)",
+          "物語": "ものがたり|story",
+          "続き": "つづき|continuation, what comes next",
+          "気になる": "きになる|to be curious about, to nag at one"
+        } }
+    ] },
+    { "s": [
+      { "jp": "大きな門が、ふたりの前でゆっくりと開き始めた。",
+        "en": "The great gate began, slowly, to open before them.",
+        "w": {
+          "大きな": "おおきな|big, great",
+          "門": "もん|gate",
+          "ふたり": "ふたり|the two of them",
+          "前": "まえ|in front of",
+          "ゆっくり": "ゆっくり|slowly",
+          "開き始めた": "ひらきはじめた|began to open|開く + 始める, past"
+        } }
+    ] }
+  ]
+}
