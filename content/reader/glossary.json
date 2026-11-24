@@ -1344,5 +1344,78 @@
     "type": "particle",
     "short": "I wonder (whether it is that…) (feminine)",
     "note": "の + かしら: feminine, often a little sarcastic in お嬢様 speech."
+  },
+  "からには": {
+    "type": "grammar",
+    "short": "now that ~ / since (I've) ~, (I must)",
+    "note": "Plain form + からには: having committed to X, you're obliged to follow through. 約束したからには守る = having promised, I keep it.",
+    "jlpt": "N2"
+  },
+  "どころか": {
+    "type": "grammar",
+    "short": "far from ~; let alone ~",
+    "note": "X どころか Y: not only not X, but (the opposite) Y. 褒められるどころか怪しまれる = far from being praised, I'm suspected.",
+    "jlpt": "N2"
+  },
+  "に違いない": {
+    "type": "grammar",
+    "short": "must be ~ (certain)",
+    "note": "Plain form + に違いない: strong conviction from evidence. Written/narrative flavour.",
+    "jlpt": "N3"
+  },
+  "ざるを得なかった": {
+    "of": "ざるを得ない"
+  },
+  "ざるを得ません": {
+    "of": "ざるを得ない"
+  },
+  "あります": {
+    "type": "verb",
+    "short": "there is; have (polite ある)"
+  },
+  "ありません": {
+    "type": "verb",
+    "short": "there isn't (polite ない)"
+  },
+  "でした": {
+    "type": "aux",
+    "short": "was (polite past of です)"
+  },
+  "でしょ": {
+    "type": "aux",
+    "short": "right? (casual でしょう)"
+  },
+  "わかる": {
+    "type": "verb",
+    "short": "to understand, know"
+  },
+  "わからない": {
+    "type": "verb",
+    "short": "don't understand / know (わかる, negative)"
+  },
+  "わかった": {
+    "type": "verb",
+    "short": "understood; got it (わかる, past)"
+  },
+  "わかって": {
+    "type": "verb",
+    "short": "understanding (わかる, て-form)"
+  },
+  "にもかかわらず": {
+    "type": "grammar",
+    "short": "despite, in spite of",
+    "note": "Plain form / noun + にもかかわらず: something happens contrary to what you'd expect. Formal; also sentence-initial: にもかかわらず、… = and yet.",
+    "jlpt": "N2"
+  },
+  "以来": {
+    "type": "grammar",
+    "short": "ever since ~",
+    "note": "て-form / noun + 以来: from that point on, continuing to now. 母がいなくなって以来 = ever since Mom disappeared.",
+    "jlpt": "N2"
+  },
+  "のかもしれない": {
+    "type": "grammar",
+    "short": "it may be that ~",
+    "note": "の (explanatory) + かもしれない: perhaps the situation is that ~."
   }
 }
