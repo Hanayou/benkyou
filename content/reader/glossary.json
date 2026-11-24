@@ -1502,5 +1502,53 @@
   },
   "に対する": {
     "of": "に対して"
+  },
+  "わけだ": {
+    "type": "grammar",
+    "short": "so that's why; it follows that ~",
+    "note": "Plain form + わけだ: a conclusion that naturally follows from what's known, or the 'aha' of understanding a reason.",
+    "jlpt": "N3"
+  },
+  "わけです": {
+    "of": "わけだ"
+  },
+  "わけか": {
+    "of": "わけだ"
+  },
+  "とは限らない": {
+    "type": "grammar",
+    "short": "not necessarily ~",
+    "note": "Plain form + とは限らない: it isn't always/necessarily so. Often with 必ずしも or からといって.",
+    "jlpt": "N2"
+  },
+  "とは限らん": {
+    "of": "とは限らない"
+  },
+  "とは限りません": {
+    "of": "とは限らない"
+  },
+  "とは限らへん": {
+    "of": "とは限らない"
+  },
+  "ないことはない": {
+    "type": "grammar",
+    "short": "it's not that ~ not (= it's possible, sort of)",
+    "note": "Double negative: できないことはない = it's not impossible / I could, I suppose. Hedged, reluctant yes.",
+    "jlpt": "N2"
+  },
+  "ないこともない": {
+    "of": "ないことはない"
+  },
+  "へんこともない": {
+    "of": "ないことはない"
+  },
+  "にすぎん": {
+    "of": "にすぎない"
+  },
+  "んことはない": {
+    "of": "ないことはない"
+  },
+  "わけですの": {
+    "of": "わけだ"
   }
 }
