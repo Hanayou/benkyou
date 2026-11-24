@@ -37,6 +37,12 @@
       "register": "お嬢様語 (noble young lady): わたくし, 〜ですわ/〜ですの/〜かしら, 〜ませ, refined keigo. Pure fiction-speak that instantly signals wealth and pride."
     },
     {
+      "name": "ヴァルター",
+      "kana": "ゔぁるたー",
+      "desc": "Count Walter Eisen, Viola's father and Keeper of the Great Clock. Cold, exacting, and devoted above all to the family name.",
+      "register": "Aristocratic patriarch: 私, plain imperatives and 〜なさい to his daughter, 〜ねばならん / 〜ならん, smooth keigo to peers. Authority in every sentence."
+    },
+    {
       "name": "オズ",
       "kana": "おず",
       "desc": "Sera's grandfather. Forty years a clockmaker in the lower ring. Few words, foul mouth, very good hands.",
@@ -64,6 +70,8 @@
   "chapters": [
     "ch1",
     "ch2",
-    "ch3"
+    "ch3",
+    "ch4",
+    "ch5"
   ]
 }

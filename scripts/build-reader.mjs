@@ -72,9 +72,10 @@ function tokenize(jp, w, where) {
         break; // wKeys sorted longest-first; w beats glossary at equal length
       }
     }
-    const cap = best ? Infinity : capAt(pos);
-    for (const k of glossKeys) {
-      if (k.length <= (best?.len ?? 0)) break;
+    // A w match at this position always wins (author intent): a longer
+    // glossary key must not swallow it (e.g. w 「の」 vs glossary 「ので」).
+    const cap = capAt(pos);
+    for (const k of best ? [] : glossKeys) {
       if (k.length > cap) continue;
       if (jp.startsWith(k, pos)) {
         best = { len: k.length, kind: 'g', key: k };

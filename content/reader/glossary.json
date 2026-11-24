@@ -1417,5 +1417,66 @@
     "type": "grammar",
     "short": "it may be that ~",
     "note": "の (explanatory) + かもしれない: perhaps the situation is that ~."
+  },
+  "わけがない": {
+    "type": "grammar",
+    "short": "there's no way ~; can't possibly",
+    "note": "Plain form + わけがない: flat logical impossibility. 戻ってくるわけがない = it can't possibly come back. Casual: わけない.",
+    "jlpt": "N2"
+  },
+  "わけがありません": {
+    "of": "わけがない"
+  },
+  "わけがなかった": {
+    "of": "わけがない"
+  },
+  "にすぎない": {
+    "type": "grammar",
+    "short": "merely, nothing more than",
+    "note": "Noun / plain form + にすぎない: downplays something as small or insignificant. 噂にすぎない = it's only a rumour.",
+    "jlpt": "N2"
+  },
+  "にすぎません": {
+    "of": "にすぎない"
+  },
+  "にすぎなかった": {
+    "of": "にすぎない"
+  },
+  "ばかりか": {
+    "type": "grammar",
+    "short": "not only ~ but (even)",
+    "note": "X ばかりか Y (も/さえ/まで): not just X, but on top of that Y — usually escalating. Written register.",
+    "jlpt": "N2"
+  },
+  "たまえ": {
+    "type": "aux",
+    "short": "do ~ (condescending command)",
+    "note": "Verb stem + たまえ: superior-to-inferior command. Old-fashioned aristocratic/boss speech."
+  },
+  "ではないか": {
+    "type": "aux",
+    "short": "isn't it? / let's ~ (formal, assertive)"
+  },
+  "ものか": {
+    "type": "particle",
+    "short": "no way (I'll) ~! (emphatic denial)"
+  },
+  "しかない": {
+    "type": "grammar",
+    "short": "have no choice but to; nothing but",
+    "note": "Dictionary form + しかない: the only option left."
+  },
+  "わかります": {
+    "type": "verb",
+    "short": "understand, know (polite わかる)"
+  },
+  "わかりません": {
+    "type": "verb",
+    "short": "don't understand / know (polite)"
+  },
+  "でして": {
+    "type": "aux",
+    "short": "(polite) is, and… / it's that… (て-form of です)",
+    "note": "Polite connective: 仲でしてね = we were (classmates), you see."
   }
 }
