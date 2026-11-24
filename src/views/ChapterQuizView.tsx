@@ -45,7 +45,7 @@ function buildQuestions(ch: ReaderChapter, gloss: Record<string, GlossEntry>): Q
   const vocab = ch.vocab;
   const newWords = shuffle(vocab.filter((v) => v.n));
   const pool = newWords.length >= 8 ? newWords : shuffle(vocab);
-  const take = pool.slice(0, 9);
+  const take = pool.slice(0, newWords.length >= 60 ? 15 : 9); // long chapters get a longer quiz
 
   take.forEach((v, i) => {
     const mode = i % 3; // rotate question types

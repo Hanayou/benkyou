@@ -21,6 +21,13 @@ mkdirSync(outDir, { recursive: true });
 
 const glossary = JSON.parse(readFileSync(join(srcDir, 'glossary.json'), 'utf8'));
 delete glossary._comment;
+// Alias entries ({"of": "ずにはいられない"}) are conjugated surfaces of a
+// canonical pattern: they tokenize on their own surface but resolve to the
+// canonical key for popups, focus counting and cloze questions.
+for (const [k, e] of Object.entries(glossary)) {
+  if (e.of && !glossary[e.of]) throw new Error(`glossary alias 「${k}」 points at missing 「${e.of}」`);
+}
+const canon = (k) => glossary[k].of ?? k;
 const glossKeys = Object.keys(glossary).sort((a, b) => b.length - a.length);
 
 const PUNCT = /[\s　。、！？!?…‥——―「」『』（）()《》〈〉・，,.：:；;≪≫]/;
@@ -118,6 +125,22 @@ for (const bookId of readdirSync(join(srcDir, 'books'))) {
   const book = JSON.parse(readFileSync(join(bookDir, 'book.json'), 'utf8'));
   mkdirSync(join(outDir, bookId), { recursive: true });
 
+  // Optional book lexicon (lexicon.json) + per-chapter "lex": word annotations
+  // that apply to every sentence — names, coined terms, words that recur
+  // constantly. Same "reading|gloss|base" format; sentence w always wins.
+  // Keys must be ≥2 chars so a lexicon entry can't silently mis-read a kanji
+  // that is part of a longer word (any leftover span still fails the build).
+  let bookLex = {};
+  try {
+    bookLex = parseW(JSON.parse(readFileSync(join(bookDir, 'lexicon.json'), 'utf8')), `${bookId}/lexicon`);
+  } catch (e) {
+    if (e.code !== 'ENOENT') errors.push(`${bookId}/lexicon.json: ${e.message}`);
+  }
+  const checkLex = (lex, where) => {
+    for (const k of Object.keys(lex)) if ([...k].length < 2) errors.push(`${where}: lexicon key 「${k}」 must be ≥2 chars`);
+  };
+  checkLex(bookLex, `${bookId}/lexicon`);
+
   const ledger = new Set(); // vocab text|reading seen in earlier chapters
   const chapterMeta = [];
 
@@ -141,6 +164,8 @@ for (const bookId of readdirSync(join(srcDir, 'books'))) {
       if (!glossary[f]) errors.push(`${where0}: focus pattern 「${f}」 is not in glossary.json`);
     }
 
+    const chLex = { ...bookLex, ...parseW(ch.lex ?? {}, `${where0}/lex`) };
+    checkLex(ch.lex ?? {}, `${where0}/lex`);
     const vocab = [];
     const vocabIdx = new Map(); // text|reading -> idx
     const grammarUsed = new Set();
@@ -150,11 +175,16 @@ for (const bookId of readdirSync(join(srcDir, 'books'))) {
     let charCount = 0;
 
     ch.paras?.forEach((para, pi) => {
+      if (para.hr) {
+        paras.push({ hr: 1, s: [] }); // scene break — keeps para indices aligned for clozeRefs
+        return;
+      }
       const sents = [];
       para.s?.forEach((sent, si) => {
         const where = `${where0} ¶${pi + 1}.${si + 1}`;
         if (!sent.jp || !sent.en) errors.push(`${where}: sentence needs jp and en`);
-        const w = parseW(sent.w ?? {}, where);
+        const ownW = parseW(sent.w ?? {}, where);
+        const w = { ...chLex, ...ownW };
         const toks = tokenize(sent.jp ?? '', w, where);
         const usedW = new Set();
         const t = toks.map((tok) => {
@@ -171,13 +201,14 @@ for (const bookId of readdirSync(join(srcDir, 'books'))) {
             }
             return [tok.key, idx];
           }
-          grammarUsed.add(tok.key);
-          if ((ch.focus ?? []).includes(tok.key)) {
-            (clozeRefs[tok.key] ??= []).push([pi, si]);
+          const ck = canon(tok.key);
+          grammarUsed.add(ck);
+          if ((ch.focus ?? []).includes(ck)) {
+            (clozeRefs[ck] ??= []).push([pi, si]);
           }
-          return [tok.key, tok.key];
+          return [tok.key, ck];
         });
-        for (const k of Object.keys(w)) {
+        for (const k of Object.keys(ownW)) {
           if (!usedW.has(k)) warnings.push(`${where}: w entry 「${k}」 never matched in the sentence`);
         }
         sents.push({ t, en: sent.en });
@@ -219,6 +250,7 @@ for (const bookId of readdirSync(join(srcDir, 'books'))) {
   }
 
   index.books.push({
+    order: book.order ?? 99,
     id: book.id,
     title: book.title,
     titleKana: book.titleKana,
@@ -233,6 +265,7 @@ for (const bookId of readdirSync(join(srcDir, 'books'))) {
   });
 }
 
+index.books.sort((a, b) => a.order - b.order);
 writeFileSync(join(outDir, 'index.json'), JSON.stringify(index));
 writeFileSync(join(outDir, 'glossary.json'), JSON.stringify(glossary));
 

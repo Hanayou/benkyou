@@ -1,0 +1,61 @@
+{
+  "order": 1,
+  "id": "sakasa",
+  "title": "逆さ時計の魔女",
+  "titleKana": "さかさどけいのまじょ",
+  "titleEn": "The Witch of the Backward Clock",
+  "tagline": "十年動かなかった母の時計が、逆さに回り始めた。",
+  "taglineEn": "Her mother's watch hadn't moved in ten years. Then it began to run backwards.",
+  "level": "N2+",
+  "genre": "steampunk fantasy · academy · time magic",
+  "registers": [
+    "literary narration",
+    "casual",
+    "関西弁 Kansai",
+    "お嬢様語 noble lady",
+    "gruff craftsman",
+    "polite standard",
+    "formal villain"
+  ],
+  "characters": [
+    {
+      "name": "セラ",
+      "kana": "せら",
+      "desc": "16. Scholarship student in the Academy's Mechanics course, granddaughter of a lower-ring clockmaker. Her mother vanished ten years ago and left a watch that has never run.",
+      "register": "Casual feminine-neutral: あたし, plain forms, sentence-final の/よ/ね, contractions (〜てる, 〜ちゃう, わかんない)."
+    },
+    {
+      "name": "ニコ",
+      "kana": "にこ",
+      "desc": "Sera's classmate and best friend. Eldest of six, son of a canal boatman, building a flying machine in a rented shed with parts of dubious origin.",
+      "register": "関西弁 (Kansai dialect): や for だ, 〜へん for 〜ない, 〜ねん/〜やん endings, ほんま, あかん, 自分 for 'you'. In fiction, the voice of merchants, comedians and big-hearted friends."
+    },
+    {
+      "name": "ヴィオラ",
+      "kana": "ゔぃおら",
+      "desc": "Top first-year of the Chronomancy course, heir of House Eisen, which has kept the Great Clock for generations. Proud, sharp, and carrying something she tells no one.",
+      "register": "お嬢様語 (noble young lady): わたくし, 〜ですわ/〜ですの/〜かしら, 〜ませ, refined keigo. Pure fiction-speak that instantly signals wealth and pride."
+    },
+    {
+      "name": "オズ",
+      "kana": "おず",
+      "desc": "Sera's grandfather. Forty years a clockmaker in the lower ring. Few words, foul mouth, very good hands.",
+      "register": "Gruff old craftsman: 〜ねえ for 〜ない, 〜やがる, 〜だぞ, bare imperatives (行け). Downtown-Tokyo old-man flavour."
+    },
+    {
+      "name": "レーゲン",
+      "kana": "れーげん",
+      "desc": "Mechanics instructor. Thin, greying, permanently sleepy-eyed — and nobody has ever dozed off in his class.",
+      "register": "Standard polite teacher speech: です/ます, 〜てください. The neutral baseline every other register departs from."
+    },
+    {
+      "name": "灰の男",
+      "kana": "はいのおとこ",
+      "desc": "A man in a grey coat and grey mask. Watches from high places.",
+      "register": "Cold formal villain style: 〜のだ/〜である, archaic negatives (〜ぬ). The voice of proclamations and masterminds."
+    }
+  ],
+  "chapters": [
+    "ch1"
+  ]
+}

@@ -1,4 +1,5 @@
 {
+  "order": 2,
   "id": "hoshiwari",
   "title": "星割りの塔",
   "titleKana": "ほしわりのとう",
@@ -7,7 +8,13 @@
   "taglineEn": "A black tower appears overnight, and Rina's story begins.",
   "level": "N2+",
   "genre": "fantasy",
-  "registers": ["literary narration", "casual", "archaic sage (役割語)", "rough masculine", "court keigo"],
+  "registers": [
+    "literary narration",
+    "casual",
+    "archaic sage (役割語)",
+    "rough masculine",
+    "court keigo"
+  ],
   "characters": [
     {
       "name": "リナ",
@@ -34,5 +41,10 @@
       "register": "Court keigo: 〜でございます, いらっしゃる/おっしゃる, humble いたす/おる, 〜ませ. The register of palaces, hotels, and formal business."
     }
   ],
-  "chapters": ["ch1", "ch2", "ch3", "ch4"]
+  "chapters": [
+    "ch1",
+    "ch2",
+    "ch3",
+    "ch4"
+  ]
 }

@@ -966,6 +966,7 @@ p {
   background: color-mix(in srgb, var(--accent) 8%, var(--card));
 }
 .reader-body {
+  position: relative; /* offsetParent for paragraph position memory */
   flex: 1;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -973,6 +974,20 @@ p {
 }
 .rpara {
   margin: 0 0 18px;
+}
+.rbreak {
+  text-align: center;
+  color: var(--ink2);
+  font-size: 13px;
+  letter-spacing: 1.5em;
+  padding-left: 1.5em;
+  margin: 30px 0;
+}
+.rprogress {
+  height: 2px;
+  background: var(--accent);
+  flex: none;
+  transition: width 0.15s;
 }
 .rjp {
   margin: 0;
@@ -1214,4 +1229,11 @@ p {
 .about-credits {
   font-size: 12.5px;
   line-height: 1.6;
+}
+
+.rv-sum {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 4px 0 8px;
 }

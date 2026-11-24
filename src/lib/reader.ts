@@ -47,6 +47,7 @@ export interface RSent {
 
 export interface RPara {
   sp?: string;
+  hr?: 1; // scene break
   s: RSent[];
 }
 

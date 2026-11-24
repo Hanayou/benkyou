@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'preact/hooks';
+import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { db } from '../lib/db';
 import {
   getChapter,
@@ -47,6 +47,52 @@ export function ReaderView({
   const [gloss, setGloss] = useState<Record<string, GlossEntry> | null>(null);
   const [pop, setPop] = useState<Popover | null>(null);
   const [prefs, setPrefs] = useState<ReaderPrefs>(loadPrefs());
+  const [pct, setPct] = useState(0);
+  const bodyRef = useRef<HTMLDivElement>(null);
+  const posKey = `benkyou.rpos.${book.id}/${chId}`;
+
+  // Long chapters: remember the paragraph you were on and come back to it.
+  useEffect(() => {
+    const body = bodyRef.current;
+    if (!ch || !body) return;
+    let saved = 0;
+    try {
+      saved = parseInt(localStorage.getItem(posKey) ?? '0', 10) || 0;
+    } catch {
+      /* fine */
+    }
+    const el = body.querySelector<HTMLElement>(`[data-pi="${saved}"]`);
+    body.scrollTop = saved > 0 && el ? el.offsetTop - 12 : 0;
+    let raf = 0;
+    const onScroll = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        // progress = how far through the story (the review section doesn't count)
+        const end = body.querySelector<HTMLElement>('.review')?.offsetTop ?? body.scrollHeight;
+        const max = end - body.clientHeight;
+        setPct(max > 0 ? Math.min(100, Math.round((body.scrollTop / max) * 100)) : 100);
+        const paras = body.querySelectorAll<HTMLElement>('[data-pi]');
+        let cur = paras.length ? Number(paras[paras.length - 1].dataset.pi) : 0;
+        for (const p of paras) {
+          if (p.offsetTop + p.offsetHeight > body.scrollTop + 12) {
+            cur = Number(p.dataset.pi);
+            break;
+          }
+        }
+        try {
+          localStorage.setItem(posKey, String(cur));
+        } catch {
+          /* fine */
+        }
+      });
+    };
+    onScroll();
+    body.addEventListener('scroll', onScroll, { passive: true });
+    return () => {
+      cancelAnimationFrame(raf);
+      body.removeEventListener('scroll', onScroll);
+    };
+  }, [ch, posKey]);
 
   useEffect(() => {
     setCh(null);
@@ -170,13 +216,19 @@ export function ReaderView({
         </div>
       </header>
 
-      <div class={`reader-body${prefs.furi ? ' with-furi' : ''}`}>
+      <div class="rprogress" style={`width:${pct}%`} />
+      <div class={`reader-body${prefs.furi ? ' with-furi' : ''}`} ref={bodyRef}>
         {!ch || !gloss ? (
           <div class="page-center muted">Loading…</div>
         ) : (
           <>
-            {ch.paras.map((para) => (
-              <div class="rpara">
+            {ch.paras.map((para, pi) =>
+              para.hr ? (
+                <div class="rbreak" data-pi={pi} aria-hidden="true">
+                  ◇
+                </div>
+              ) : (
+              <div class="rpara" data-pi={pi}>
                 {para.sp && speakerChip(para.sp)}
                 {prefs.split ? (
                   <div class="rsplit">
@@ -195,7 +247,8 @@ export function ReaderView({
                   </p>
                 )}
               </div>
-            ))}
+              )
+            )}
 
             <section class="review">
               <h3 class="section-title">
@@ -227,7 +280,8 @@ export function ReaderView({
                     </div>
                   ))}
               </div>
-              <div class="card review-vocab">
+              <details class="card review-vocab" open={ch.vocab.filter((v) => v.n).length <= 60}>
+                <summary class="rv-sum">New words ({ch.vocab.filter((v) => v.n).length})</summary>
                 {ch.vocab
                   .filter((v) => v.n)
                   .map((v) => (
@@ -241,7 +295,7 @@ export function ReaderView({
                       <span class="rv-g">{v.g}</span>
                     </div>
                   ))}
-              </div>
+              </details>
               <div class="review-actions">
                 <button type="button" class="btn btn-primary" onClick={onQuiz}>
                   Chapter quiz
