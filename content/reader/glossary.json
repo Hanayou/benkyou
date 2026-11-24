@@ -1550,5 +1550,32 @@
   },
   "わけですの": {
     "of": "わけだ"
+  },
+  "かと思うと": {
+    "type": "grammar",
+    "short": "no sooner ~ than; the moment ~",
+    "note": "た-form + かと思うと / かと思ったら: one thing happens and immediately (surprisingly) another follows. Narrative, about others — not your own actions.",
+    "jlpt": "N2"
+  },
+  "かと思ったら": {
+    "of": "かと思うと"
+  },
+  "かと思えば": {
+    "of": "かと思うと"
+  },
+  "ばかりに": {
+    "type": "grammar",
+    "short": "simply because ~ (with bad result)",
+    "note": "Plain form + ばかりに: one small cause led to an unwanted outcome. 欲張ったばかりに = all because he got greedy.",
+    "jlpt": "N2"
+  },
+  "まいと": {
+    "type": "grammar",
+    "short": "trying not to ~",
+    "note": "Dictionary form + まいと(して): determined effort to avoid something. 振り落とされまいと = so as not to be thrown off.",
+    "jlpt": "N2"
+  },
+  "まいとして": {
+    "of": "まいと"
   }
 }
