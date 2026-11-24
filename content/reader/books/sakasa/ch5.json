@@ -1,0 +1,2194 @@
+{
+  "title": "評議の間",
+  "titleEn": "The Council Chamber",
+  "focus": ["をめぐって", "からといって", "に対して"],
+  "paras": [
+    {
+      "s": [
+        {
+          "jp": "計算は、三日がかりになった。",
+          "en": "The calculation took three days.",
+          "w": {
+            "計算": "けいさん|calculation",
+            "三日がかり": "みっかがかり|taking three days"
+          }
+        },
+        {
+          "jp": "レーゲン先生から借り受けた十年分の記録と、ヴィオラが破り取ってきた帳簿の一頁。",
+          "en": "Ten years of records on loan from Instructor Regen, and the single page Viola had torn from the ledger.",
+          "w": {
+            "借り受けた": "かりうけた|borrowed|借り受ける, past",
+            "十年分": "じゅうねんぶん|ten years' worth",
+            "記録": "きろく|records",
+            "破り取ってきた": "やぶりとってきた|had torn out (and brought)|破り取る + てくる, past",
+            "帳簿": "ちょうぼ|ledger",
+            "一頁": "いちぺーじ|one page"
+          }
+        },
+        {
+          "jp": "ニコは倉庫の壁一面に紙を貼りつけ、白墨でびっしりと数字を書き連ねていった。",
+          "en": "Niko papered an entire wall of the warehouse and covered it in chalked figures.",
+          "w": {
+            "倉庫": "そうこ|warehouse",
+            "壁一面": "かべいちめん|an entire wall",
+            "紙": "かみ|paper",
+            "貼りつけ": "はりつけ|paste up (stem)|貼りつける",
+            "白墨": "はくぼく|chalk",
+            "びっしりと": "びっしりと|densely",
+            "数字": "すうじ|figures",
+            "書き連ねていった": "かきつらねていった|wrote out in long rows|書き連ねる + ていく, past"
+          }
+        },
+        {
+          "jp": "学院の文献によれば、刻晶片ひとつに込められている時間は、およそ二分。",
+          "en": "According to the Academy's literature, a single time shard holds about two minutes.",
+          "w": {
+            "文献": "ぶんけん|literature, documents",
+            "によれば": "によれば|according to",
+            "込められている": "こめられている|is contained|込める, passive + ている",
+            "時間": "じかん|time",
+            "およそ": "およそ|about",
+            "二分": "にふん|two minutes"
+          }
+        },
+        {
+          "jp": "帳簿に記された一月分の納品数から、十年分の総量を推し量る。",
+          "en": "From one month's deliveries in the ledger, they estimated the ten-year total.",
+          "w": {
+            "帳簿": "ちょうぼ|ledger",
+            "記された": "しるされた|recorded|記す, passive past",
+            "一月分": "ひとつきぶん|one month's worth",
+            "納品数": "のうひんすう|number of deliveries",
+            "十年分": "じゅうねんぶん|ten years' worth",
+            "総量": "そうりょう|total quantity",
+            "推し量る": "おしはかる|to estimate, infer"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ニコ",
+      "s": [
+        {
+          "jp": "「……あかん。何べん計算しても、合わへん」",
+          "en": "\"...No good. However many times I run it, it doesn't add up.\"",
+          "w": {
+            "何べん": "なんべん|however many times",
+            "計算して": "けいさんして|calculating|計算する, て-form",
+            "も": "も|even (〜ても)",
+            "合わへん": "あわへん|doesn't match (Kansai 合わない)"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "三日目の夕方、ニコはとうとう白墨を放り出した。",
+          "en": "On the evening of the third day, Niko finally flung down the chalk.",
+          "w": {
+            "三日目": "みっかめ|the third day",
+            "夕方": "ゆうがた|evening",
+            "とうとう": "とうとう|finally",
+            "白墨": "はくぼく|chalk",
+            "放り出した": "ほうりだした|flung aside|放り出す, past"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ニコ",
+      "s": [
+        {
+          "jp": "「なくなった時間に対して、刻晶片の分は、どない多めに見積もっても三十分の一くらいや」",
+          "en": "\"Against all the time that's gone missing, the shards account for maybe a thirtieth, however generously you count.\"",
+          "w": {
+            "なくなった": "なくなった|lost, gone|なくなる, past",
+            "時間": "じかん|time",
+            "分": "ぶん|portion, share",
+            "どない": "どない|however (Kansai どんなに)",
+            "多めに": "おおめに|generously, on the high side",
+            "見積もっても": "みつもっても|even estimating|見積もる + ても",
+            "三十分の一": "さんじゅうぶんのいち|one thirtieth",
+            "や": "や|is (Kansai だ)"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "セラ",
+      "s": [
+        {
+          "jp": "「三十分の一？」",
+          "en": "\"A thirtieth?\"",
+          "w": {
+            "三十分の一": "さんじゅうぶんのいち|one thirtieth"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ニコ",
+      "s": [
+        {
+          "jp": "「せや。残りの二十九は、どっか別のとこに消えとる」",
+          "en": "\"Yep. The other twenty-nine are vanishing somewhere else.\"",
+          "w": {
+            "残り": "のこり|the rest",
+            "二十九": "にじゅうく|twenty-nine",
+            "どっか": "どっか|somewhere (casual どこか)",
+            "別": "べつ|other",
+            "とこ": "とこ|place",
+            "消えとる": "きえとる|are vanishing (Kansai 消えている)|消える + とる"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "セラは、壁を埋め尽くす数字を見上げた。",
+          "en": "Sera looked up at the figures covering the wall.",
+          "w": {
+            "壁": "かべ|wall",
+            "埋め尽くす": "うめつくす|to fill completely",
+            "数字": "すうじ|figures",
+            "見上げた": "みあげた|looked up at|見上げる, past"
+          }
+        },
+        {
+          "jp": "整然と並んだ数字の列が、出口のない迷路のように見える。",
+          "en": "The orderly columns of numbers looked like a maze without an exit.",
+          "w": {
+            "整然と": "せいぜんと|neatly, in good order",
+            "並んだ": "ならんだ|lined up|並ぶ, past",
+            "数字": "すうじ|numbers",
+            "列": "れつ|columns, rows",
+            "出口": "でぐち|exit",
+            "迷路": "めいろ|maze",
+            "見える": "みえる|to look, appear"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "セラ",
+      "s": [
+        {
+          "jp": "「じゃあ、アイゼン家は……」",
+          "en": "\"So House Eisen is...\"",
+          "w": {
+            "じゃあ": "じゃあ|then, so",
+            "家": "け|House (of)"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ニコ",
+      "s": [
+        {
+          "jp": "「刻晶片を売っとるのは、褒められたことやない。けど、大泥棒は別におる、っちゅうこっちゃ」",
+          "en": "\"Selling shards is nothing to be proud of. But the big thief's someone else. That's what it comes to.\"",
+          "w": {
+            "売っとる": "うっとる|are selling (Kansai)|売る + とる",
+            "褒められた": "ほめられた|praiseworthy|褒める, passive past",
+            "やない": "やない|is not (Kansai じゃない)",
+            "大泥棒": "おおどろぼう|master thief",
+            "別に": "べつに|separately, elsewhere",
+            "おる": "おる|there is (person) (Kansai/humble いる)",
+            "っちゅうこっちゃ": "っちゅうこっちゃ|that's what it means (Kansai ということだ)"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "刻晶片を売っているからといって、アイゼン家が時間泥棒の張本人だとは言いきれない。",
+          "en": "Just because they were selling time shards didn't mean House Eisen were the real culprits.",
+          "w": {
+            "売っている": "うっている|are selling|売る + ている",
+            "家": "け|House (of)",
+            "時間泥棒": "じかんどろぼう|time thief",
+            "張本人": "ちょうほんにん|ringleader, the one responsible",
+            "言いきれない": "いいきれない|can't say for sure|言いきる, potential negative"
+          }
+        },
+        {
+          "jp": "ヴィオラに、一刻も早く知らせてあげたかった。",
+          "en": "She wanted to tell Viola as soon as she possibly could.",
+          "w": {
+            "一刻も早く": "いっこくもはやく|as soon as possible",
+            "知らせてあげたかった": "しらせてあげたかった|wanted to let (her) know|知らせる + てあげる + たい, past"
+          }
+        },
+        {
+          "jp": "けれど、そのヴィオラは今日、学院に姿を見せていない。",
+          "en": "But that very Viola hadn't shown her face at the Academy today.",
+          "w": {
+            "今日": "きょう|today",
+            "姿を見せていない": "すがたをみせていない|hasn't shown up|姿を見せる + ている, negative"
+          }
+        },
+        {
+          "jp": "今夜、大時計塔で開かれる評議会に、父親とともに出席するのだ。",
+          "en": "Tonight she was attending the council at the Great Clock Tower with her father.",
+          "w": {
+            "今夜": "こんや|tonight",
+            "開かれる": "ひらかれる|to be held|開く, passive",
+            "父親": "ちちおや|father",
+            "とともに": "とともに|together with",
+            "出席する": "しゅっせきする|to attend"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ニコ",
+      "s": [
+        {
+          "jp": "「なあ、セラ」",
+          "en": "\"Hey, Sera.\""
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "白墨の粉にまみれた手を払いながら、ニコが言った。",
+          "en": "Brushing the chalk dust off his hands, Niko spoke.",
+          "w": {
+            "白墨": "はくぼく|chalk",
+            "粉": "こな|powder, dust",
+            "まみれた": "まみれた|covered in|まみれる, past",
+            "手": "て|hands",
+            "払いながら": "はらいながら|while brushing off|払う + ながら",
+            "言った": "いった|said"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ニコ",
+      "s": [
+        {
+          "jp": "「あの灰色の男、言うとったよな。『盗んどる奴を知っとる』て」",
+          "en": "\"That grey bloke said it, didn't he. 'I know who's stealing it.'\"",
+          "w": {
+            "灰色": "はいいろ|grey",
+            "男": "おとこ|man",
+            "言うとった": "いうとった|was saying (Kansai 言っていた)|言う + とる, past",
+            "盗んどる": "ぬすんどる|is stealing (Kansai)|盗む + とる",
+            "奴": "やつ|guy (rough)",
+            "知っとる": "しっとる|know (Kansai)|知る + とる",
+            "て": "て|(quoting) — casual って"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "セラ",
+      "s": [
+        {
+          "jp": "「……うん」",
+          "en": "\"...Yeah.\"",
+          "w": {
+            "うん": "うん|yeah"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ニコ",
+      "s": [
+        {
+          "jp": "「あいつの言うこと、案外ほんまやったんかもしれへんな」",
+          "en": "\"Maybe what he said was actually true.\"",
+          "w": {
+            "あいつ": "あいつ|that guy",
+            "言うこと": "いうこと|what (he) says",
+            "案外": "あんがい|unexpectedly, actually",
+            "やったん": "やったん|was (it that) (Kansai だったの)",
+            "かもしれへん": "かもしれへん|might be (Kansai かもしれない)"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "セラは答えずに、胸ポケットの時計に触れた。",
+          "en": "Without answering, Sera touched the watch in her breast pocket.",
+          "w": {
+            "答えずに": "こたえずに|without answering|答える + ずに",
+            "胸ポケット": "むねぽけっと|breast pocket",
+            "触れた": "ふれた|touched|触れる, past"
+          }
+        },
+        {
+          "jp": "逆向きの鼓動が、指先にかすかに伝わってくる。",
+          "en": "Its backward heartbeat came faintly through to her fingertips.",
+          "w": {
+            "逆向き": "ぎゃくむき|backwards",
+            "鼓動": "こどう|heartbeat",
+            "指先": "ゆびさき|fingertips",
+            "かすかに": "かすかに|faintly",
+            "伝わってくる": "つたわってくる|comes through|伝わる + てくる"
+          }
+        }
+      ]
+    },
+    { "hr": true },
+    {
+      "s": [
+        {
+          "jp": "大時計塔の最上階には、評議の間と呼ばれる広間がある。",
+          "en": "On the top floor of the Great Clock Tower is a hall called the Council Chamber.",
+          "w": {
+            "最上階": "さいじょうかい|top floor",
+            "呼ばれる": "よばれる|to be called|呼ぶ, passive",
+            "広間": "ひろま|hall"
+          }
+        },
+        {
+          "jp": "巨大な文字盤の裏側に設けられたその部屋からは、半ば透き通った文字盤越しに、夕暮れの街が一望できた。",
+          "en": "Built into the back of the giant dial, the room looked out through its half-translucent face over the whole city at dusk.",
+          "w": {
+            "巨大な": "きょだいな|giant",
+            "裏側": "うらがわ|back side",
+            "設けられた": "もうけられた|set up, built|設ける, passive past",
+            "部屋": "へや|room",
+            "半ば": "なかば|half",
+            "透き通った": "すきとおった|transparent",
+            "越し": "ごし|through, across",
+            "夕暮れ": "ゆうぐれ|dusk",
+            "街": "まち|city",
+            "一望できた": "いちぼうできた|could be seen at a glance|一望する, potential past"
+          }
+        },
+        {
+          "jp": "歯車の回る低い唸りが、絶えず床の下から響いてくる。",
+          "en": "The low drone of turning gears rose ceaselessly from beneath the floor.",
+          "w": {
+            "回る": "まわる|to turn",
+            "低い": "ひくい|low",
+            "唸り": "うなり|drone, hum",
+            "絶えず": "たえず|ceaselessly",
+            "床": "ゆか|floor",
+            "下": "した|below",
+            "響いてくる": "ひびいてくる|resounds (up)|響く + てくる"
+          }
+        },
+        {
+          "jp": "円卓を囲むのは、ヴェルンを治める十二の名家の当主たち。",
+          "en": "Around the round table sat the heads of the twelve great houses that governed Vern.",
+          "w": {
+            "円卓": "えんたく|round table",
+            "囲む": "かこむ|to surround",
+            "治める": "おさめる|to govern",
+            "十二": "じゅうに|twelve",
+            "名家": "めいか|great houses",
+            "当主たち": "とうしゅたち|heads of the houses"
+          }
+        },
+        {
+          "jp": "時晶の扱いをめぐって、これまで幾度となく意見が割れてきた顔ぶれだ。",
+          "en": "The same faces that had split again and again over how the time crystal should be handled.",
+          "w": {
+            "扱い": "あつかい|handling, treatment",
+            "これまで": "これまで|until now",
+            "幾度となく": "いくどとなく|time and again",
+            "意見": "いけん|opinion",
+            "割れてきた": "われてきた|have been divided|割れる + てくる, past",
+            "顔ぶれ": "かおぶれ|line-up of people"
+          }
+        },
+        {
+          "jp": "ローゼンベルク伯爵夫人の姿もあった。今宵も、不自然なほど若々しい。",
+          "en": "The Countess Rosenberg was there too. Unnaturally youthful, as ever.",
+          "w": {
+            "姿": "すがた|figure, presence",
+            "今宵": "こよい|tonight (literary)",
+            "不自然な": "ふしぜんな|unnatural",
+            "若々しい": "わかわかしい|youthful"
+          }
+        },
+        {
+          "jp": "ヴィオラは父の斜め後ろに控え、扇を握りしめていた。",
+          "en": "Viola waited at an angle behind her father, gripping her fan.",
+          "w": {
+            "父": "ちち|father",
+            "斜め": "ななめ|diagonally",
+            "後ろ": "うしろ|behind",
+            "控え": "ひかえ|wait in attendance (stem)|控える",
+            "扇": "おうぎ|fan",
+            "握りしめていた": "にぎりしめていた|was gripping tight|握りしめる + ていた"
+          }
+        },
+        {
+          "jp": "帳簿に並んでいた名前が、ここにいる者たちの顔と、ひとつ、またひとつと重なっていく。",
+          "en": "One by one, the names in the ledger fitted themselves onto the faces in this room.",
+          "w": {
+            "帳簿": "ちょうぼ|ledger",
+            "並んでいた": "ならんでいた|were lined up",
+            "名前": "なまえ|names",
+            "者たち": "ものたち|people",
+            "顔": "かお|faces",
+            "重なっていく": "かさなっていく|overlap, one after another|重なる + ていく"
+          }
+        },
+        {
+          "jp": "吐き気がした。",
+          "en": "She felt sick.",
+          "w": {
+            "吐き気": "はきけ|nausea"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "グレゴール学院長",
+      "s": [
+        {
+          "jp": "「では、本日の議題に入ろう」",
+          "en": "\"Then let us turn to today's business.\"",
+          "w": {
+            "本日": "ほんじつ|today",
+            "議題": "ぎだい|agenda item",
+            "入ろう": "はいろう|let us enter|入る, volitional"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "議長席から、しわがれてはいるが、よく通る声が響いた。",
+          "en": "From the chair came a voice, cracked with age but carrying well.",
+          "w": {
+            "議長席": "ぎちょうせき|chairman's seat",
+            "しわがれて": "しわがれて|hoarse, cracked|しわがれる, て-form",
+            "いる": "いる|is (〜てはいる = it is ~, but…)",
+            "よく通る": "よくとおる|carrying (of a voice)",
+            "声": "こえ|voice",
+            "響いた": "ひびいた|rang out"
+          }
+        },
+        {
+          "jp": "学院長グレゴール。",
+          "en": "Rector Gregor."
+        },
+        {
+          "jp": "白い髭をたくわえ、黒い礼服に身を包んだ老人だ。",
+          "en": "An old man with a white beard, dressed in a black formal coat.",
+          "w": {
+            "白い": "しろい|white",
+            "髭": "ひげ|beard",
+            "たくわえ": "たくわえ|grow, keep (a beard) (stem)|たくわえる",
+            "黒い": "くろい|black",
+            "礼服": "れいふく|formal dress",
+            "身を包んだ": "みをつつんだ|clad in|身を包む, past",
+            "老人": "ろうじん|old man"
+          }
+        },
+        {
+          "jp": "学院を創設した一族の末裔で、ヴィオラが物心ついたころから、ずっと学院長の座にある。",
+          "en": "A descendant of the family that founded the Academy, he had held the Rector's chair for as long as Viola could remember.",
+          "w": {
+            "創設した": "そうせつした|founded|創設する, past",
+            "一族": "いちぞく|family, clan",
+            "末裔": "まつえい|descendant",
+            "物心ついた": "ものごころついた|became old enough to remember",
+            "ころ": "ころ|time",
+            "座": "ざ|seat, position"
+          }
+        },
+        {
+          "jp": "穏やかな笑みを絶やさぬ人柄で、生徒たちからの人望も厚い。",
+          "en": "Never without a gentle smile, he was deeply loved by the students.",
+          "w": {
+            "穏やかな": "おだやかな|gentle",
+            "笑み": "えみ|smile",
+            "絶やさぬ": "たやさぬ|never letting fade (literary 絶やさない)|絶やす, classical negative",
+            "人柄": "ひとがら|personality, character",
+            "生徒たち": "せいとたち|students",
+            "人望": "じんぼう|popularity, esteem",
+            "厚い": "あつい|deep, warm (lit. thick)"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "グレゴール学院長",
+      "s": [
+        {
+          "jp": "「諸君も知ってのとおり、ここひと月、時晶の不調が続いている」",
+          "en": "\"As you are all aware, the time crystal has been ailing this past month.\"",
+          "w": {
+            "諸君": "しょくん|gentlemen, all of you",
+            "知ってのとおり": "しってのとおり|as you know",
+            "ここひと月": "ここひとつき|this past month",
+            "不調": "ふちょう|malfunction, ill health",
+            "続いている": "つづいている|has been continuing|続く + ている"
+          }
+        },
+        {
+          "jp": "「先日の事故は、幸いにも死者を出さずに済んだ。だが、次もそうとは限らん」",
+          "en": "\"The recent accident, by good fortune, cost no lives. But there is no guarantee the next will be so kind.\"",
+          "w": {
+            "先日": "せんじつ|the other day",
+            "事故": "じこ|accident",
+            "幸いにも": "さいわいにも|fortunately",
+            "死者": "ししゃ|deaths",
+            "出さずに": "ださずに|without causing|出す + ずに",
+            "済んだ": "すんだ|got by|済む, past",
+            "次": "つぎ|next",
+            "そう": "そう|so",
+            "とは限らん": "とはかぎらん|isn't necessarily (とは限らない)"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "学院長は、円卓を見回した。",
+          "en": "The Rector looked around the table.",
+          "w": {
+            "円卓": "えんたく|round table",
+            "見回した": "みまわした|looked around|見回す, past"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "グレゴール学院長",
+      "s": [
+        {
+          "jp": "「そこで、かねてより検討してきた隔壁計画を、前倒しで実行に移したい」",
+          "en": "\"I therefore propose that we bring forward the Partition Plan we have long been considering, and put it into effect.\"",
+          "w": {
+            "そこで": "そこで|therefore",
+            "かねてより": "かねてより|for some time",
+            "検討してきた": "けんとうしてきた|have been considering|検討する + てくる, past",
+            "前倒し": "まえだおし|bringing forward (in time)",
+            "実行": "じっこう|execution, carrying out",
+            "移したい": "うつしたい|wish to move (into)|移す + たい"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "広間が、かすかにざわめいた。",
+          "en": "A faint murmur ran through the hall.",
+          "w": {
+            "広間": "ひろま|hall",
+            "かすかに": "かすかに|faintly",
+            "ざわめいた": "ざわめいた|stirred, murmured|ざわめく, past"
+          }
+        },
+        {
+          "jp": "隔壁計画――。",
+          "en": "The Partition Plan."
+        },
+        {
+          "jp": "ヴィオラは、その名を一度も耳にしたことがなかった。",
+          "en": "Viola had never once heard the name.",
+          "w": {
+            "名": "な|name",
+            "一度も": "いちども|not once",
+            "耳にした": "みみにした|heard|耳にする, past"
+          }
+        },
+        {
+          "jp": "父の横顔を盗み見る。表情ひとつ変わっていない。父は、知っていたのだ。",
+          "en": "She stole a glance at her father's profile. Not a flicker. He had known.",
+          "w": {
+            "父": "ちち|father",
+            "横顔": "よこがお|profile",
+            "盗み見る": "ぬすみみる|to steal a glance",
+            "表情": "ひょうじょう|expression",
+            "変わっていない": "かわっていない|hasn't changed",
+            "知っていた": "しっていた|knew"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "グレゴール学院長",
+      "s": [
+        {
+          "jp": "「平たく申せば、街を二つに分けるのです」",
+          "en": "\"Put simply, we divide the city in two.\"",
+          "w": {
+            "平たく": "ひらたく|plainly, simply",
+            "申せば": "もうせば|if I may say|申す, conditional",
+            "街": "まち|city",
+            "二つ": "ふたつ|two",
+            "分ける": "わける|to divide"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "学院長の手振りに合わせて、円卓の中央に、ヴェルンの立体図が淡く浮かび上がった。",
+          "en": "At a gesture from the Rector, a three-dimensional map of Vern rose faintly over the centre of the table.",
+          "w": {
+            "手振り": "てぶり|gesture",
+            "合わせて": "あわせて|in time with|合わせる, て-form",
+            "円卓": "えんたく|round table",
+            "中央": "ちゅうおう|centre",
+            "立体図": "りったいず|three-dimensional map",
+            "淡く": "あわく|faintly|淡い, adverb",
+            "浮かび上がった": "うかびあがった|rose up"
+          }
+        },
+        {
+          "jp": "上層と、下層。",
+          "en": "Upper ring and lower ring."
+        },
+        {
+          "jp": "その境目に、青い光の壁が立ち上がる。",
+          "en": "Along the boundary between them, a wall of blue light rose up.",
+          "w": {
+            "境目": "さかいめ|boundary",
+            "青い": "あおい|blue",
+            "光": "ひかり|light",
+            "壁": "かべ|wall",
+            "立ち上がる": "たちあがる|to rise up"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "グレゴール学院長",
+      "s": [
+        {
+          "jp": "「時晶の力が弱まっている以上、街全体の時を支え続けることはできません」",
+          "en": "\"So long as the crystal's power is waning, it cannot go on supporting the time of the entire city.\"",
+          "w": {
+            "力": "ちから|power",
+            "弱まっている": "よわまっている|is weakening",
+            "以上": "いじょう|since, as long as",
+            "街全体": "まちぜんたい|the whole city",
+            "時": "とき|time",
+            "支え続ける": "ささえつづける|to keep supporting",
+            "できません": "できません|cannot"
+          }
+        },
+        {
+          "jp": "「ならば、支える範囲を狭めればよい。下層への時の供給を絶ち、その分を上層に回すのです」",
+          "en": "\"Then we need only narrow what it supports. Cut off the supply of time to the lower ring and redirect that share to the upper.\"",
+          "w": {
+            "ならば": "ならば|in that case",
+            "支える": "ささえる|to support",
+            "範囲": "はんい|range, scope",
+            "狭めれば": "せばめれば|if (we) narrow|狭める, conditional",
+            "よい": "よい|good, (it) will do",
+            "時": "とき|time",
+            "供給": "きょうきゅう|supply",
+            "絶ち": "たち|cut off (stem)|絶つ",
+            "分": "ぶん|share",
+            "回す": "まわす|to redirect"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「時の流れを絶たれた下層は、どうなりますの」",
+          "en": "\"And what becomes of the lower ring, once its flow of time is cut?\"",
+          "w": {
+            "時": "とき|time",
+            "流れ": "ながれ|flow",
+            "絶たれた": "たたれた|cut off|絶つ, passive past",
+            "どう": "どう|how, what",
+            "なります": "なります|become (polite)"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "気づいたときには、口が勝手に動いていた。",
+          "en": "Before she knew it, her mouth had moved on its own.",
+          "w": {
+            "気づいた": "きづいた|noticed",
+            "口": "くち|mouth",
+            "勝手に": "かってに|on its own",
+            "動いていた": "うごいていた|was moving"
+          }
+        },
+        {
+          "jp": "十二対の目が、一斉にこちらを向く。",
+          "en": "Twelve pairs of eyes turned to her at once.",
+          "w": {
+            "十二対": "じゅうについ|twelve pairs",
+            "目": "め|eyes",
+            "一斉に": "いっせいに|all at once",
+            "こちら": "こちら|this way",
+            "向く": "むく|to turn"
+          }
+        },
+        {
+          "jp": "父が鋭く振り返ったが、ヴィオラは目をそらさなかった。",
+          "en": "Her father turned sharply, but Viola didn't look away.",
+          "w": {
+            "父": "ちち|father",
+            "鋭く": "するどく|sharply",
+            "振り返った": "ふりかえった|turned around",
+            "目": "め|eyes",
+            "そらさなかった": "そらさなかった|didn't avert|そらす, negative past"
+          }
+        },
+        {
+          "jp": "学院長は、孫娘に語りかけるような柔らかな声で答えた。",
+          "en": "The Rector answered in a soft voice, as if speaking to a granddaughter.",
+          "w": {
+            "孫娘": "まごむすめ|granddaughter",
+            "語りかける": "かたりかける|to speak to",
+            "柔らかな": "やわらかな|soft",
+            "声": "こえ|voice",
+            "答えた": "こたえた|answered"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "グレゴール学院長",
+      "s": [
+        {
+          "jp": "「眠りにつくのですよ、アイゼン嬢。時が止まれば、苦しみもない。いずれ時晶が持ち直せば、目覚めることもできるでしょう」",
+          "en": "\"They go to sleep, Miss Eisen. When time stops, there is no suffering. And if the crystal recovers one day, they may even wake.\"",
+          "w": {
+            "眠り": "ねむり|sleep; 眠りにつく = fall asleep",
+            "つく": "つく|to settle into",
+            "嬢": "じょう|Miss (title)",
+            "時": "とき|time",
+            "止まれば": "とまれば|if (it) stops",
+            "苦しみ": "くるしみ|suffering",
+            "いずれ": "いずれ|someday",
+            "持ち直せば": "もちなおせば|if it recovers|持ち直す, conditional",
+            "目覚める": "めざめる|to wake up",
+            "できる": "できる|can"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「いずれ、とは。いつのことですの」",
+          "en": "\"'One day.' And when would that be?\"",
+          "w": {
+            "いずれ": "いずれ|one day",
+            "とは": "とは|(as for) 'X'…",
+            "いつ": "いつ|when"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "グレゴール学院長",
+      "s": [
+        {
+          "jp": "「さて。十年先か、百年先か」",
+          "en": "\"Well now. Ten years hence? A hundred?\"",
+          "w": {
+            "さて": "さて|well now",
+            "十年先": "じゅうねんさき|ten years from now",
+            "百年先": "ひゃくねんさき|a hundred years from now"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "学院長は、穏やかに微笑んだ。",
+          "en": "The Rector smiled gently.",
+          "w": {
+            "穏やかに": "おだやかに|gently",
+            "微笑んだ": "ほほえんだ|smiled"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "グレゴール学院長",
+      "s": [
+        {
+          "jp": "「いずれにせよ、ヴェルンという街が生き延びるためには、やむを得ない犠牲です」",
+          "en": "\"Either way, it is a necessary sacrifice if the city of Vern is to survive.\"",
+          "w": {
+            "いずれにせよ": "いずれにせよ|either way",
+            "街": "まち|city",
+            "生き延びる": "いきのびる|to survive",
+            "ために": "ために|in order to",
+            "やむを得ない": "やむをえない|unavoidable",
+            "犠牲": "ぎせい|sacrifice"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "下層には、何万という人々が暮らしている。",
+          "en": "Tens of thousands of people lived in the lower ring.",
+          "w": {
+            "何万": "なんまん|tens of thousands",
+            "人々": "ひとびと|people",
+            "暮らしている": "くらしている|live"
+          }
+        },
+        {
+          "jp": "セラも、オズも、ニコの家族も。",
+          "en": "Sera. Oz. Niko's family.",
+          "w": {
+            "家族": "かぞく|family"
+          }
+        },
+        {
+          "jp": "彼らを、止まった時の中に閉じ込めるというのか。",
+          "en": "They meant to shut them all inside stopped time?",
+          "w": {
+            "彼ら": "かれら|them",
+            "止まった": "とまった|stopped",
+            "時": "とき|time",
+            "中": "なか|inside",
+            "閉じ込める": "とじこめる|to shut in",
+            "というのか": "というのか|are you saying that…?"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「わたくしは、反対いたします」",
+          "en": "\"I object.\"",
+          "w": {
+            "反対いたします": "はんたいいたします|I oppose (humble)|反対する → いたす"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "ヴィオラの声は、震えていなかった。",
+          "en": "Viola's voice did not shake.",
+          "w": {
+            "声": "こえ|voice",
+            "震えていなかった": "ふるえていなかった|wasn't trembling"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「大時計を守るのはアイゼン家の務め。けれど、大時計は街を守るためにあるもの。街の半分を捨てて時計だけを守るなど、本末転倒ですわ」",
+          "en": "\"Guarding the Great Clock is the duty of House Eisen. But the Great Clock exists to protect the city. To abandon half the city and save only the clock is to get things exactly backwards.\"",
+          "w": {
+            "守る": "まもる|to guard",
+            "家": "け|House (of)",
+            "務め": "つとめ|duty",
+            "街": "まち|city",
+            "ために": "ために|for the sake of",
+            "半分": "はんぶん|half",
+            "捨てて": "すてて|throwing away",
+            "本末転倒": "ほんまつてんとう|putting the cart before the horse"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴァルター",
+      "s": [
+        {
+          "jp": "「ヴィオラ」",
+          "en": "\"Viola.\""
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "父の声は、低く、冷たかった。",
+          "en": "Her father's voice was low and cold.",
+          "w": {
+            "父": "ちち|father",
+            "声": "こえ|voice",
+            "低く": "ひくく|low",
+            "冷たかった": "つめたかった|was cold"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴァルター",
+      "s": [
+        {
+          "jp": "「下がりなさい。お前に発言は許していない」",
+          "en": "\"Step back. You were not given leave to speak.\"",
+          "w": {
+            "下がりなさい": "さがりなさい|step back (instruction)",
+            "お前": "おまえ|you",
+            "発言": "はつげん|speaking (in a meeting)",
+            "許していない": "ゆるしていない|haven't permitted"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「お父様――」",
+          "en": "\"Father—\"",
+          "w": {
+            "お父様": "おとうさま|Father (very polite)"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴァルター",
+      "s": [
+        {
+          "jp": "「下がれと言っている」",
+          "en": "\"I said step back.\"",
+          "w": {
+            "下がれ": "さがれ|step back! (command)|下がる, imperative",
+            "言っている": "いっている|am saying"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "ヴィオラは唇を噛んだ。",
+          "en": "Viola bit her lip.",
+          "w": {
+            "唇": "くちびる|lip",
+            "噛んだ": "かんだ|bit"
+          }
+        },
+        {
+          "jp": "広間のあちこちから、冷ややかな視線と、押し殺した笑い声が向けられる。",
+          "en": "From all around the hall came chilly glances and stifled laughter.",
+          "w": {
+            "広間": "ひろま|hall",
+            "あちこち": "あちこち|here and there",
+            "冷ややかな": "ひややかな|cold, cool",
+            "視線": "しせん|gaze",
+            "押し殺した": "おしころした|stifled",
+            "笑い声": "わらいごえ|laughter",
+            "向けられる": "むけられる|are directed"
+          }
+        },
+        {
+          "jp": "小娘の戯言だ、と誰もが思っているのがわかった。",
+          "en": "She could tell every one of them was thinking: a little girl's prattle.",
+          "w": {
+            "小娘": "こむすめ|little girl (dismissive)",
+            "戯言": "たわごと|nonsense, prattle",
+            "誰もが": "だれもが|everyone",
+            "思っている": "おもっている|are thinking"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "グレゴール学院長",
+      "s": [
+        {
+          "jp": "「お嬢様の熱意には、敬意を表しましょう」",
+          "en": "\"Let us honour the young lady's passion.\"",
+          "w": {
+            "お嬢様": "おじょうさま|young lady",
+            "熱意": "ねつい|passion, zeal",
+            "敬意": "けいい|respect",
+            "表しましょう": "あらわしましょう|let us express|表す, polite volitional"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "学院長が、やんわりと場を収めた。",
+          "en": "The Rector smoothed things over gently.",
+          "w": {
+            "やんわりと": "やんわりと|gently, softly",
+            "場": "ば|the room, the situation",
+            "収めた": "おさめた|settled|収める, past"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "グレゴール学院長",
+      "s": [
+        {
+          "jp": "「では、決を採ります。隔壁計画の実施に賛成の方は」",
+          "en": "\"Then we shall put it to a vote. Those in favour of carrying out the Partition Plan?\"",
+          "w": {
+            "決を採ります": "けつをとります|take a vote|決を採る, polite",
+            "実施": "じっし|implementation",
+            "賛成": "さんせい|in favour",
+            "方": "かた|persons (polite)"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "手が、次々と挙がっていく。",
+          "en": "Hands rose, one after another.",
+          "w": {
+            "手": "て|hands",
+            "次々と": "つぎつぎと|one after another",
+            "挙がっていく": "あがっていく|go up|挙がる + ていく"
+          }
+        },
+        {
+          "jp": "ローゼンベルク伯爵夫人。ヴァイス家。グラーフ家。",
+          "en": "Countess Rosenberg. House Weiss. House Graf.",
+          "w": {
+            "ヴァイス": "ゔぁいす|Weiss",
+            "家": "け|House (of)",
+            "グラーフ": "ぐらーふ|Graf"
+          }
+        },
+        {
+          "jp": "十一本目の手が挙がったところで、全員の目が、まだ動かないひとりに注がれた。",
+          "en": "When the eleventh hand went up, every eye turned to the one man who had not yet moved.",
+          "w": {
+            "十一本目": "じゅういっぽんめ|the eleventh",
+            "手": "て|hand",
+            "挙がった": "あがった|went up",
+            "ところ": "ところ|(at the) point",
+            "全員": "ぜんいん|everyone",
+            "目": "め|eyes",
+            "動かない": "うごかない|not moving",
+            "ひとり": "ひとり|one person",
+            "注がれた": "そそがれた|were directed|注ぐ, passive past"
+          }
+        },
+        {
+          "jp": "ヴァルター・アイゼン。",
+          "en": "Walter Eisen."
+        },
+        {
+          "jp": "大時計の守り手。その一票がなければ、時晶に手を加えることはできない。",
+          "en": "Keeper of the Great Clock. Without his vote, no one could lay a finger on the crystal.",
+          "w": {
+            "守り手": "まもりて|keeper, guardian",
+            "一票": "いっぴょう|one vote",
+            "なければ": "なければ|without, if there isn't",
+            "手を加える": "てをくわえる|to alter, tamper with",
+            "できない": "できない|cannot"
+          }
+        },
+        {
+          "jp": "父は長いあいだ、目を閉じていた。",
+          "en": "For a long moment her father kept his eyes closed.",
+          "w": {
+            "父": "ちち|father",
+            "長いあいだ": "ながいあいだ|for a long time",
+            "目": "め|eyes",
+            "閉じていた": "とじていた|kept closed"
+          }
+        },
+        {
+          "jp": "やがて目を開けると、ゆっくりと右手を挙げた。",
+          "en": "Then he opened them, and slowly raised his right hand.",
+          "w": {
+            "やがて": "やがて|before long",
+            "目": "め|eyes",
+            "開ける": "あける|to open",
+            "ゆっくりと": "ゆっくりと|slowly",
+            "右手": "みぎて|right hand",
+            "挙げた": "あげた|raised"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴァルター",
+      "s": [
+        {
+          "jp": "「アイゼン家は――賛成する」",
+          "en": "\"House Eisen... is in favour.\"",
+          "w": {
+            "家": "け|House (of)",
+            "賛成する": "さんせいする|to be in favour"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "グレゴール学院長",
+      "s": [
+        {
+          "jp": "「決まりですな。隔壁は、七日後の夜、零時をもって閉じることとします」",
+          "en": "\"Then it is decided. The partition will close at midnight, seven days from now.\"",
+          "w": {
+            "決まり": "きまり|decided, settled",
+            "ですな": "ですな|isn't it (older male です + な)",
+            "七日後": "なのかご|seven days later",
+            "夜": "よる|night",
+            "零時": "れいじ|midnight, zero hour",
+            "をもって": "をもって|at, as of (formal)",
+            "閉じる": "とじる|to close",
+            "こととします": "こととします|shall (be decided as)|こととする, polite"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "学院長の宣言に対して、異を唱える者は、もういなかった。",
+          "en": "Against the Rector's declaration, no one raised a voice any longer.",
+          "w": {
+            "宣言": "せんげん|declaration",
+            "異を唱える": "いをとなえる|to object",
+            "者": "もの|person",
+            "いなかった": "いなかった|there were none"
+          }
+        }
+      ]
+    },
+    { "hr": true },
+    {
+      "s": [
+        {
+          "jp": "評議が散会したあと、ヴィオラはひとり、塔のバルコニーに出た。",
+          "en": "When the council broke up, Viola went out alone onto the tower's balcony.",
+          "w": {
+            "評議": "ひょうぎ|council (session)",
+            "散会した": "さんかいした|adjourned|散会する, past",
+            "あと": "あと|after",
+            "ひとり": "ひとり|alone",
+            "塔": "とう|tower",
+            "バルコニー": "ばるこにー|balcony",
+            "出た": "でた|went out|出る, past"
+          }
+        },
+        {
+          "jp": "眼下には、夕闇に沈んでいく下層街が広がっている。",
+          "en": "Below her spread the lower ring, sinking into twilight.",
+          "w": {
+            "眼下": "がんか|below one's eyes",
+            "夕闇": "ゆうやみ|dusk, twilight",
+            "沈んでいく": "しずんでいく|sinking|沈む + ていく",
+            "広がっている": "ひろがっている|spreads out|広がる + ている"
+          }
+        },
+        {
+          "jp": "工場の煙。運河の灯り。どこかの家の窓からこぼれる、夕餉の湯気。",
+          "en": "Factory smoke. Lights on the canals. The steam of supper spilling from some house's window.",
+          "w": {
+            "工場": "こうじょう|factory",
+            "煙": "けむり|smoke",
+            "運河": "うんが|canal",
+            "灯り": "あかり|lights",
+            "どこか": "どこか|some",
+            "家": "いえ|house",
+            "窓": "まど|window",
+            "こぼれる": "こぼれる|to spill",
+            "夕餉": "ゆうげ|supper (literary)",
+            "湯気": "ゆげ|steam"
+          }
+        },
+        {
+          "jp": "七日後、あの灯りがすべて止まる。",
+          "en": "In seven days, every one of those lights would stop.",
+          "w": {
+            "七日後": "なのかご|seven days later",
+            "灯り": "あかり|lights",
+            "すべて": "すべて|all",
+            "止まる": "とまる|to stop"
+          }
+        },
+        {
+          "jp": "父は、それに手を貸した。",
+          "en": "And her father had lent his hand to it.",
+          "w": {
+            "父": "ちち|father",
+            "手を貸した": "てをかした|lent a hand|手を貸す, past"
+          }
+        },
+        {
+          "jp": "手すりを握る指に、知らず知らず力がこもった。",
+          "en": "Without realising, she tightened her grip on the railing.",
+          "w": {
+            "手すり": "てすり|railing",
+            "握る": "にぎる|to grip",
+            "指": "ゆび|fingers",
+            "知らず知らず": "しらずしらず|unconsciously",
+            "力": "ちから|strength",
+            "こもった": "こもった|was put into, filled|こもる, past"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "灰の男",
+      "s": [
+        {
+          "jp": "「――悔しいか」",
+          "en": "\"—Galling, isn't it.\"",
+          "w": {
+            "悔しい": "くやしい|frustrating, galling"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "背後から声がして、ヴィオラは振り返りざまに扇を開いた。",
+          "en": "A voice behind her — Viola spun, snapping her fan open as she turned.",
+          "w": {
+            "背後": "はいご|behind",
+            "声": "こえ|voice",
+            "振り返りざまに": "ふりかえりざまに|in the act of turning around|振り返る + ざま",
+            "扇": "おうぎ|fan",
+            "開いた": "ひらいた|opened"
+          }
+        },
+        {
+          "jp": "バルコニーの端、文字盤の影の中に、灰色の男が立っていた。",
+          "en": "At the end of the balcony, in the shadow of the dial, stood the grey man.",
+          "w": {
+            "バルコニー": "ばるこにー|balcony",
+            "端": "はし|end",
+            "影": "かげ|shadow",
+            "中": "なか|in",
+            "灰色": "はいいろ|grey",
+            "男": "おとこ|man",
+            "立っていた": "たっていた|was standing"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「……よくも、ぬけぬけと」",
+          "en": "\"...You have some nerve.\"",
+          "w": {
+            "よくも": "よくも|how dare (you)",
+            "ぬけぬけと": "ぬけぬけと|brazenly, shamelessly"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "灰の男",
+      "s": [
+        {
+          "jp": "「騒ぐな。今夜は、話をしに来ただけだ」",
+          "en": "\"Quiet. I've come only to talk tonight.\"",
+          "w": {
+            "騒ぐ": "さわぐ|to make a fuss",
+            "今夜": "こんや|tonight",
+            "話": "はなし|talk",
+            "し": "し|do (stem; 〜に来る = come to)|する",
+            "来た": "きた|came"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "男は両手を広げて見せた。武器は持っていない。懐中時計も、外套の内にしまわれたままだ。",
+          "en": "He spread his hands to show her. No weapon. His watch stayed tucked inside his coat.",
+          "w": {
+            "男": "おとこ|man",
+            "両手": "りょうて|both hands",
+            "広げて": "ひろげて|spreading|広げる, て-form",
+            "見せた": "みせた|showed",
+            "武器": "ぶき|weapon",
+            "持っていない": "もっていない|isn't holding",
+            "外套": "がいとう|coat",
+            "内": "うち|inside",
+            "しまわれた": "しまわれた|put away|しまう, passive past"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "灰の男",
+      "s": [
+        {
+          "jp": "「君の父君は、盗人ではない」",
+          "en": "\"Your father is not the thief.\"",
+          "w": {
+            "君": "きみ|you",
+            "父君": "ちちぎみ|father (respectful)",
+            "盗人": "ぬすっと|thief"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「なんですって？」",
+          "en": "\"I beg your pardon?\"",
+          "w": {
+            "なんですって": "なんですって|what did you say?! (feminine, indignant)"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "灰の男",
+      "s": [
+        {
+          "jp": "「刻晶片を売っているのは事実だ。だがそれは、脅されてのこと。断れば、アイゼン家は大時計の守り手の座を追われる」",
+          "en": "\"He sells the shards, yes. But under threat. Refuse, and House Eisen is stripped of the Keepership of the Great Clock.\"",
+          "w": {
+            "売っている": "うっている|is selling",
+            "事実": "じじつ|fact",
+            "脅されて": "おどされて|being threatened|脅す, passive, て-form",
+            "のこと": "のこと|(it's) a matter of",
+            "断れば": "ことわれば|if he refuses|断る, conditional",
+            "家": "け|House (of)",
+            "守り手": "まもりて|keeper",
+            "座": "ざ|seat, position",
+            "追われる": "おわれる|to be driven out|追う, passive"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「誰に脅されている、とおっしゃいますの」",
+          "en": "\"And by whom, pray, is he being threatened?\"",
+          "w": {
+            "誰": "だれ|whom",
+            "脅されている": "おどされている|is being threatened",
+            "おっしゃいます": "おっしゃいます|you say (honorific)"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "男は答えるかわりに、評議の間の窓を顎で示した。",
+          "en": "Instead of answering, the man nodded towards the window of the Council Chamber.",
+          "w": {
+            "男": "おとこ|man",
+            "答える": "こたえる|to answer",
+            "かわりに": "かわりに|instead of",
+            "窓": "まど|window",
+            "顎": "あご|chin",
+            "示した": "しめした|indicated"
+          }
+        },
+        {
+          "jp": "広間の中では、学院長グレゴールが、まだ数人の貴族と談笑している。",
+          "en": "Inside, Rector Gregor was still chatting pleasantly with a few nobles.",
+          "w": {
+            "広間": "ひろま|hall",
+            "中": "なか|inside",
+            "数人": "すうにん|a few people",
+            "貴族": "きぞく|nobles",
+            "談笑している": "だんしょうしている|is chatting pleasantly"
+          }
+        },
+        {
+          "jp": "窓越しに見るその姿は、さっきまでと何ひとつ変わらない。穏やかで、品のよい老紳士だ。",
+          "en": "Seen through the glass, he was exactly as before. A gentle, refined old gentleman.",
+          "w": {
+            "窓越し": "まどごし|through the window",
+            "見る": "みる|to see",
+            "姿": "すがた|figure",
+            "さっき": "さっき|a moment ago",
+            "何ひとつ": "なにひとつ|not one thing",
+            "変わらない": "かわらない|unchanged",
+            "穏やか": "おだやか|gentle",
+            "品のよい": "ひんのよい|refined, elegant",
+            "老紳士": "ろうしんし|old gentleman"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "灰の男",
+      "s": [
+        {
+          "jp": "「あの男だ。この十年――いや、百年にわたって、この街の時を食らい続けてきたのは」",
+          "en": "\"Him. He's the one who has been devouring this city's time for these ten years — no. For a hundred.\"",
+          "w": {
+            "男": "おとこ|man",
+            "十年": "じゅうねん|ten years",
+            "いや": "いや|no",
+            "百年": "ひゃくねん|a hundred years",
+            "にわたって": "にわたって|spanning, throughout",
+            "街": "まち|city",
+            "時": "とき|time",
+            "食らい続けてきた": "くらいつづけてきた|has kept devouring|食らう + 続ける + てくる, past"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「百年……？」",
+          "en": "\"A hundred...?\"",
+          "w": {
+            "百年": "ひゃくねん|a hundred years"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "灰の男",
+      "s": [
+        {
+          "jp": "「あれは、百年前に学院を作った男そのものだ。末裔などではない」",
+          "en": "\"He is the very man who founded the Academy a hundred years ago. No descendant.\"",
+          "w": {
+            "百年前": "ひゃくねんまえ|a hundred years ago",
+            "作った": "つくった|made, founded",
+            "男": "おとこ|man",
+            "そのもの": "そのもの|the very (one)",
+            "末裔": "まつえい|descendant",
+            "ではない": "ではない|is not"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "ヴィオラは、言葉を失った。",
+          "en": "Viola was lost for words.",
+          "w": {
+            "言葉": "ことば|words",
+            "失った": "うしなった|lost"
+          }
+        },
+        {
+          "jp": "百年。逆刻師たちが消えた年。そして、セラの母の名が刻まれていた年。",
+          "en": "A hundred years. The year the Rewinders vanished. The year carved beside Sera's mother's name.",
+          "w": {
+            "百年": "ひゃくねん|a hundred years",
+            "たち": "たち|(plural)",
+            "消えた": "きえた|vanished",
+            "年": "とし|year",
+            "母": "はは|mother",
+            "名": "な|name",
+            "刻まれていた": "きざまれていた|was carved"
+          }
+        },
+        {
+          "jp": "ばらばらだった何もかもが、一本の糸でつながっていく。",
+          "en": "Everything that had been scattered was being drawn onto a single thread.",
+          "w": {
+            "ばらばら": "ばらばら|scattered",
+            "何もかも": "なにもかも|everything",
+            "一本": "いっぽん|one (thread)",
+            "糸": "いと|thread",
+            "つながっていく": "つながっていく|becomes connected|つながる + ていく"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「なぜ、わたくしにそれを？」",
+          "en": "\"Why tell me this?\""
+        }
+      ]
+    },
+    {
+      "sp": "灰の男",
+      "s": [
+        {
+          "jp": "「隔壁が閉じれば手遅れになる。止めるには、あの娘の力と、君の刻術と、時晶の台座を開けられるアイゼンの血がいる」",
+          "en": "\"Once the partition closes, it will be too late. To stop it we need that girl's power, your chronomancy, and Eisen blood to open the crystal's pedestal.\"",
+          "w": {
+            "閉じれば": "とじれば|if it closes",
+            "手遅れ": "ておくれ|too late",
+            "止める": "とめる|to stop",
+            "には": "には|in order to",
+            "娘": "むすめ|girl",
+            "力": "ちから|power",
+            "君": "きみ|your",
+            "台座": "だいざ|pedestal",
+            "開けられる": "あけられる|can open",
+            "血": "ち|blood",
+            "いる": "いる|is needed (要る)"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「わたくしたちに、あなたと手を組めと？」",
+          "en": "\"You're asking us to join forces with you?\"",
+          "w": {
+            "たち": "たち|(plural) we",
+            "手を組め": "てをくめ|join forces! (imperative)|手を組む"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "灰の男",
+      "s": [
+        {
+          "jp": "「敵同士だからといって、同じ敵を持てぬわけではあるまい」",
+          "en": "\"Being enemies doesn't mean we cannot share an enemy.\"",
+          "w": {
+            "敵同士": "てきどうし|mutual enemies",
+            "だ": "だ|is",
+            "同じ": "おなじ|same",
+            "敵": "てき|enemy",
+            "持てぬ": "もてぬ|cannot have (archaic 持てない)|持つ, potential + ぬ",
+            "わけではあるまい": "わけではあるまい|surely it isn't that (archaic わけではないだろう)"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "男は、仮面の奥でかすかに笑った。",
+          "en": "Behind his mask, the man gave a faint laugh.",
+          "w": {
+            "男": "おとこ|man",
+            "仮面": "かめん|mask",
+            "奥": "おく|behind",
+            "かすかに": "かすかに|faintly",
+            "笑った": "わらった|laughed"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "灰の男",
+      "s": [
+        {
+          "jp": "「三日後の夜、運河の倉庫で待っている。あの娘と、騒がしい小僧にも伝えておけ」",
+          "en": "\"Three nights from now, I'll be waiting at the canal warehouse. Tell the girl, and the noisy boy too.\"",
+          "w": {
+            "三日後": "みっかご|three days later",
+            "夜": "よる|night",
+            "運河": "うんが|canal",
+            "倉庫": "そうこ|warehouse",
+            "待っている": "まっている|will be waiting",
+            "娘": "むすめ|girl",
+            "騒がしい": "さわがしい|noisy",
+            "小僧": "こぞう|boy, brat",
+            "伝えておけ": "つたえておけ|pass it on (command)|伝える + ておく, imperative"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「お待ちなさい！　あなたは、いったい何者ですの」",
+          "en": "\"Wait! Who in the world are you?\"",
+          "w": {
+            "お待ちなさい": "おまちなさい|wait! (refined command)|待つ → お〜なさい",
+            "いったい": "いったい|in the world",
+            "何者": "なにもの|who, what sort of person"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "返事のかわりに、一陣の風が吹いた。",
+          "en": "In place of a reply, a gust of wind blew.",
+          "w": {
+            "返事": "へんじ|reply",
+            "かわりに": "かわりに|instead",
+            "一陣": "いちじん|a gust (of)",
+            "風": "かぜ|wind",
+            "吹いた": "ふいた|blew"
+          }
+        },
+        {
+          "jp": "まばたきひとつの間に、男の姿は消えていた。",
+          "en": "In the space of a blink, the man was gone.",
+          "w": {
+            "まばたき": "まばたき|blink",
+            "間": "あいだ|space, interval",
+            "男": "おとこ|man",
+            "姿": "すがた|figure",
+            "消えていた": "きえていた|had vanished"
+          }
+        },
+        {
+          "jp": "時を止めて去ったのだと、ヴィオラにはわかった。",
+          "en": "He had stopped time and left; Viola knew it.",
+          "w": {
+            "時": "とき|time",
+            "止めて": "とめて|stopping",
+            "去った": "さった|left"
+          }
+        },
+        {
+          "jp": "刻術師である自分にすら、その瞬間を感じ取ることはできなかった。",
+          "en": "Not even she, a chronomancer, had been able to sense the moment it happened.",
+          "w": {
+            "である": "である|being (written copula)",
+            "自分": "じぶん|oneself",
+            "すら": "すら|even",
+            "瞬間": "しゅんかん|moment",
+            "感じ取る": "かんじとる|to sense",
+            "できなかった": "できなかった|couldn't"
+          }
+        }
+      ]
+    },
+    { "hr": true },
+    {
+      "s": [
+        {
+          "jp": "その夜遅く、ミルフォード時計店の扉が、遠慮がちに叩かれた。",
+          "en": "Late that night, someone knocked hesitantly at the door of Milford's Clocks.",
+          "w": {
+            "夜": "よる|night",
+            "遅く": "おそく|late",
+            "扉": "とびら|door",
+            "遠慮がちに": "えんりょがちに|hesitantly",
+            "叩かれた": "たたかれた|was knocked|叩く, passive past"
+          }
+        },
+        {
+          "jp": "寝間着に上着を引っかけて扉を開けたセラは、目を丸くした。",
+          "en": "Sera threw a jacket over her nightclothes, opened the door, and stared.",
+          "w": {
+            "寝間着": "ねまき|nightclothes",
+            "上着": "うわぎ|jacket",
+            "引っかけて": "ひっかけて|throwing on|引っかける, て-form",
+            "扉": "とびら|door",
+            "開けた": "あけた|opened",
+            "目を丸くした": "めをまるくした|stared wide-eyed|目を丸くする, past"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "セラ",
+      "s": [
+        {
+          "jp": "「ヴィオラ……？」",
+          "en": "\"Viola...?\""
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "夜会用のドレスの上に外套を羽織っただけの姿で、ヴィオラが立っていた。",
+          "en": "Viola stood there in an evening gown with only a coat thrown over it.",
+          "w": {
+            "夜会用": "やかいよう|for an evening party",
+            "ドレス": "どれす|dress",
+            "上": "うえ|over",
+            "外套": "がいとう|coat",
+            "羽織った": "はおった|threw on",
+            "姿": "すがた|appearance",
+            "立っていた": "たっていた|was standing"
+          }
+        },
+        {
+          "jp": "銀の髪はほつれ、靴は運河沿いの泥で汚れている。",
+          "en": "Her silver hair was coming loose, her shoes muddy from the canal paths.",
+          "w": {
+            "銀": "ぎん|silver",
+            "髪": "かみ|hair",
+            "ほつれ": "ほつれ|come loose (stem)|ほつれる",
+            "靴": "くつ|shoes",
+            "運河沿い": "うんがぞい|along the canal",
+            "泥": "どろ|mud",
+            "汚れている": "よごれている|are dirty"
+          }
+        },
+        {
+          "jp": "上層から、ひとりで歩いて下りてきたのだ。",
+          "en": "She had walked all the way down from the upper ring, alone.",
+          "w": {
+            "ひとり": "ひとり|alone",
+            "歩いて": "あるいて|walking",
+            "下りてきた": "おりてきた|came down"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「夜分に申し訳ございません。どうしても、今夜のうちにお話ししておきたくて」",
+          "en": "\"Forgive me for calling so late. I simply had to speak with you tonight.\"",
+          "w": {
+            "夜分": "やぶん|at night (polite)",
+            "申し訳ございません": "もうしわけございません|I am terribly sorry",
+            "どうしても": "どうしても|no matter what",
+            "今夜": "こんや|tonight",
+            "うち": "うち|within",
+            "お話ししておきたくて": "おはなししておきたくて|wanting to tell (you) (humble)|話す → お話しする + ておく + たい, て-form"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "気丈な声だった。けれど、外套の裾をつかむ指先は、白くなるほど震えている。",
+          "en": "Her voice was steady. But the fingers clutching the hem of her coat were trembling white.",
+          "w": {
+            "気丈な": "きじょうな|resolute, steady",
+            "声": "こえ|voice",
+            "外套": "がいとう|coat",
+            "裾": "すそ|hem",
+            "つかむ": "つかむ|to grip",
+            "指先": "ゆびさき|fingertips",
+            "白く": "しろく|white",
+            "震えている": "ふるえている|are trembling"
+          }
+        },
+        {
+          "jp": "セラは黙って、ヴィオラの手を引いて中に入れた。",
+          "en": "Without a word, Sera took her hand and drew her inside.",
+          "w": {
+            "黙って": "だまって|silently",
+            "手": "て|hand",
+            "引いて": "ひいて|pulling",
+            "中": "なか|inside",
+            "入れた": "いれた|let in"
+          }
+        },
+        {
+          "jp": "奥からランプを手にしたオズが顔を出し、客の姿を認めると、片眉を上げた。",
+          "en": "Oz looked out from the back with a lamp, saw who it was, and raised one eyebrow.",
+          "w": {
+            "奥": "おく|back",
+            "ランプ": "らんぷ|lamp",
+            "手にした": "てにした|holding|手にする, past",
+            "顔を出し": "かおをだし|show one's face (stem)|顔を出す",
+            "客": "きゃく|visitor",
+            "姿": "すがた|figure",
+            "認める": "みとめる|to recognise",
+            "片眉": "かたまゆ|one eyebrow",
+            "上げた": "あげた|raised"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "オズ",
+      "s": [
+        {
+          "jp": "「……アイゼンのとこの嬢ちゃんか」",
+          "en": "\"...The Eisen girl, is it.\"",
+          "w": {
+            "とこ": "とこ|place, family (casual)",
+            "嬢ちゃん": "じょうちゃん|young miss"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「夜分に失礼いたします。ヴィオラ・アイゼンと申します」",
+          "en": "\"Please excuse the late hour. My name is Viola Eisen.\"",
+          "w": {
+            "夜分": "やぶん|at night",
+            "失礼いたします": "しつれいいたします|excuse me (humble)",
+            "申します": "もうします|am called (humble)"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "オズ",
+      "s": [
+        {
+          "jp": "「堅苦しいのはいい。座れ。茶ぐらい淹れてやる」",
+          "en": "\"Never mind the formalities. Sit. I'll make you some tea, at least.\"",
+          "w": {
+            "堅苦しい": "かたくるしい|stiff, formal",
+            "いい": "いい|fine, no need",
+            "座れ": "すわれ|sit (command)|座る, imperative",
+            "茶": "ちゃ|tea",
+            "淹れてやる": "いれてやる|I'll brew (for you)|淹れる + てやる"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "ぶっきらぼうにそう言うと、オズは台所へ引っ込んだ。",
+          "en": "With that gruff word, Oz withdrew to the kitchen.",
+          "w": {
+            "ぶっきらぼうに": "ぶっきらぼうに|gruffly",
+            "言う": "いう|to say",
+            "台所": "だいどころ|kitchen",
+            "引っ込んだ": "ひっこんだ|withdrew"
+          }
+        },
+        {
+          "jp": "ヴィオラは作業台の前の丸椅子に、ちょこんと腰を下ろした。",
+          "en": "Viola perched on the round stool in front of the workbench.",
+          "w": {
+            "作業台": "さぎょうだい|workbench",
+            "前": "まえ|in front of",
+            "丸椅子": "まるいす|round stool",
+            "ちょこんと": "ちょこんと|neatly, small (sitting)",
+            "腰を下ろした": "こしをおろした|sat down"
+          }
+        },
+        {
+          "jp": "時計だらけの狭い店の中で、その姿はひどく場違いで、ひどく小さく見えた。",
+          "en": "In the cramped shop full of clocks, she looked terribly out of place, and terribly small.",
+          "w": {
+            "だらけ": "だらけ|full of",
+            "狭い": "せまい|cramped",
+            "店": "みせ|shop",
+            "中": "なか|inside",
+            "姿": "すがた|figure",
+            "ひどく": "ひどく|terribly",
+            "場違い": "ばちがい|out of place",
+            "小さく": "ちいさく|small",
+            "見えた": "みえた|looked"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "セラ",
+      "s": [
+        {
+          "jp": "「何があったの」",
+          "en": "\"What happened?\"",
+          "w": {
+            "何": "なに|what"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "ヴィオラは、隔壁計画をめぐって評議の間で起きたことを、ひとつずつ話した。",
+          "en": "One thing at a time, Viola told her what had happened in the Council Chamber over the Partition Plan.",
+          "w": {
+            "起きた": "おきた|happened",
+            "話した": "はなした|told"
+          }
+        },
+        {
+          "jp": "七日後の零時。父の挙げた手。そして、バルコニーに現れた灰色の男の言葉。",
+          "en": "Midnight in seven days. Her father's raised hand. And the words of the grey man on the balcony.",
+          "w": {
+            "七日後": "なのかご|seven days later",
+            "零時": "れいじ|midnight",
+            "父": "ちち|father",
+            "挙げた": "あげた|raised",
+            "手": "て|hand",
+            "バルコニー": "ばるこにー|balcony",
+            "現れた": "あらわれた|appeared",
+            "灰色": "はいいろ|grey",
+            "男": "おとこ|man",
+            "言葉": "ことば|words"
+          }
+        },
+        {
+          "jp": "話が進むにつれて、セラの手は、膝の上でいつの間にか拳になっていた。",
+          "en": "As the story went on, Sera's hands had somehow become fists in her lap.",
+          "w": {
+            "話": "はなし|story",
+            "進む": "すすむ|to progress",
+            "につれて": "につれて|as",
+            "手": "て|hands",
+            "膝": "ひざ|lap",
+            "上": "うえ|on",
+            "いつの間にか": "いつのまにか|before one knew it",
+            "拳": "こぶし|fists"
+          }
+        },
+        {
+          "jp": "下層街を、止める。",
+          "en": "Stop the lower ring.",
+          "w": {
+            "止める": "とめる|to stop"
+          }
+        },
+        {
+          "jp": "この店も、オズも、ニコの家族も、みんな。",
+          "en": "This shop. Oz. Niko's family. All of them.",
+          "w": {
+            "店": "みせ|shop",
+            "家族": "かぞく|family"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "セラ",
+      "s": [
+        {
+          "jp": "「学院長が……百年も前から」",
+          "en": "\"The Rector... for a hundred years.\"",
+          "w": {
+            "百年": "ひゃくねん|a hundred years",
+            "前": "まえ|before, ago"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「信じられませんわよね。わたくしも、まだ信じきれておりませんの」",
+          "en": "\"It's unbelievable, isn't it. I still can't quite believe it myself.\"",
+          "w": {
+            "信じられません": "しんじられません|can't believe|信じる, potential polite negative",
+            "信じきれておりません": "しんじきれておりません|can't fully believe (humble)|信じる + きれる + ておる, polite negative"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "ヴィオラはうつむいた。",
+          "en": "Viola looked down.",
+          "w": {
+            "うつむいた": "うつむいた|looked down"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「でも、父が手を挙げたのは本当ですの。たとえ脅されていたからといって、あの人が街の半分を見捨てることを選んだのは、事実ですわ」",
+          "en": "\"But my father raising his hand — that much is true. Even if he was being threatened, it doesn't change the fact that he chose to abandon half the city.\"",
+          "w": {
+            "父": "ちち|father",
+            "手": "て|hand",
+            "挙げた": "あげた|raised",
+            "本当": "ほんとう|true",
+            "たとえ": "たとえ|even if",
+            "脅されていた": "おどされていた|was being threatened",
+            "あの人": "あのひと|that man",
+            "街": "まち|city",
+            "半分": "はんぶん|half",
+            "見捨てる": "みすてる|to abandon",
+            "選んだ": "えらんだ|chose",
+            "事実": "じじつ|fact"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "台所から、湯の沸く音が聞こえてくる。",
+          "en": "From the kitchen came the sound of water coming to the boil.",
+          "w": {
+            "台所": "だいどころ|kitchen",
+            "湯": "ゆ|hot water",
+            "沸く": "わく|to boil",
+            "音": "おと|sound",
+            "聞こえてくる": "きこえてくる|can be heard"
+          }
+        },
+        {
+          "jp": "セラは、ヴィオラの隣の椅子に座り直した。",
+          "en": "Sera moved to the stool next to Viola.",
+          "w": {
+            "隣": "となり|next to",
+            "椅子": "いす|chair, stool",
+            "座り直した": "すわりなおした|resettled, sat again"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "セラ",
+      "s": [
+        {
+          "jp": "「ヴィオラは、反対してくれたんでしょ。十二人の大人の前で、ひとりで」",
+          "en": "\"But you objected. In front of twelve grown-ups. On your own.\"",
+          "w": {
+            "反対してくれた": "はんたいしてくれた|objected (for us)|反対する + てくれる, past",
+            "んでしょ": "んでしょ|didn't you? (casual)",
+            "十二人": "じゅうににん|twelve people",
+            "大人": "おとな|adults",
+            "前": "まえ|in front of",
+            "ひとり": "ひとり|alone"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "ヴィオラ",
+      "s": [
+        {
+          "jp": "「……何の役にも立ちませんでしたわ」",
+          "en": "\"...Much good it did.\"",
+          "w": {
+            "何の": "なんの|any, of what",
+            "役にも立ちませんでした": "やくにもたちませんでした|was of no use at all|役に立つ, polite negative past"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "セラ",
+      "s": [
+        {
+          "jp": "「役に立つかどうかなんて、関係ないよ」",
+          "en": "\"Whether it did any good doesn't matter.\"",
+          "w": {
+            "役に立つ": "やくにたつ|to be of use",
+            "なんて": "なんて|things like",
+            "関係ない": "かんけいない|doesn't matter"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "セラは、ヴィオラの冷えきった手を、そっと両手で包んだ。",
+          "en": "Sera gently wrapped Viola's ice-cold hands in both of her own.",
+          "w": {
+            "冷えきった": "ひえきった|chilled through|冷えきる, past",
+            "手": "て|hands",
+            "そっと": "そっと|gently",
+            "両手": "りょうて|both hands",
+            "包んだ": "つつんだ|wrapped"
+          }
+        }
+      ]
+    },
+    {
+      "sp": "セラ",
+      "s": [
+        {
+          "jp": "「あたしは、うれしかった。それだけ」",
+          "en": "\"It made me happy. That's all.\"",
+          "w": {
+            "うれしかった": "うれしかった|was happy|うれしい, past",
+            "それだけ": "それだけ|that's all"
+          }
+        }
+      ]
+    },
+    {
+      "s": [
+        {
+          "jp": "ヴィオラの肩が、小さく揺れた。",
+          "en": "Viola's shoulders shook, just a little.",
+          "w": {
+            "肩": "かた|shoulders",
+            "小さく": "ちいさく|slightly",
+            "揺れた": "ゆれた|shook"
+          }
+        },
+        {
+          "jp": "しばらくして、湯気の立つ茶碗を三つ盆に載せて戻ってきたオズは、店の中の様子を一瞥すると、黙って盆を作業台に置いた。",
+          "en": "A little later Oz came back with three steaming cups on a tray, took one look at the scene in the shop, and silently set the tray on the workbench.",
+          "w": {
+            "しばらくして": "しばらくして|after a while",
+            "湯気": "ゆげ|steam",
+            "立つ": "たつ|to rise",
+            "茶碗": "ちゃわん|teacup",
+            "三つ": "みっつ|three",
+            "盆": "ぼん|tray",
+            "載せて": "のせて|putting on",
+            "戻ってきた": "もどってきた|came back",
+            "店": "みせ|shop",
+            "中": "なか|inside",
+            "様子": "ようす|state, scene",
+            "一瞥する": "いちべつする|to glance at",
+            "黙って": "だまって|silently",
+            "作業台": "さぎょうだい|workbench",
+            "置いた": "おいた|placed"
+          }
+        },
+        {
+          "jp": "そして自分の茶碗だけを手に取ると、また奥へ引っ込んでいった。",
+          "en": "Then, taking only his own cup, he withdrew into the back again.",
+          "w": {
+            "自分": "じぶん|his own",
+            "茶碗": "ちゃわん|teacup",
+            "手に取る": "てにとる|to take in hand",
+            "奥": "おく|back",
+            "引っ込んでいった": "ひっこんでいった|withdrew"
+          }
+        },
+        {
+          "jp": "柱時計が、零時を打った。",
+          "en": "The wall clock struck midnight.",
+          "w": {
+            "柱時計": "はしらどけい|wall clock",
+            "零時": "れいじ|midnight",
+            "打った": "うった|struck"
+          }
+        },
+        {
+          "jp": "隔壁が閉じるまで、残された時間は七日もない。",
+          "en": "Less than seven days remained before the partition closed.",
+          "w": {
+            "閉じる": "とじる|to close",
+            "残された": "のこされた|remaining|残す, passive past",
+            "時間": "じかん|time",
+            "七日": "なのか|seven days"
+          }
+        }
+      ]
+    }
+  ]
+}

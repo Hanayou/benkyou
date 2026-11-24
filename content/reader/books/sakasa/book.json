@@ -61,6 +61,12 @@
       "register": "Standard polite teacher speech: です/ます, 〜てください. The neutral baseline every other register departs from."
     },
     {
+      "name": "グレゴール",
+      "kana": "ぐれごーる",
+      "desc": "Rector of the Royal Vern Academy, descendant of its founder. White-bearded, gentle, adored by students.",
+      "register": "Benevolent elder: soft polite 〜ですよ/〜でしょう to the young, 諸君 and clipped 〜ん (限らん) among peers. The grandfatherly voice of authority."
+    },
+    {
       "name": "灰の男",
       "kana": "はいのおとこ",
       "desc": "A man in a grey coat and grey mask. Watches from high places.",
@@ -72,6 +78,8 @@
     "ch2",
     "ch3",
     "ch4",
-    "ch5"
+    "ch5",
+    "ch6",
+    "ch7"
   ]
 }

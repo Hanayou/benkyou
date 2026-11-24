@@ -1478,5 +1478,29 @@
     "type": "aux",
     "short": "(polite) is, and… / it's that… (て-form of です)",
     "note": "Polite connective: 仲でしてね = we were (classmates), you see."
+  },
+  "をめぐって": {
+    "type": "grammar",
+    "short": "over, concerning (a dispute)",
+    "note": "Noun + をめぐって / をめぐる + noun: the issue around which conflict, debate or competition revolves.",
+    "jlpt": "N2"
+  },
+  "をめぐる": {
+    "of": "をめぐって"
+  },
+  "からといって": {
+    "type": "grammar",
+    "short": "just because ~ (doesn't mean)",
+    "note": "Plain form + からといって, usually followed by a negative: X is true, but X alone doesn't justify the conclusion.",
+    "jlpt": "N2"
+  },
+  "に対して": {
+    "type": "grammar",
+    "short": "towards, against; in contrast to",
+    "note": "Noun + に対して: the target of an action/attitude, or a contrast between two things.",
+    "jlpt": "N3"
+  },
+  "に対する": {
+    "of": "に対して"
   }
 }
